@@ -2,6 +2,7 @@
  {
   "recurso": "Advanced Technologies & Aerospace Database",
   "proveedor": "ProQuest",
+  "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/hightechjournals/fromDatabasesLayer?accountid=25548",
   "estado": "Disponible",
   "falla": "",
   "detalle": "",
@@ -13,6 +14,7 @@
  {
   "recurso": "Arts & Humanities Database",
   "proveedor": "ProQuest",
+  "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/artshumanities/arts/fromDatabasesLayer?accountid=25548",
   "estado": "Disponible",
   "falla": "",
   "detalle": "",
@@ -24,6 +26,7 @@
  {
   "recurso": "Biological Science Collection (Biomedicina)",
   "proveedor": "ProQuest",
+  "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/biologicalscience1",
   "estado": "Disponible",
   "falla": "",
   "detalle": "",
@@ -35,6 +38,7 @@
  {
   "recurso": "Canadian Business & Current Affairs Database",
   "proveedor": "ProQuest",
+  "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/cbcacomplete/index?accountid=2554",
   "estado": "Con falla",
   "falla": "Contenido inesperado",
   "detalle": "No aparece: Acceso proporcionado por Universidad Agustiniana",
@@ -46,6 +50,7 @@
  {
   "recurso": "Canadian Newsstream",
   "proveedor": "ProQuest",
+  "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/canadiannews/index?accountid=25548",
   "estado": "Disponible",
   "falla": "",
   "detalle": "",
@@ -57,6 +62,7 @@
  {
   "recurso": "Career and Technical Education (ProQuest)",
   "proveedor": "ProQuest",
+  "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/career/index?accountid=25548",
   "estado": "Disponible",
   "falla": "",
   "detalle": "",
@@ -68,6 +74,7 @@
  {
   "recurso": "Computer Science Database",
   "proveedor": "ProQuest",
+  "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/compscijour",
   "estado": "Disponible",
   "falla": "",
   "detalle": "",
@@ -79,6 +86,7 @@
  {
   "recurso": "Consumer Health Database",
   "proveedor": "ProQuest",
+  "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/index?accountid=25548&selectids=1006520,1006520",
   "estado": "Disponible",
   "falla": "",
   "detalle": "",
@@ -90,6 +98,7 @@
  {
   "recurso": "Coronavirus Research Database (ProQuest)",
   "proveedor": "ProQuest",
+  "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/coronavirus",
   "estado": "Disponible",
   "falla": "",
   "detalle": "",
@@ -101,6 +110,7 @@
  {
   "recurso": "Criminal Justice Database (ProQuest)",
   "proveedor": "ProQuest",
+  "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/criminaljusticeperiodicals/index?accountid=25548",
   "estado": "Disponible",
   "falla": "",
   "detalle": "",
@@ -112,6 +122,7 @@
  {
   "recurso": "E-Collection",
   "proveedor": "ICONTEC",
+  "url": "https://itmsp.museknowledge.com/UniAgu?groupID=1&action=source&sourceID=ICONTECeCollection",
   "estado": "Disponible",
   "falla": "",
   "detalle": "",
@@ -123,6 +134,7 @@
  {
   "recurso": "Engineering Database",
   "proveedor": "ProQuest",
+  "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/engineeringjournals/fromDatabasesLayer?accountid=25548",
   "estado": "Disponible",
   "falla": "",
   "detalle": "",
@@ -134,6 +146,7 @@
  {
   "recurso": "Global Breaking Newswires",
   "proveedor": "ProQuest",
+  "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/globalwires/news/?accountid=25548",
   "estado": "Disponible",
   "falla": "",
   "detalle": "",
@@ -145,6 +158,7 @@
  {
   "recurso": "Gran base de datos Premium",
   "proveedor": "enLegislación",
+  "url": "https://itmsp.museknowledge.com/UniAgu?url=https://uniagustiniana.enlegislacion.com/",
   "estado": "Disponible",
   "falla": "",
   "detalle": "",
@@ -156,6 +170,7 @@
  {
   "recurso": "Health & Medical Collection (ProQuest)",
   "proveedor": "ProQuest",
+  "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/healthcomplete?accountid=25548",
   "estado": "Disponible",
   "falla": "",
   "detalle": "",
@@ -167,6 +182,7 @@
  {
   "recurso": "Healthcare Administration Database",
   "proveedor": "ProQuest",
+  "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/index?accountid=25548&selectids=1006481,1006481",
   "estado": "Disponible",
   "falla": "",
   "detalle": "",
@@ -178,6 +194,7 @@
  {
   "recurso": "International Newsstream (ProQuest)",
   "proveedor": "ProQuest",
+  "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/internationalnews1/index?accountid=25548",
   "estado": "Disponible",
   "falla": "",
   "detalle": "",
@@ -189,6 +206,7 @@
  {
   "recurso": "Legiscomex",
   "proveedor": "Legis",
+  "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.legiscomex.com/",
   "estado": "Disponible",
   "falla": "",
   "detalle": "",
@@ -200,6 +218,7 @@
  {
   "recurso": "Library Science Database (ProQuest)",
   "proveedor": "ProQuest",
+  "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/libraryscience/index?accountid=25548",
   "estado": "Disponible",
   "falla": "",
   "detalle": "",
@@ -211,6 +230,7 @@
  {
   "recurso": "Linguistics Database (ProQuest)",
   "proveedor": "ProQuest",
+  "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/linguistics/index?accountid=25548",
   "estado": "Disponible",
   "falla": "",
   "detalle": "",
@@ -222,6 +242,7 @@
  {
   "recurso": "Materials Science Database",
   "proveedor": "ProQuest",
+  "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/materialsscijournals/fromDatabasesLayer?accountid=25548",
   "estado": "Disponible",
   "falla": "",
   "detalle": "",
@@ -233,6 +254,7 @@
  {
   "recurso": "Military Database (ProQuest)",
   "proveedor": "ProQuest",
+  "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/military/index?accountid=25548",
   "estado": "Disponible",
   "falla": "",
   "detalle": "",
@@ -244,6 +266,7 @@
  {
   "recurso": "Nursing & Allied Health Database",
   "proveedor": "ProQuest",
+  "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/nahp",
   "estado": "Disponible",
   "falla": "",
   "detalle": "",
@@ -255,6 +278,7 @@
  {
   "recurso": "Political Science Database",
   "proveedor": "ProQuest",
+  "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/politicalscience/index?accountid=25548",
   "estado": "Disponible",
   "falla": "",
   "detalle": "",
@@ -266,6 +290,7 @@
  {
   "recurso": "ProQuest Central Premium",
   "proveedor": "ProQuest",
+  "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/centralnew?accountid=25548",
   "estado": "Disponible",
   "falla": "",
   "detalle": "",
@@ -277,6 +302,7 @@
  {
   "recurso": "Publicly Available Content Database",
   "proveedor": "ProQuest",
+  "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/publiccontent/fromDatabasesLayer?accountid=25548uniagus",
   "estado": "Disponible",
   "falla": "",
   "detalle": "",
@@ -288,6 +314,7 @@
  {
   "recurso": "Public Health Database",
   "proveedor": "ProQuest",
+  "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/publichealth/index?accountid=25548",
   "estado": "Disponible",
   "falla": "",
   "detalle": "",
@@ -299,6 +326,7 @@
  {
   "recurso": "Religion Database (ProQuest)",
   "proveedor": "ProQuest",
+  "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/religion/index?accountid=25548",
   "estado": "Disponible",
   "falla": "",
   "detalle": "",
@@ -310,6 +338,7 @@
  {
   "recurso": "Research Library (ProQuest)",
   "proveedor": "ProQuest",
+  "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/pqrl/index?accountid=25548",
   "estado": "Disponible",
   "falla": "",
   "detalle": "",
@@ -321,6 +350,7 @@
  {
   "recurso": "Social Science Database (ProQuest)",
   "proveedor": "ProQuest",
+  "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/socscijournals/index?accountid=25548",
   "estado": "Disponible",
   "falla": "",
   "detalle": "",
@@ -332,6 +362,7 @@
  {
   "recurso": "Sociology Database (ProQuest)",
   "proveedor": "ProQuest",
+  "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/sociology/index?accountid=25548",
   "estado": "Disponible",
   "falla": "",
   "detalle": "",
@@ -343,6 +374,7 @@
  {
   "recurso": "US Newsstream",
   "proveedor": "ProQuest",
+  "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/usnews/index?accountid=25548",
   "estado": "Disponible",
   "falla": "",
   "detalle": "",
@@ -354,6 +386,7 @@
  {
   "recurso": "Virtual Pro",
   "proveedor": "Virtual Pro",
+  "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.virtualpro.co/instituciones/universidad-agustiniana",
   "estado": "Disponible",
   "falla": "",
   "detalle": "",
@@ -365,6 +398,7 @@
  {
   "recurso": "OpenAire",
   "proveedor": "OpenAIRE",
+  "url": "https://login.recursoselectronicos.uniagustiniana.edu.co/login?url=https://www.openaire.eu/",
   "estado": "Con falla",
   "falla": "Dominio inesperado",
   "detalle": "Dominio final itmsp.museknowledge.com, se esperaba www.openaire.eu",
@@ -376,6 +410,7 @@
  {
   "recurso": "Ebook Central",
   "proveedor": "ProQuest",
+  "url": "https://itmsp.museknowledge.com/UniAgu?url=https://ebookcentral.proquest.com/lib/bibliounc-ebooks/home.action",
   "estado": "Disponible",
   "falla": "",
   "detalle": "",
@@ -387,6 +422,7 @@
  {
   "recurso": "Education Research Index",
   "proveedor": "ProQuest",
+  "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/?accountid=25548&selectids=10000449,1007399",
   "estado": "Disponible",
   "falla": "",
   "detalle": "",
@@ -398,6 +434,7 @@
  {
   "recurso": "Eric",
   "proveedor": "ProQuest",
+  "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/?accountid=25548&selectids=1007399",
   "estado": "Disponible",
   "falla": "",
   "detalle": "",
@@ -409,6 +446,7 @@
  {
   "recurso": "Supplemental Education Index",
   "proveedor": "ProQuest",
+  "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/suppeducationindex?accountid=25548",
   "estado": "Disponible",
   "falla": "",
   "detalle": "",
@@ -420,6 +458,7 @@
  {
   "recurso": "Agrícola",
   "proveedor": "ProQuest",
+  "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/agricolamodule?accountid=25548",
   "estado": "Disponible",
   "falla": "",
   "detalle": "",
@@ -431,6 +470,7 @@
  {
   "recurso": "ASFA: Aquatic Sciences and Fisheries Abstracts",
   "proveedor": "ProQuest",
+  "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/asfa?accountid=25548",
   "estado": "Disponible",
   "falla": "",
   "detalle": "",
@@ -442,6 +482,7 @@
  {
   "recurso": "Aquatic Science & Fisheries Abstracts (ASFA) 1: Biological Sciences & Living Resources",
   "proveedor": "ProQuest",
+  "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/asfabiological?accountid=25548",
   "estado": "Disponible",
   "falla": "",
   "detalle": "",
@@ -453,6 +494,7 @@
  {
   "recurso": "Aquatic Science & Fisheries Abstracts (ASFA) 2: Ocean Technology, Policy & Non-Living Resources",
   "proveedor": "ProQuest",
+  "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/asfaocean?accountid=25548",
   "estado": "Disponible",
   "falla": "",
   "detalle": "",
@@ -464,6 +506,7 @@
  {
   "recurso": "Aquatic Science & Fisheries Abstracts (ASFA) 3: Aquatic Pollution & Environmental Quality",
   "proveedor": "ProQuest",
+  "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/asfaaquaticpollution?accountid=25548",
   "estado": "Disponible",
   "falla": "",
   "detalle": "",
@@ -475,6 +518,7 @@
  {
   "recurso": "Aquatic Science & Fisheries Abstracts (ASFA) Aquaculture Abstracts",
   "proveedor": "ProQuest",
+  "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/asfaaquaculture?accountid=25548",
   "estado": "Disponible",
   "falla": "",
   "detalle": "",
@@ -486,6 +530,7 @@
  {
   "recurso": "Aquatic Science & Fisheries Abstracts (ASFA) Marine Biotechnology Abstracts",
   "proveedor": "ProQuest",
+  "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/asfamarine?accountid=25548",
   "estado": "Disponible",
   "falla": "",
   "detalle": "",
@@ -497,6 +542,7 @@
  {
   "recurso": "Oceanic Abstracts",
   "proveedor": "ProQuest",
+  "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/oceanic?accountid=25548",
   "estado": "Disponible",
   "falla": "",
   "detalle": "",
@@ -508,6 +554,7 @@
  {
   "recurso": "Environmental Science Index",
   "proveedor": "ProQuest",
+  "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/esindex?accountid=25548",
   "estado": "Disponible",
   "falla": "",
   "detalle": "",
@@ -519,6 +566,7 @@
  {
   "recurso": "Global Newsstream Collection",
   "proveedor": "ProQuest",
+  "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/globalnews?accountid=25548",
   "estado": "Disponible",
   "falla": "",
   "detalle": "",
@@ -530,6 +578,7 @@
  {
   "recurso": "Humanities Index",
   "proveedor": "ProQuest",
+  "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/bhi?accountid=25548",
   "estado": "Disponible",
   "falla": "",
   "detalle": "",
@@ -541,6 +590,7 @@
  {
   "recurso": "Meteorological & Geoastrophysical Abstracts",
   "proveedor": "ProQuest",
+  "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/mgamodule?accountid=25548",
   "estado": "Disponible",
   "falla": "",
   "detalle": "",
@@ -552,6 +602,7 @@
  {
   "recurso": "ProQuest One Applied & Life Sciences",
   "proveedor": "ProQuest",
+  "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/pq1appliedlifesciences?accountid=25548",
   "estado": "Disponible",
   "falla": "",
   "detalle": "",
@@ -563,6 +614,7 @@
  {
   "recurso": "Advanced Technologies & Computer Science Collection",
   "proveedor": "ProQuest",
+  "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/advancedtechaerospace?accountid=25548",
   "estado": "Disponible",
   "falla": "",
   "detalle": "",
@@ -574,6 +626,7 @@
  {
   "recurso": "Engineering Collection",
   "proveedor": "ProQuest",
+  "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/engcoll?accountid=25548",
   "estado": "Disponible",
   "falla": "",
   "detalle": "",
@@ -585,6 +638,7 @@
  {
   "recurso": "Materials Science Collection",
   "proveedor": "ProQuest",
+  "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/mscoll?accountid=25548",
   "estado": "Disponible",
   "falla": "",
   "detalle": "",
@@ -596,6 +650,7 @@
  {
   "recurso": "ProQuest One Business",
   "proveedor": "ProQuest",
+  "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/pq1business?accountid=25548",
   "estado": "Disponible",
   "falla": "",
   "detalle": "",
@@ -607,6 +662,7 @@
  {
   "recurso": "ProQuest One Education",
   "proveedor": "ProQuest",
+  "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/pq1education?accountid=25548",
   "estado": "Disponible",
   "falla": "",
   "detalle": "",
@@ -618,6 +674,7 @@
  {
   "recurso": "Education Magazine Archive",
   "proveedor": "ProQuest",
+  "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/ema?accountid=25548",
   "estado": "Disponible",
   "falla": "",
   "detalle": "",
@@ -629,6 +686,7 @@
  {
   "recurso": "ProQuest One Health & Nursing",
   "proveedor": "ProQuest",
+  "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/pq1healthnursing?accountid=25548",
   "estado": "Disponible",
   "falla": "",
   "detalle": "",
@@ -640,6 +698,7 @@
  {
   "recurso": "British Nursing Collection",
   "proveedor": "ProQuest",
+  "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/britishnursingindexft?accountid=25548",
   "estado": "Disponible",
   "falla": "",
   "detalle": "",
@@ -651,6 +710,7 @@
  {
   "recurso": "Health & Medical Research Collection",
   "proveedor": "ProQuest",
+  "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/healthmedresearch?accountid=25548",
   "estado": "Disponible",
   "falla": "",
   "detalle": "",
@@ -662,6 +722,7 @@
  {
   "recurso": "ProQuest One Psychology",
   "proveedor": "ProQuest",
+  "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/pq1psychology?accountid=25548",
   "estado": "Disponible",
   "falla": "",
   "detalle": "",
@@ -673,6 +734,7 @@
  {
   "recurso": "ProQuest One Religion & Philosophy",
   "proveedor": "ProQuest",
+  "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/pq1religionphilosophy?accountid=25548",
   "estado": "Disponible",
   "falla": "",
   "detalle": "",
@@ -684,6 +746,7 @@
  {
   "recurso": "Philosophy Research Collection",
   "proveedor": "ProQuest",
+  "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/philosophyjournals?accountid=25548",
   "estado": "Disponible",
   "falla": "",
   "detalle": "",
@@ -695,6 +758,7 @@
  {
   "recurso": "Religion Archive Collection",
   "proveedor": "ProQuest",
+  "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/religionarchive?accountid=25548",
   "estado": "Disponible",
   "falla": "",
   "detalle": "",
@@ -706,6 +770,7 @@
  {
   "recurso": "ProQuest One Social Sciences",
   "proveedor": "ProQuest",
+  "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/pq1socialsciences?accountid=25548",
   "estado": "Disponible",
   "falla": "",
   "detalle": "",
@@ -717,6 +782,7 @@
  {
   "recurso": "Criminology Collection",
   "proveedor": "ProQuest",
+  "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/criminology?accountid=25548",
   "estado": "Disponible",
   "falla": "",
   "detalle": "",
@@ -728,6 +794,7 @@
  {
   "recurso": "Library & Information Science Collection",
   "proveedor": "ProQuest",
+  "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/libraryinformation?accountid=25548",
   "estado": "Disponible",
   "falla": "",
   "detalle": "",
@@ -739,6 +806,7 @@
  {
   "recurso": "Linguistics Collection",
   "proveedor": "ProQuest",
+  "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/linguistics1?accountid=25548",
   "estado": "Disponible",
   "falla": "",
   "detalle": "",
@@ -750,6 +818,7 @@
  {
   "recurso": "Politics Collection",
   "proveedor": "ProQuest",
+  "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/politics?accountid=25548",
   "estado": "Disponible",
   "falla": "",
   "detalle": "",
@@ -761,6 +830,7 @@
  {
   "recurso": "Sociology & Social Sciences Collection",
   "proveedor": "ProQuest",
+  "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/sociologysocialsciences?accountid=25548",
   "estado": "Disponible",
   "falla": "",
   "detalle": "",
@@ -772,6 +842,7 @@
  {
   "recurso": "ProQuest One Sustainability",
   "proveedor": "ProQuest",
+  "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/pq1sustainability?accountid=25548",
   "estado": "Disponible",
   "falla": "",
   "detalle": "",
@@ -783,6 +854,7 @@
  {
   "recurso": "Research Library: Business",
   "proveedor": "ProQuest",
+  "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/pqrlbusiness?accountid=25548",
   "estado": "Disponible",
   "falla": "",
   "detalle": "",
@@ -794,6 +866,7 @@
  {
   "recurso": "Research Library: Health & Medicine",
   "proveedor": "ProQuest",
+  "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/pqrlhealth?accountid=25548",
   "estado": "Disponible",
   "falla": "",
   "detalle": "",
@@ -805,6 +878,7 @@
  {
   "recurso": "Research Library: History",
   "proveedor": "ProQuest",
+  "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/pqrlhistory?accountid=25548",
   "estado": "Disponible",
   "falla": "",
   "detalle": "",
@@ -816,6 +890,7 @@
  {
   "recurso": "Research Library: Literature & Language",
   "proveedor": "ProQuest",
+  "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/pqrllitlang?accountid=25548",
   "estado": "Disponible",
   "falla": "",
   "detalle": "",
@@ -827,6 +902,7 @@
  {
   "recurso": "Research Library: Science & Technology",
   "proveedor": "ProQuest",
+  "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/pqrlscitech?accountid=25548",
   "estado": "Disponible",
   "falla": "",
   "detalle": "",
@@ -838,6 +914,7 @@
  {
   "recurso": "Research Library: Social Sciences",
   "proveedor": "ProQuest",
+  "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/pqrlsocsci?accountid=25548",
   "estado": "Disponible",
   "falla": "",
   "detalle": "",
@@ -849,6 +926,7 @@
  {
   "recurso": "Research Library: The Arts",
   "proveedor": "ProQuest",
+  "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/pqrlarts?accountid=25548",
   "estado": "Disponible",
   "falla": "",
   "detalle": "",
@@ -860,6 +938,7 @@
  {
   "recurso": "Career & Technical Education Database: Business",
   "proveedor": "ProQuest",
+  "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/careerbusiness?accountid=25548",
   "estado": "Disponible",
   "falla": "",
   "detalle": "",
@@ -871,6 +950,7 @@
  {
   "recurso": "Career & Technical Education Database: Health & Medicine",
   "proveedor": "ProQuest",
+  "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/careerhealth?accountid=25548",
   "estado": "Disponible",
   "falla": "",
   "detalle": "",
@@ -882,6 +962,7 @@
  {
   "recurso": "Career & Technical Education Database: History",
   "proveedor": "ProQuest",
+  "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/careerhistory?accountid=25548",
   "estado": "Disponible",
   "falla": "",
   "detalle": "",
@@ -893,6 +974,7 @@
  {
   "recurso": "Career & Technical Education Database: Literature & Language",
   "proveedor": "ProQuest",
+  "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/careerlitlang?accountid=25548",
   "estado": "Disponible",
   "falla": "",
   "detalle": "",
@@ -904,6 +986,7 @@
  {
   "recurso": "Career & Technical Education Database: Science & Technology",
   "proveedor": "ProQuest",
+  "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/careerscitech?accountid=25548",
   "estado": "Disponible",
   "falla": "",
   "detalle": "",
@@ -915,6 +998,7 @@
  {
   "recurso": "Career & Technical Education Database: Social Sciences",
   "proveedor": "ProQuest",
+  "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/careersocsci?accountid=25548",
   "estado": "Disponible",
   "falla": "",
   "detalle": "",
@@ -926,6 +1010,7 @@
  {
   "recurso": "Career & Technical Education Database: The Arts",
   "proveedor": "ProQuest",
+  "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/careerarts?accountid=25548",
   "estado": "Disponible",
   "falla": "",
   "detalle": "",
@@ -937,6 +1022,7 @@
  {
   "recurso": "Canadian Business & Current Affairs Database: Business",
   "proveedor": "ProQuest",
+  "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/cbcacompletebusiness?accountid=25548",
   "estado": "Disponible",
   "falla": "",
   "detalle": "",
@@ -948,6 +1034,7 @@
  {
   "recurso": "Canadian Business & Current Affairs Database: Health & Medicine",
   "proveedor": "ProQuest",
+  "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/cbcacompletehealth?accountid=25548",
   "estado": "Disponible",
   "falla": "",
   "detalle": "",
@@ -959,6 +1046,7 @@
  {
   "recurso": "Canadian Business & Current Affairs Database: History",
   "proveedor": "ProQuest",
+  "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/cbcacompletehistory?accountid=25548",
   "estado": "Disponible",
   "falla": "",
   "detalle": "",
@@ -970,6 +1058,7 @@
  {
   "recurso": "Canadian Business & Current Affairs Database: Literature & Language",
   "proveedor": "ProQuest",
+  "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/cbcacompletelitlang?accountid=25548",
   "estado": "Disponible",
   "falla": "",
   "detalle": "",
@@ -981,6 +1070,7 @@
  {
   "recurso": "Canadian Business & Current Affairs Database: Science & Technology",
   "proveedor": "ProQuest",
+  "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/cbcacompletescitech?accountid=25548",
   "estado": "Disponible",
   "falla": "",
   "detalle": "",
@@ -992,6 +1082,7 @@
  {
   "recurso": "Canadian Business & Current Affairs Database: Social Sciences",
   "proveedor": "ProQuest",
+  "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/cbcacompletesocsci?accountid=25548",
   "estado": "Disponible",
   "falla": "",
   "detalle": "",
@@ -1003,6 +1094,7 @@
  {
   "recurso": "Canadian Business & Current Affairs Database: The Arts",
   "proveedor": "ProQuest",
+  "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/cbcacompletearts?accountid=25548",
   "estado": "Disponible",
   "falla": "",
   "detalle": "",
@@ -1014,6 +1106,7 @@
  {
   "recurso": "El Tiempo",
   "proveedor": "El Tiempo",
+  "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.eltiempo.com/login",
   "estado": "Disponible",
   "falla": "",
   "detalle": "",
@@ -1025,6 +1118,7 @@
  {
   "recurso": "Revista Derecho y Sociedad",
   "proveedor": "Unicórdoba",
+  "url": "https://revistas-unicordoba-edu-co.recursoselectronicos.uniagustiniana.edu.co/index.php/dersoc",
   "estado": "Con falla",
   "falla": "Error de conexión",
   "detalle": "page.goto: net::ERR_NAME_NOT_RESOLVED at https://revistas-unicordoba-edu-co.recursoselectronicos.uniagustiniana.edu.co/index.php/dersoc",
@@ -1036,6 +1130,7 @@
  {
   "recurso": "E-Libro",
   "proveedor": "e-Libro",
+  "url": "https://itmsp.museknowledge.com/UniAgu?qurl=https%3A%2F%2Felibro.net%2Fes%2Flc%2Funiagustiniana%2Finicio%2F",
   "estado": "Disponible",
   "falla": "",
   "detalle": "",
@@ -1047,6 +1142,7 @@
  {
   "recurso": "Bibliotele",
   "proveedor": "Bibliotele",
+  "url": "https://itmsp.museknowledge.com/UniAgu?groupID=1&action=source&sourceID=Bibliotele",
   "estado": "Disponible",
   "falla": "",
   "detalle": "",

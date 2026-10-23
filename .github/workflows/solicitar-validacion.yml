@@ -1,0 +1,19 @@
+# Botón "Validar ahora" de la página de monitoreo.
+# Solo registra la solicitud: el equipo de monitoreo de la biblioteca la detecta en pocos minutos
+# y ejecuta la validación completa con la sesión institucional.
+name: Solicitar validación
+
+on:
+  workflow_dispatch:
+
+permissions: {}
+
+jobs:
+  registrar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - name: Registrar solicitud
+        env:
+          SOLICITANTE: ${{ github.actor }}
+        run: echo "Validación solicitada por $SOLICITANTE. Los resultados aparecerán en la página en unos 30 minutos."
