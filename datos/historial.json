@@ -2,9 +2,9 @@
  {
   "fecha": "2026-10-23",
   "revisados": 96,
-  "disponibles": 93,
-  "con_fallas": 3,
-  "disponibilidad": 0.969,
+  "disponibles": 92,
+  "con_fallas": 4,
+  "disponibilidad": 0.958,
   "carga_mediana_s": 6.6,
   "sesion": "OK"
  }

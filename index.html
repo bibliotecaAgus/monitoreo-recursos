@@ -182,7 +182,7 @@
       <div>
         <h1>Monitoreo de recursos electrónicos</h1>
         <div class="status-line" id="status-line"><span class="status-dot"></span><span id="status-text">Cargando la última validación…</span></div>
-        <p class="schedule">La validación se realiza <strong>automáticamente todos los días a las 7:00 a. m.</strong>: se inicia sesión con la cuenta institucional y se abre cada recurso a través del proxy de la biblioteca para comprobar que carga con el acceso de la Uniagustiniana. Última validación: <strong id="ultima">—</strong>.</p>
+        <p class="schedule">La validación se realiza <strong>automáticamente todos los días a las 7:00 a. m.</strong>: se inicia sesión con la cuenta institucional y se abre cada recurso a través del proxy de la biblioteca para comprobar que carga con el acceso de la Uniagustiniana. Última validación: <strong id="ultima">—</strong></p>
       </div>
       <div class="actions">
         <button class="btn btn-primary" id="btn-validar" type="button">
@@ -542,7 +542,7 @@
     btn.disabled = !!enCurso;
     if (enCurso) {
       nodo.className = 'run-state active';
-      nodo.replaceChildren(el('span', 'spin'), 'Validación ' + (e.origen === 'manual' ? 'solicitada' : 'automática') + ' en curso desde las ' + hora(e.inicio) + '. Los resultados se actualizan solos.');
+      nodo.replaceChildren(el('span', 'spin'), 'Validación ' + (e.origen === 'manual' ? 'solicitada' : 'automática') + ' en curso (inició a las ' + hora(e.inicio) + '). Los resultados se actualizan solos.');
     } else {
       nodo.className = 'run-state';
       nodo.textContent = e && e.estado === 'fallida' ? 'La última validación no pudo iniciar sesión. El equipo de la biblioteca debe renovar el login.'
