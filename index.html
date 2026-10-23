@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Monitoreo Recursos Biblioteca</title>
+<meta name="description" content="Estado diario de acceso a los recursos electrónicos de la Biblioteca de la Universitaria Agustiniana a través del proxy institucional.">
+<style>
+  /* Tablero de una columna: resumen arriba, fallas, tendencias y la tabla completa abajo. */
+  :root {
+    --bg: #f6f7f9; --panel: #ffffff; --fg: #17202b; --muted: #5b6676; --line: #dde2e8;
+    --accent: #1f4f8f; --ok: #1d7a46; --bad: #c0362c; --bar: #9fb3cc; --grid: #e8ecf1;
+    --font: "Segoe UI", system-ui, -apple-system, Roboto, "Helvetica Neue", Arial, sans-serif;
+    --font-num: Georgia, "Times New Roman", serif;
+    --radius: 10px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #11161d; --panel: #18202a; --fg: #e8edf3; --muted: #9aa6b5; --line: #2a3542;
+      --accent: #7fa8e0; --ok: #4cc283; --bad: #ff6b5e; --bar: #4f6b8f; --grid: #222c38; color-scheme: dark; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 15px/1.5 var(--font); }
+  .wrap { max-width: 1180px; margin: 0 auto; padding-block: 28px 48px;
+    padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+    display: flex; flex-direction: column; gap: 20px; }
+  header { display: flex; flex-direction: column; gap: 4px; }
+  .eyebrow { font-size: 12px; letter-spacing: .06em; text-transform: uppercase; color: var(--accent); font-weight: 600; }
+  h1 { margin: 0; font-family: var(--font-num); font-weight: 400; font-size: clamp(26px, 4vw, 34px); text-wrap: balance; }
+  .takeaway { margin: 0; color: var(--muted); max-width: 75ch; }
+  .takeaway b { color: var(--fg); }
+  .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 170px), 1fr)); gap: 12px; }
+  .tile, .card { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); }
+  .tile { padding: 14px 16px; display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+  .tile .label, .note, th { font-size: 13px; color: var(--muted); }
+  .tile .value { font-family: var(--font-num); font-size: 30px; line-height: 1.2; font-variant-numeric: tabular-nums; }
+  .tile .value small { font-family: var(--font); font-size: 14px; color: var(--muted); }
+  .tile.is-bad .value { color: var(--bad); }
+  .grid2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr)); gap: 12px; }
+  .card { padding: 18px 20px; display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+  h2 { margin: 0; font-size: 17px; font-weight: 600; }
+  .note { margin: 0; }
+  .chart { position: relative; min-height: 220px; }
+  .chart svg { display: block; }
+  .chart text { fill: var(--muted); font-size: 12px; font-family: var(--font); }
+  .tip { position: absolute; pointer-events: none; background: var(--panel); border: 1px solid var(--line); border-radius: 8px;
+    box-shadow: 0 4px 16px rgb(0 0 0 / .15); padding: 6px 10px; font-size: 12px; white-space: nowrap; }
+  .legend { display: flex; gap: 16px; flex-wrap: wrap; font-size: 12px; color: var(--muted); }
+  .sw { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 6px; vertical-align: -1px; }
+  .prov { display: flex; flex-direction: column; gap: 8px; }
+  .prov-row { display: grid; grid-template-columns: minmax(90px, 140px) 1fr 52px; gap: 10px; align-items: center; font-size: 13px; }
+  .prov-name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .track { display: flex; height: 12px; border-radius: 6px; overflow: hidden; }
+  .seg-ok { background: var(--bar); } .seg-bad { background: var(--bad); }
+  .num { text-align: right; font-variant-numeric: tabular-nums; }
+  .table-wrap { overflow: auto; max-height: 34rem; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; font-variant-numeric: tabular-nums; }
+  th { position: sticky; top: 0; background: var(--panel); text-align: left; font-weight: 600; border-bottom: 1px solid var(--line); padding: 6px 8px; white-space: nowrap; }
+  td { padding: 6px 8px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th button { all: unset; cursor: pointer; }
+  th button:focus-visible, input:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  th[aria-sort="ascending"] button::after { content: " ↑"; } th[aria-sort="descending"] button::after { content: " ↓"; }
+  .detail { color: var(--muted); word-break: break-word; }
+  .pill { display: inline-flex; align-items: center; gap: 6px; white-space: nowrap; }
+  .pill::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--ok); }
+  .pill.bad::before { background: var(--bad); } .pill.none::before { background: var(--muted); }
+  .tools { display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap; }
+  input[type=search] { font: inherit; font-size: 13px; padding: 6px 10px; border: 1px solid var(--line); border-radius: 8px;
+    background: var(--bg); color: var(--fg); flex: 1 1 220px; max-width: 320px; min-width: 0; }
+  .empty { color: var(--muted); font-size: 13px; }
+  footer { font-size: 12px; color: var(--muted); }
+  .error { background: var(--panel); border: 1px solid var(--bad); border-radius: var(--radius); padding: 14px 16px; }
+</style>
+</head>
+<body>
+<main class="wrap">
+  <header>
+    <span class="eyebrow">Biblioteca · Universitaria Agustiniana</span>
+    <h1>Monitoreo de recursos electrónicos</h1>
+    <p class="takeaway" id="takeaway">Cargando la última revisión…</p>
+  </header>
+
+  <div class="error" id="error" hidden>No se pudieron cargar los datos del monitoreo. Intenta recargar la página.</div>
+
+  <section class="tiles" aria-label="Indicadores de la última revisión">
+    <div class="tile"><span class="label">Recursos disponibles</span><span class="value"><span id="t-disp">—</span> <small>de <span id="t-total">—</span></small></span></div>
+    <div class="tile" id="tile-fallas"><span class="label">Con fallas</span><span class="value" id="t-fallas">—</span></div>
+    <div class="tile"><span class="label">Disponibilidad</span><span class="value" id="t-pct">—</span></div>
+    <div class="tile"><span class="label">Tiempo de carga (mediana)</span><span class="value"><span id="t-carga">—</span> <small>s</small></span></div>
+    <div class="tile" id="tile-sesion"><span class="label">Sesión institucional</span><span class="value" id="t-sesion">—</span></div>
+    <div class="tile"><span class="label">Última revisión</span><span class="value" style="font-size:20px" id="t-fecha">—</span></div>
+  </section>
+
+  <section class="card" id="fallas">
+    <h2>Recursos con fallas</h2>
+    <p class="note">Recursos que no pasaron la última revisión: no llegaron al sitio esperado, no mostraron el acceso institucional o no respondieron.</p>
+    <div class="table-wrap"><table id="tabla-fallas"><thead><tr><th>Recurso</th><th>Proveedor</th><th>Falla</th><th>Detalle</th></tr></thead><tbody></tbody></table></div>
+    <p class="empty" id="sin-fallas" hidden>Todos los recursos pasaron la última revisión.</p>
+  </section>
+
+  <div class="grid2">
+    <section class="card">
+      <h2>Disponibilidad por día</h2>
+      <p class="note">Recursos disponibles y con fallas en cada revisión diaria completa.</p>
+      <div class="chart" id="chart-historial"></div>
+      <div class="legend"><span><span class="sw" style="background:var(--bar)"></span>Disponibles</span><span><span class="sw" style="background:var(--bad)"></span>Con fallas</span></div>
+    </section>
+    <section class="card">
+      <h2>Estado por proveedor</h2>
+      <p class="note">Recursos de cada proveedor en la última revisión.</p>
+      <div class="prov" id="proveedores"></div>
+      <div class="legend"><span><span class="sw" style="background:var(--bar)"></span>Disponibles</span><span><span class="sw" style="background:var(--bad)"></span>Con fallas</span></div>
+    </section>
+  </div>
+
+  <section class="card" id="recursos">
+    <div class="tools"><h2>Todos los recursos</h2><input type="search" id="buscar" placeholder="Buscar recurso o proveedor" aria-label="Buscar recurso o proveedor"></div>
+    <p class="note">Disponibilidad: porcentaje de revisiones diarias en que el recurso estuvo accesible.</p>
+    <div class="table-wrap"><table id="tabla-todos"><thead><tr>
+      <th data-k="recurso"><button type="button">Recurso</button></th>
+      <th data-k="proveedor"><button type="button">Proveedor</button></th>
+      <th data-k="estado"><button type="button">Estado</button></th>
+      <th data-k="carga_s" class="num"><button type="button">Carga (s)</button></th>
+      <th data-k="disponibilidad" class="num"><button type="button">Disponibilidad</button></th>
+      <th data-k="revisado"><button type="button">Revisado</button></th>
+    </tr></thead><tbody></tbody></table></div>
+  </section>
+
+  <footer id="pie">Revisión automática diaria con Playwright a través del proxy institucional (MuseKnowledge) con la cuenta de la biblioteca.</footer>
+</main>
+
+<script>
+(function () {
+  var pct = new Intl.NumberFormat('es-CO', { style: 'percent', maximumFractionDigits: 1 });
+  var num = new Intl.NumberFormat('es-CO', { maximumFractionDigits: 1 });
+  var fecha = function (iso) { return new Date(iso).toLocaleString('es-CO', { day: 'numeric', month: 'short', hour: 'numeric', minute: '2-digit' }); };
+  var dia = function (d) { return new Date(d + 'T12:00:00').toLocaleDateString('es-CO', { day: 'numeric', month: 'short' }); };
+  var $ = function (id) { return document.getElementById(id); };
+  var el = function (tag, cls, text) { var e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; };
+  var SVG = 'http://www.w3.org/2000/svg';
+  var svgEl = function (tag, attrs) { var e = document.createElementNS(SVG, tag); for (var k in attrs) e.setAttribute(k, attrs[k]); return e; };
+
+  var cache = '?v=' + Date.now();
+  Promise.all([
+    fetch('datos/estado.json' + cache).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }),
+    fetch('datos/historial.json' + cache).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }),
+  ]).then(function (res) { pintar(res[0], res[1]); })
+    .catch(function () { $('error').hidden = false; $('takeaway').textContent = ''; });
+
+  function pintar(estado, historial) {
+    var revisados = estado.filter(function (r) { return r.estado !== 'Sin revisar'; });
+    var disponibles = revisados.filter(function (r) { return r.estado === 'Disponible'; });
+    var fallan = estado.filter(function (r) { return r.estado === 'Con falla'; });
+    var cargas = disponibles.map(function (r) { return Number(r.carga_s); }).sort(function (a, b) { return a - b; });
+    var ultimoDia = historial[historial.length - 1];
+    var fechas = revisados.map(function (r) { return r.revisado; }).sort();
+    var sesionOk = !ultimoDia || ultimoDia.sesion === 'OK';
+
+    $('t-disp').textContent = disponibles.length;
+    $('t-total').textContent = estado.length;
+    $('t-fallas').textContent = fallan.length;
+    $('tile-fallas').classList.toggle('is-bad', fallan.length > 0);
+    $('t-pct').textContent = revisados.length ? pct.format(disponibles.length / revisados.length) : '—';
+    $('t-carga').textContent = cargas.length ? num.format(cargas[Math.floor(cargas.length / 2)]) : '—';
+    $('t-sesion').textContent = ultimoDia ? (sesionOk ? 'Activa' : 'Vencida') : '—';
+    $('tile-sesion').classList.toggle('is-bad', !sesionOk);
+    $('t-fecha').textContent = fechas.length ? fecha(fechas[fechas.length - 1]) : '—';
+
+    var t = $('takeaway');
+    t.replaceChildren(el('b', null, String(disponibles.length)), ' de ', el('b', null, String(estado.length)),
+      ' recursos accesibles por el proxy institucional en la última revisión. ');
+    t.append(fallan.length ? 'Revisar: ' + fallan.map(function (r) { return r.recurso; }).join(', ') + '.' : 'Ningún recurso con fallas.');
+    if (!sesionOk) t.append(' La sesión institucional venció: los resultados pueden estar incompletos hasta renovar el login.');
+
+    var cuerpo = $('tabla-fallas').querySelector('tbody');
+    cuerpo.replaceChildren.apply(cuerpo, fallan.map(function (r) {
+      var tr = el('tr');
+      tr.append(el('td', null, r.recurso), el('td', null, r.proveedor), el('td', null, r.falla), el('td', 'detail', r.detalle));
+      return tr;
+    }));
+    $('tabla-fallas').hidden = !fallan.length;
+    $('sin-fallas').hidden = fallan.length > 0;
+
+    proveedores(estado);
+    tabla(estado);
+    grafico(historial);
+    window.addEventListener('resize', function () { grafico(historial); });
+  }
+
+  function proveedores(estado) {
+    var grupos = {};
+    estado.forEach(function (r) {
+      var g = grupos[r.proveedor] || (grupos[r.proveedor] = { proveedor: r.proveedor, total: 0, ok: 0, bad: 0 });
+      g.total++; if (r.estado === 'Disponible') g.ok++; else if (r.estado === 'Con falla') g.bad++;
+    });
+    var filas = Object.values(grupos).sort(function (a, b) { return b.total - a.total || a.proveedor.localeCompare(b.proveedor); });
+    var max = filas.length ? filas[0].total : 1;
+    var box = $('proveedores');
+    box.replaceChildren.apply(box, filas.map(function (g) {
+      var row = el('div', 'prov-row');
+      var name = el('span', 'prov-name', g.proveedor); name.title = g.proveedor;
+      var track = el('div', 'track');
+      var ok = el('div', 'seg-ok'); ok.style.width = (g.ok / max * 100) + '%';
+      var bad = el('div', 'seg-bad'); bad.style.width = (g.bad / max * 100) + '%';
+      track.append(ok, bad);
+      var n = el('span', 'num', g.bad ? g.ok + '/' + g.total : String(g.total));
+      if (g.bad) n.style.color = 'var(--bad)';
+      row.append(name, track, n);
+      return row;
+    }));
+  }
+
+  function tabla(estado) {
+    var clave = 'recurso', dir = 1;
+    var cuerpo = $('tabla-todos').querySelector('tbody');
+    var buscar = $('buscar');
+    function dibujar() {
+      var q = buscar.value.trim().toLowerCase();
+      var filas = estado.filter(function (r) { return !q || (r.recurso + ' ' + r.proveedor).toLowerCase().indexOf(q) >= 0; })
+        .sort(function (a, b) {
+          var va = a[clave], vb = b[clave];
+          if (va == null) return 1; if (vb == null) return -1;
+          return (typeof va === 'number' ? va - vb : String(va).localeCompare(String(vb), 'es')) * dir;
+        });
+      cuerpo.replaceChildren.apply(cuerpo, filas.map(function (r) {
+        var tr = el('tr');
+        var p = el('span', 'pill' + (r.estado === 'Con falla' ? ' bad' : r.estado === 'Disponible' ? '' : ' none'), r.estado);
+        var e = el('td'); e.append(p);
+        tr.append(el('td', null, r.recurso), el('td', null, r.proveedor), e,
+          el('td', 'num', r.carga_s == null ? '—' : num.format(r.carga_s)),
+          el('td', 'num', r.disponibilidad == null ? '—' : pct.format(r.disponibilidad)),
+          el('td', null, r.revisado ? fecha(r.revisado) : '—'));
+        return tr;
+      }));
+      document.querySelectorAll('#tabla-todos th[data-k]').forEach(function (th) {
+        th.setAttribute('aria-sort', th.dataset.k === clave ? (dir === 1 ? 'ascending' : 'descending') : 'none');
+      });
+    }
+    document.querySelectorAll('#tabla-todos th[data-k] button').forEach(function (b) {
+      b.addEventListener('click', function () {
+        var k = b.parentElement.dataset.k;
+        if (k === clave) dir = -dir; else { clave = k; dir = (k === 'recurso' || k === 'proveedor') ? 1 : -1; }
+        dibujar();
+      });
+    });
+    buscar.addEventListener('input', dibujar);
+    dibujar();
+  }
+
+  function grafico(historial) {
+    var box = $('chart-historial');
+    box.replaceChildren();
+    if (!historial.length) { box.append(el('p', 'empty', 'Aún no hay revisiones completas.')); return; }
+    var W = box.clientWidth || 360, H = 220, top = 10, bottom = 26;
+    var yMax = Math.max.apply(null, historial.map(function (r) { return r.revisados; })) || 1;
+    var paso = yMax > 50 ? 25 : yMax > 20 ? 10 : 5;
+    var tope = Math.ceil(yMax / paso) * paso;
+    var y = function (v) { return H - bottom - (v / tope) * (H - bottom - top); };
+    var svg = svgEl('svg', { width: '100%', viewBox: '0 0 ' + W + ' ' + H, role: 'img', 'aria-label': 'Disponibilidad por día' });
+    box.append(svg);
+    var probe = svgEl('text', {}); probe.textContent = String(tope); svg.append(probe);
+    var left = Math.ceil(probe.getComputedTextLength()) + 10; probe.remove();
+    for (var v = 0; v <= tope; v += paso) {
+      svg.append(svgEl('line', { x1: left, x2: W - 4, y1: y(v), y2: y(v), stroke: 'var(--grid)' }));
+      var tl = svgEl('text', { x: left - 6, y: y(v), dy: '0.32em', 'text-anchor': 'end' }); tl.textContent = v; svg.append(tl);
+    }
+    var n = historial.length, banda = (W - 4 - left) / n, ancho = Math.min(32, banda * 0.65);
+    var cada = Math.ceil(n / Math.max(1, Math.floor((W - left) / 60)));
+    var tip = el('div', 'tip'); tip.hidden = true; box.append(tip);
+    historial.forEach(function (r, i) {
+      var x = left + banda * i + (banda - ancho) / 2;
+      svg.append(svgEl('rect', { x: x, width: ancho, y: y(r.disponibles), height: y(0) - y(r.disponibles), rx: 4, fill: 'var(--bar)' }));
+      if (r.con_fallas) svg.append(svgEl('rect', { x: x, width: ancho, y: y(r.disponibles + r.con_fallas), height: y(r.disponibles) - y(r.disponibles + r.con_fallas), rx: 4, fill: 'var(--bad)' }));
+      if (i % cada === 0) { var xl = svgEl('text', { x: x + ancho / 2, y: H - 8, 'text-anchor': 'middle' }); xl.textContent = dia(r.fecha); svg.append(xl); }
+      var hit = svgEl('rect', { x: left + banda * i, width: banda, y: 0, height: H - bottom, fill: 'transparent' });
+      hit.addEventListener('mousemove', function (ev) {
+        tip.replaceChildren(el('div', 'note', dia(r.fecha)), el('div', null, 'Disponibles: ' + r.disponibles), el('div', null, 'Con fallas: ' + r.con_fallas));
+        tip.hidden = false;
+        var b = box.getBoundingClientRect();
+        tip.style.left = Math.max(0, Math.min(ev.clientX - b.left + 12, box.clientWidth - tip.offsetWidth)) + 'px';
+        tip.style.top = Math.max(0, ev.clientY - b.top - 40) + 'px';
+      });
+      hit.addEventListener('mouseleave', function () { tip.hidden = true; });
+      svg.append(hit);
+    });
+  }
+})();
+</script>
+</body>
+</html>
