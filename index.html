@@ -4,295 +4,227 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Monitoreo Recursos Biblioteca</title>
-<meta name="description" content="Estado diario de acceso a los recursos electrónicos del Sistema de Bibliotecas de la Universitaria Agustiniana a través del proxy institucional.">
+<meta name="description" content="Estado diario del proxy, el login institucional y los sitios de los recursos electrónicos del Sistema de Bibliotecas Uniagustiniana.">
 <link rel="icon" href="assets/escudo.webp">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap">
 <style>
-  /* Identidad Uniagustiniana: banda azul institucional con el logo, acentos dorados.
-     Orden de lectura: estado general → qué falla → tendencias → detalle por recurso. */
+  /* Página de estado al estilo Uptime Kuma con la identidad Uniagustiniana:
+     estado general → 3 componentes del acceso (proxy, login, sitio) → lista de recursos con barras de latidos. */
   :root {
-    --navy: #172741; --navy-2: #22365a; --gold: #e0be74; --gold-ink: #8a6a23;
-    --bg: #f4f6fa; --panel: #ffffff; --fg: #172741; --muted: #5a6680; --line: #dfe4ee; --soft: #eef1f7;
-    --ok: #1f8a54; --ok-soft: #e3f4ea; --bad: #c4362b; --bad-soft: #fbe6e3; --warn: #b7791f; --none: #c6cdd9;
-    --bar: #7d93b8; --grid: #e9edf4;
+    --navy: #172741; --gold: #e0be74; --gold-ink: #8a6a23;
+    --bg: #f3f5f9; --panel: #ffffff; --fg: #172741; --muted: #66728a; --line: #e2e7ef; --soft: #eef1f6;
+    --ok: #3bb26e; --ok-ink: #1b7a46; --warn: #f0a63a; --warn-ink: #9a5d00; --bad: #e0483e; --bad-ink: #b42a20; --empty: #dfe4ec;
     --font: "Montserrat", "Segoe UI", system-ui, sans-serif;
-    --radius: 14px; --shadow: 0 1px 2px rgb(23 39 65 / .06), 0 4px 16px rgb(23 39 65 / .06);
+    --r: 14px; --shadow: 0 1px 3px rgb(23 39 65 / .07), 0 6px 20px rgb(23 39 65 / .05);
   }
   @media (prefers-color-scheme: dark) {
-    :root { --bg: #0e1626; --panel: #16223a; --fg: #e9eef7; --muted: #a2afc6; --line: #273754; --soft: #1c2a45;
-      --gold-ink: #e0be74; --ok: #4cc283; --ok-soft: #173a2b; --bad: #ff7a6e; --bad-soft: #43201f; --warn: #f0b75a;
-      --none: #3a4a66; --bar: #6d86b0; --grid: #22314d; --shadow: none; color-scheme: dark; }
+    :root { --bg: #0d1524; --panel: #152138; --fg: #e8edf6; --muted: #9eabc2; --line: #24324d; --soft: #1b2944;
+      --gold-ink: #e0be74; --ok-ink: #5fd393; --warn-ink: #f6c06b; --bad-ink: #ff8b82; --empty: #2a3956; --shadow: none; color-scheme: dark; }
   }
   * { box-sizing: border-box; }
-  body { margin: 0; background: var(--bg); color: var(--fg); font: 15px/1.55 var(--font); }
-  a { color: inherit; }
-  .gutter { max-width: 1200px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+  [hidden] { display: none !important; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 14px/1.5 var(--font); }
+  a { color: inherit; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .gutter { max-width: 1100px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
 
-  /* Encabezado institucional */
-  .brand { background: var(--navy); color: #fff; border-bottom: 3px solid var(--gold); }
-  .brand .gutter { display: flex; align-items: center; justify-content: space-between; gap: 16px 24px; flex-wrap: wrap; padding-block: 14px; }
-  .brand-id { display: flex; align-items: center; gap: 18px; min-width: 0; }
-  .brand-id img { height: 56px; width: auto; display: block; }
-  .brand-id .sep { width: 1px; align-self: stretch; background: rgb(255 255 255 / .25); }
-  .brand-id .unit { font-size: 13px; line-height: 1.3; letter-spacing: .02em; }
-  .brand-id .unit b { display: block; font-size: 15px; font-weight: 600; color: var(--gold); }
-  .hero { background: linear-gradient(180deg, var(--navy) 0, var(--navy) 60%, var(--bg) 60%); }
-  .hero .gutter { padding-block: 22px 0; }
-  .hero-card { background: var(--panel); border-radius: var(--radius); box-shadow: var(--shadow); border: 1px solid var(--line); padding: 22px 24px; display: grid; grid-template-columns: 1fr auto; gap: 18px 24px; align-items: center; }
-  .hero-card h1 { margin: 0; font-size: clamp(22px, 3.2vw, 30px); font-weight: 700; line-height: 1.2; text-wrap: balance; }
-  .status-line { display: flex; align-items: center; gap: 10px; margin-top: 8px; font-weight: 600; }
-  .status-dot { width: 12px; height: 12px; border-radius: 50%; background: var(--none); box-shadow: 0 0 0 4px var(--soft); flex: none; }
-  .is-ok .status-dot { background: var(--ok); box-shadow: 0 0 0 4px var(--ok-soft); }
-  .is-bad .status-dot { background: var(--bad); box-shadow: 0 0 0 4px var(--bad-soft); }
-  .schedule { margin: 10px 0 0; color: var(--muted); font-size: 14px; max-width: 70ch; }
-  .schedule strong { color: var(--fg); font-weight: 600; }
-  .actions { display: flex; flex-direction: column; align-items: flex-end; gap: 8px; }
-  .btn { font: inherit; font-weight: 600; font-size: 15px; border: 0; border-radius: 10px; padding: 12px 20px; cursor: pointer; display: inline-flex; align-items: center; gap: 10px; text-decoration: none; }
-  .btn-primary { background: var(--gold); color: var(--navy); box-shadow: 0 2px 0 #b8964f; }
-  .btn-primary:hover { background: #e8ca88; }
-  .btn-primary:disabled { opacity: .55; cursor: not-allowed; }
-  .btn-ghost { background: transparent; color: var(--fg); border: 1px solid var(--line); }
-  .btn:focus-visible, input:focus-visible, .chip:focus-visible, th button:focus-visible, summary:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
-  .run-state { font-size: 13px; color: var(--muted); text-align: right; max-width: 34ch; }
-  .run-state.active { color: var(--gold-ink); font-weight: 600; }
-  .spin { width: 14px; height: 14px; border: 2px solid currentColor; border-right-color: transparent; border-radius: 50%; display: inline-block; vertical-align: -2px; margin-right: 6px; }
-  @media (prefers-reduced-motion: no-preference) { .spin { animation: girar 0.9s linear infinite; } }
+  header { background: var(--navy); color: #fff; border-bottom: 3px solid var(--gold); }
+  header .gutter { display: flex; align-items: center; justify-content: space-between; gap: 12px 20px; flex-wrap: wrap; padding-block: 12px; }
+  .id { display: flex; align-items: center; gap: 16px; min-width: 0; }
+  .id img { height: 48px; width: auto; display: block; }
+  .id h1 { margin: 0; font-size: 17px; font-weight: 600; line-height: 1.25; }
+  .id h1 small { display: block; font-size: 12px; font-weight: 500; color: var(--gold); letter-spacing: .03em; }
+  .top-actions { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+  .auto { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; color: rgb(255 255 255 / .85); background: rgb(255 255 255 / .1); border-radius: 999px; padding: 5px 12px; white-space: nowrap; }
+  .btn { font: inherit; font-weight: 600; border: 0; border-radius: 999px; padding: 9px 18px; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; white-space: nowrap; }
+  .btn-gold { background: var(--gold); color: var(--navy); }
+  .btn-gold:hover { background: #ebcd8c; }
+  .btn-gold:disabled { opacity: .55; cursor: not-allowed; }
+  .btn-line { background: transparent; color: var(--fg); border: 1px solid var(--line); }
+  .btn:focus-visible, .tab:focus-visible, input:focus-visible, summary:focus-visible, a:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
+
+  main.gutter { display: flex; flex-direction: column; gap: 18px; padding-block: 22px 36px; }
+
+  /* Estado general */
+  .overall { border-radius: var(--r); padding: 18px 22px; color: #fff; display: flex; align-items: center; gap: 16px; flex-wrap: wrap; background: var(--empty); }
+  .overall.ok { background: var(--ok); } .overall.warn { background: var(--warn); } .overall.bad { background: var(--bad); }
+  .overall svg { flex: none; }
+  .overall .big { font-size: 20px; font-weight: 700; line-height: 1.2; }
+  .overall .sub { font-size: 13px; opacity: .92; }
+  .overall .run { margin-left: auto; font-size: 13px; font-weight: 600; background: rgb(0 0 0 / .14); border-radius: 999px; padding: 6px 14px; display: inline-flex; align-items: center; gap: 8px; }
+  .spin { width: 13px; height: 13px; border: 2px solid currentColor; border-right-color: transparent; border-radius: 50%; display: inline-block; }
+  @media (prefers-reduced-motion: no-preference) { .spin { animation: girar .9s linear infinite; } }
   @keyframes girar { to { transform: rotate(360deg); } }
 
-  main.gutter { display: flex; flex-direction: column; gap: 22px; padding-block: 22px 40px; }
-  .section-title { margin: 0; font-size: 13px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--gold-ink); }
+  /* Componentes del acceso */
+  .comps { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 14px; }
+  .panel { background: var(--panel); border: 1px solid var(--line); border-radius: var(--r); box-shadow: var(--shadow); }
+  .comp { padding: 16px 18px; display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+  .comp-head { display: flex; align-items: center; gap: 10px; }
+  .comp-ico { width: 36px; height: 36px; border-radius: 10px; display: grid; place-items: center; background: var(--soft); color: var(--fg); flex: none; }
+  .comp-name { font-weight: 600; font-size: 15px; line-height: 1.2; }
+  .comp-name small { display: block; font-weight: 500; font-size: 12px; color: var(--muted); }
+  .comp-val { margin-left: auto; text-align: right; font-size: 22px; font-weight: 700; font-variant-numeric: tabular-nums; line-height: 1.1; }
+  .comp-val small { display: block; font-size: 11px; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; }
+  .comp-foot { display: flex; justify-content: space-between; font-size: 12px; color: var(--muted); }
 
-  /* Indicadores */
-  .kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); gap: 14px; }
-  .kpi { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); padding: 16px 18px; display: flex; flex-direction: column; gap: 4px; min-width: 0; }
-  .kpi .label { font-size: 13px; color: var(--muted); font-weight: 500; }
-  .kpi .value { font-size: 30px; font-weight: 700; line-height: 1.15; font-variant-numeric: tabular-nums; }
-  .kpi .value small { font-size: 15px; font-weight: 500; color: var(--muted); }
-  .kpi .delta { font-size: 12px; color: var(--muted); }
-  .kpi .delta.up { color: var(--ok); } .kpi .delta.down { color: var(--bad); }
-  .kpi.alert { border-color: var(--bad); }
-  .kpi.alert .value { color: var(--bad); }
-  .kpi svg { margin-top: 4px; }
+  .t-ok { color: var(--ok-ink); } .t-warn { color: var(--warn-ink); } .t-bad { color: var(--bad-ink); } .t-none { color: var(--muted); }
 
-  .card { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); padding: 20px 22px; display: flex; flex-direction: column; gap: 12px; min-width: 0; }
-  .card h2 { margin: 0; font-size: 18px; font-weight: 700; }
-  .card-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; flex-wrap: wrap; }
-  .note { margin: 0; color: var(--muted); font-size: 13px; }
-  .grid2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 18px; }
+  /* Barras de latidos (una por día) */
+  .beats { display: flex; gap: 3px; align-items: center; min-width: 0; justify-content: flex-end; }
+  .beat { flex: 0 0 auto; width: 7px; height: 22px; border-radius: 4px; background: var(--empty); }
+  .beat.ok { background: var(--ok); } .beat.warn { background: var(--warn); } .beat.bad { background: var(--bad); }
+  .comp .beats .beat { flex: 1 1 0; width: auto; max-width: 10px; height: 26px; }
+  @media (prefers-reduced-motion: no-preference) { .beat:hover { transform: scaleY(1.15); transition: transform .12s; } }
 
-  /* Fallas */
-  .incidents { display: flex; flex-direction: column; gap: 10px; }
-  .incident { display: grid; grid-template-columns: 6px 1fr auto; gap: 14px; align-items: start; padding: 12px 14px 12px 0; border: 1px solid var(--line); border-radius: 12px; background: var(--panel); overflow: hidden; }
-  .incident::before { content: ""; align-self: stretch; background: var(--bad); }
-  .incident h3 { margin: 0; font-size: 15px; font-weight: 600; }
-  .incident .tags { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 4px; }
-  .tag { font-size: 12px; padding: 2px 8px; border-radius: 999px; background: var(--soft); color: var(--muted); white-space: nowrap; }
-  .tag.bad { background: var(--bad-soft); color: var(--bad); font-weight: 600; }
-  .incident details { margin-top: 6px; font-size: 13px; color: var(--muted); }
-  .incident summary { cursor: pointer; width: fit-content; }
-  .incident .detail { margin-top: 4px; word-break: break-word; font-family: ui-monospace, Consolas, monospace; font-size: 12px; }
-  .incident .open { font-size: 13px; font-weight: 600; color: var(--gold-ink); white-space: nowrap; text-decoration: none; }
-  .incident .open:hover { text-decoration: underline; }
-  .all-good { display: flex; align-items: center; gap: 12px; padding: 14px; border-radius: 12px; background: var(--ok-soft); color: var(--ok); font-weight: 600; }
+  /* Cifras */
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 150px), 1fr)); }
+  .stat { padding: 14px 18px; border-right: 1px solid var(--line); }
+  .stat:last-child { border-right: 0; }
+  .stat b { display: block; font-size: 22px; font-weight: 700; font-variant-numeric: tabular-nums; line-height: 1.2; }
+  .stat span { font-size: 12px; color: var(--muted); }
 
-  /* Gráficos */
-  .chart { position: relative; min-height: 240px; }
-  .chart svg { display: block; overflow: visible; }
-  .chart text { fill: var(--muted); font-size: 12px; font-family: var(--font); }
-  .tip { position: absolute; z-index: 2; pointer-events: none; background: var(--panel); border: 1px solid var(--line); border-radius: 10px; box-shadow: 0 6px 20px rgb(23 39 65 / .18); padding: 8px 12px; font-size: 12px; white-space: nowrap; }
-  .tip b { display: block; font-size: 13px; color: var(--fg); }
-  .legend { display: flex; gap: 16px; flex-wrap: wrap; font-size: 12px; color: var(--muted); }
-  .sw { display: inline-block; width: 12px; height: 12px; border-radius: 3px; margin-right: 6px; vertical-align: -2px; }
-  .empty { color: var(--muted); font-size: 13px; display: flex; align-items: center; justify-content: center; min-height: 200px; text-align: center; padding: 0 20px; }
+  /* Lista de monitores */
+  .list-head { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; padding: 14px 18px; border-bottom: 1px solid var(--line); }
+  .list-head h2 { margin: 0 auto 0 0; font-size: 16px; }
+  .tabs { display: inline-flex; background: var(--soft); border-radius: 999px; padding: 3px; }
+  .tab { font: inherit; font-size: 13px; font-weight: 600; border: 0; background: transparent; color: var(--muted); border-radius: 999px; padding: 5px 14px; cursor: pointer; }
+  .tab[aria-pressed="true"] { background: var(--panel); color: var(--fg); box-shadow: 0 1px 3px rgb(0 0 0 / .1); }
+  .tab .n { font-variant-numeric: tabular-nums; opacity: .7; margin-left: 4px; }
+  input[type=search] { font: inherit; font-size: 13px; padding: 7px 12px; border: 1px solid var(--line); border-radius: 999px; background: var(--bg); color: var(--fg); width: 220px; max-width: 100%; }
+  .legend { display: flex; gap: 14px; flex-wrap: wrap; padding: 10px 18px; border-bottom: 1px solid var(--line); font-size: 12px; color: var(--muted); }
+  .legend i { display: inline-block; width: 8px; height: 14px; border-radius: 3px; margin-right: 5px; vertical-align: -3px; }
+  .group > summary { list-style: none; cursor: pointer; display: flex; align-items: center; gap: 8px; padding: 10px 18px; background: var(--soft); font-weight: 600; font-size: 13px; border-bottom: 1px solid var(--line); }
+  .group > summary::-webkit-details-marker { display: none; }
+  .group > summary::before { content: "▸"; color: var(--muted); transition: transform .15s; }
+  .group[open] > summary::before { transform: rotate(90deg); }
+  .group > summary .cnt { margin-left: auto; font-weight: 500; color: var(--muted); font-size: 12px; }
+  .mon { display: grid; grid-template-columns: 54px minmax(0, 1fr) auto auto; gap: 14px; align-items: center; padding: 10px 18px; border-bottom: 1px solid var(--line); }
+  .mon:hover { background: var(--soft); }
+  .up { font-size: 12px; font-weight: 700; color: #fff; border-radius: 999px; padding: 3px 0; text-align: center; font-variant-numeric: tabular-nums; background: var(--empty); }
+  .up.ok { background: var(--ok); } .up.warn { background: var(--warn); } .up.bad { background: var(--bad); } .up.none { color: var(--muted); }
+  .mon-name { min-width: 0; }
+  .mon-name a { display: block; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .mon-name small { font-size: 12px; color: var(--muted); }
+  .mon-name small.t-bad { color: var(--bad-ink); font-weight: 600; }
+  .stages { display: flex; gap: 4px; }
+  .stg { width: 24px; height: 22px; border-radius: 6px; display: grid; place-items: center; font-size: 11px; font-weight: 700; color: #fff; background: var(--empty); }
+  .stg.ok { background: var(--ok); } .stg.bad { background: var(--bad); } .stg.none { color: var(--muted); }
+  .mon .beats { width: 300px; }
 
-  .heat-wrap { overflow-x: auto; }
-  .heat { display: grid; gap: 3px; align-items: center; font-size: 12px; min-width: 100%; }
-  .heat .name { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; padding-right: 8px; color: var(--fg); }
-  .heat .cell { height: 18px; border-radius: 3px; background: var(--none); }
-  .heat .cell.ok { background: var(--ok); opacity: .8; } .heat .cell.bad { background: var(--bad); }
-  .heat .day { font-size: 11px; color: var(--muted); text-align: center; white-space: nowrap; overflow: hidden; }
+  .empty { padding: 30px 18px; text-align: center; color: var(--muted); }
+  .error { background: var(--bad); color: #fff; border-radius: var(--r); padding: 14px 18px; font-weight: 600; }
 
-  .hbars { display: flex; flex-direction: column; gap: 9px; }
-  .hbar { display: grid; grid-template-columns: minmax(110px, 200px) 1fr 64px; gap: 12px; align-items: center; font-size: 13px; }
-  .hbar .name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-  .hbar .track { height: 14px; border-radius: 7px; background: var(--soft); overflow: hidden; display: flex; }
-  .hbar .fill { height: 100%; border-radius: 7px; background: var(--bar); }
-  .hbar .fill.warn { background: var(--warn); } .hbar .fill.bad { background: var(--bad); } .hbar .fill.ok { background: var(--ok); }
-  .hbar .n { text-align: right; font-variant-numeric: tabular-nums; color: var(--muted); }
+  .tip { position: fixed; z-index: 10; pointer-events: none; background: var(--navy); color: #fff; border-radius: 8px; padding: 6px 10px; font-size: 12px; white-space: nowrap; box-shadow: 0 6px 18px rgb(0 0 0 / .25); }
 
-  /* Tabla */
-  .toolbar { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
-  .chips { display: flex; gap: 6px; flex-wrap: wrap; }
-  .chip { font: inherit; font-size: 13px; padding: 6px 12px; border-radius: 999px; border: 1px solid var(--line); background: var(--panel); color: var(--fg); cursor: pointer; }
-  .chip[aria-pressed="true"] { background: var(--navy); color: #fff; border-color: var(--navy); }
-  input[type=search] { font: inherit; font-size: 14px; padding: 8px 12px; border: 1px solid var(--line); border-radius: 10px; background: var(--bg); color: var(--fg); flex: 1 1 220px; max-width: 340px; min-width: 0; }
-  .table-wrap { overflow: auto; max-height: 36rem; border: 1px solid var(--line); border-radius: 12px; }
-  table { width: 100%; border-collapse: collapse; font-size: 13px; font-variant-numeric: tabular-nums; }
-  th { position: sticky; top: 0; background: var(--soft); text-align: left; font-weight: 600; color: var(--muted); padding: 10px 12px; white-space: nowrap; z-index: 1; }
-  td { padding: 9px 12px; border-top: 1px solid var(--line); vertical-align: middle; }
-  tbody tr:hover { background: var(--soft); }
-  th button { all: unset; cursor: pointer; }
-  th[aria-sort="ascending"] button::after { content: " ↑"; } th[aria-sort="descending"] button::after { content: " ↓"; }
-  .num { text-align: right; }
-  .pill { display: inline-flex; align-items: center; gap: 6px; padding: 2px 10px; border-radius: 999px; font-size: 12px; font-weight: 600; white-space: nowrap; background: var(--ok-soft); color: var(--ok); }
-  .pill.bad { background: var(--bad-soft); color: var(--bad); } .pill.none { background: var(--soft); color: var(--muted); }
-  .spark { display: flex; gap: 2px; }
-  .spark i { width: 6px; height: 14px; border-radius: 2px; background: var(--none); }
-  .spark i.ok { background: var(--ok); opacity: .75; } .spark i.bad { background: var(--bad); }
-
-  /* Diálogo de validación */
-  dialog { border: 0; border-radius: var(--radius); padding: 0; max-width: min(520px, calc(100vw - 32px)); background: var(--panel); color: var(--fg); box-shadow: 0 20px 60px rgb(0 0 0 / .3); }
+  dialog { border: 0; border-radius: var(--r); padding: 0; max-width: min(460px, calc(100vw - 32px)); background: var(--panel); color: var(--fg); box-shadow: 0 20px 60px rgb(0 0 0 / .3); }
   dialog::backdrop { background: rgb(23 39 65 / .55); }
-  .dlg-head { background: var(--navy); color: #fff; padding: 16px 22px; border-bottom: 3px solid var(--gold); }
-  .dlg-head h2 { margin: 0; font-size: 18px; }
-  .dlg-body { padding: 18px 22px; display: flex; flex-direction: column; gap: 12px; font-size: 14px; }
-  .dlg-body ol { margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 6px; }
-  .dlg-foot { display: flex; justify-content: flex-end; gap: 10px; padding: 0 22px 18px; flex-wrap: wrap; }
+  .dlg-head { background: var(--navy); color: #fff; padding: 14px 20px; border-bottom: 3px solid var(--gold); font-weight: 700; }
+  .dlg-body { padding: 16px 20px; display: flex; flex-direction: column; gap: 10px; }
+  .dlg-body ol { margin: 0; padding-left: 20px; display: grid; gap: 4px; }
+  .dlg-body p { margin: 0; color: var(--muted); font-size: 13px; }
+  .dlg-foot { display: flex; justify-content: flex-end; gap: 10px; padding: 0 20px 16px; }
 
-  footer { background: var(--navy); color: rgb(255 255 255 / .8); font-size: 13px; }
-  footer .gutter { display: flex; gap: 16px; align-items: center; padding-block: 18px; flex-wrap: wrap; }
-  footer img { height: 44px; width: 44px; }
-  .error { background: var(--bad-soft); color: var(--bad); border-radius: 12px; padding: 14px 16px; font-weight: 600; }
+  footer { text-align: center; font-size: 12px; color: var(--muted); padding-bottom: 28px; }
 
-  @media (max-width: 640px) {
-    .hero-card { grid-template-columns: 1fr; }
-    .actions { align-items: stretch; } .actions .btn { justify-content: center; } .run-state { text-align: left; max-width: none; }
-    .brand-id img { height: 44px; } .brand-id .sep, .brand-id .unit { display: none; }
-    .incident { grid-template-columns: 6px 1fr; } .incident .open { grid-column: 2; }
-    .hbar { grid-template-columns: minmax(90px, 130px) 1fr 52px; }
+  @media (max-width: 760px) {
+    .mon { grid-template-columns: 54px minmax(0, 1fr) auto; }
+    .mon .beats { grid-column: 1 / -1; width: auto; }
+    .mon .beats .beat { flex: 1 1 0; width: auto; max-width: 10px; }
+    .stat { border-right: 0; border-bottom: 1px solid var(--line); }
+    .id img { height: 40px; }
+    .overall .run { margin-left: 0; }
   }
 </style>
 </head>
 <body>
-<header class="brand">
+<header>
   <div class="gutter">
-    <div class="brand-id">
-      <img src="assets/logo-horizontal-blanco.webp" alt="Uniagustiniana" width="152" height="56">
-      <span class="sep" aria-hidden="true"></span>
-      <span class="unit"><b>Sistema de Bibliotecas</b>Recursos electrónicos</span>
+    <div class="id">
+      <img src="assets/logo-horizontal-blanco.webp" alt="Uniagustiniana" width="130" height="48">
+      <h1><small>Sistema de Bibliotecas</small>Estado de recursos electrónicos</h1>
+    </div>
+    <div class="top-actions">
+      <span class="auto" title="La validación se ejecuta sola todos los días">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+        Automático · 7:00 a. m.
+      </span>
+      <button class="btn btn-gold" id="btn-validar" type="button">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-3-6.7"/><path d="M21 4v5h-5"/></svg>
+        Validar ahora
+      </button>
     </div>
   </div>
 </header>
 
-<section class="hero">
-  <div class="gutter">
-    <div class="hero-card" id="estado-general">
-      <div>
-        <h1>Monitoreo de recursos electrónicos</h1>
-        <div class="status-line" id="status-line"><span class="status-dot"></span><span id="status-text">Cargando la última validación…</span></div>
-        <p class="schedule">La validación se realiza <strong>automáticamente todos los días a las 7:00 a. m.</strong>: se inicia sesión con la cuenta institucional y se abre cada recurso a través del proxy de la biblioteca para comprobar que carga con el acceso de la Uniagustiniana. Última validación: <strong id="ultima">—</strong></p>
-      </div>
-      <div class="actions">
-        <button class="btn btn-primary" id="btn-validar" type="button">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-3-6.7"/><path d="M21 4v5h-5"/></svg>
-          Validar ahora
-        </button>
-        <span class="run-state" id="run-state">La próxima validación automática es mañana a las 7:00 a. m.</span>
-      </div>
-    </div>
-  </div>
-</section>
-
 <main class="gutter">
-  <div class="error" id="error" hidden>No se pudieron cargar los datos del monitoreo. Recarga la página en unos minutos.</div>
+  <div class="error" id="error" hidden>No se pudieron cargar los datos. Recarga la página en unos minutos.</div>
 
-  <section aria-labelledby="t-indicadores">
-    <h2 class="section-title" id="t-indicadores" style="margin-bottom:12px">Última validación</h2>
-    <div class="kpis">
-      <div class="kpi"><span class="label">Recursos disponibles</span><span class="value"><span id="k-disp">—</span> <small>de <span id="k-total">—</span></small></span><span class="delta" id="k-disp-d"></span></div>
-      <div class="kpi" id="kpi-fallas"><span class="label">Requieren atención</span><span class="value" id="k-fallas">—</span><span class="delta" id="k-fallas-d"></span></div>
-      <div class="kpi"><span class="label">Disponibilidad</span><span class="value" id="k-pct">—</span><span id="k-spark"></span></div>
-      <div class="kpi"><span class="label">Tiempo de carga típico</span><span class="value"><span id="k-carga">—</span> <small>seg.</small></span><span class="delta">Mediana de los recursos disponibles</span></div>
-      <div class="kpi" id="kpi-sesion"><span class="label">Sesión institucional</span><span class="value" id="k-sesion">—</span><span class="delta">Login con Google vía proxy</span></div>
+  <section class="overall" id="overall" aria-live="polite">
+    <svg id="overall-ico" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/></svg>
+    <div>
+      <div class="big" id="overall-txt">Cargando…</div>
+      <div class="sub" id="overall-sub"></div>
     </div>
+    <span class="run" id="run" hidden></span>
   </section>
 
-  <section class="card" id="fallas" aria-labelledby="t-fallas">
-    <div class="card-head"><h2 id="t-fallas">Recursos que requieren atención</h2></div>
-    <p class="note">Recursos que no pasaron la última validación: no llegaron al sitio del proveedor, no mostraron el acceso de la Uniagustiniana o no respondieron.</p>
-    <div class="incidents" id="incidents"></div>
+  <section class="comps" aria-label="Componentes del acceso">
+    <div class="panel comp" id="c-proxy"></div>
+    <div class="panel comp" id="c-login"></div>
+    <div class="panel comp" id="c-sitio"></div>
   </section>
 
-  <div class="grid2">
-    <section class="card" aria-labelledby="t-tendencia">
-      <h2 id="t-tendencia">Tendencia de disponibilidad</h2>
-      <p class="note">Porcentaje de recursos accesibles en cada validación diaria (últimos 30 días).</p>
-      <div class="chart" id="chart-tendencia"></div>
-    </section>
-    <section class="card" aria-labelledby="t-proveedores">
-      <h2 id="t-proveedores">Disponibilidad por proveedor</h2>
-      <p class="note">Recursos accesibles de cada proveedor en la última validación.</p>
-      <div class="hbars" id="chart-proveedores"></div>
-    </section>
-  </div>
-
-  <section class="card" aria-labelledby="t-mapa">
-    <div class="card-head">
-      <div><h2 id="t-mapa">Historial por recurso</h2>
-      <p class="note">Cada cuadro es una validación diaria. Se muestran primero los recursos que han fallado.</p></div>
-      <button class="chip" id="heat-all" type="button" aria-pressed="false">Mostrar los 96 recursos</button>
-    </div>
-    <div class="heat-wrap"><div class="heat" id="heat"></div></div>
-    <div class="legend"><span><span class="sw" style="background:var(--ok)"></span>Disponible</span><span><span class="sw" style="background:var(--bad)"></span>Con falla</span><span><span class="sw" style="background:var(--none)"></span>Sin validar</span></div>
+  <section class="panel stats" aria-label="Cifras">
+    <div class="stat"><b id="s-disp">—</b><span>Disponibilidad hoy</span></div>
+    <div class="stat"><b id="s-30">—</b><span>Promedio 30 días</span></div>
+    <div class="stat"><b id="s-ok">—</b><span>Recursos operativos</span></div>
+    <div class="stat"><b id="s-carga">—</b><span>Carga típica</span></div>
   </section>
 
-  <section class="card" aria-labelledby="t-carga">
-    <h2 id="t-carga">Recursos más lentos</h2>
-    <p class="note">Segundos desde que se abre el enlace del proxy hasta que el recurso muestra su contenido (última validación). Más de 15 s se marca en ámbar.</p>
-    <div class="hbars" id="chart-carga"></div>
-  </section>
-
-  <section class="card" id="recursos" aria-labelledby="t-recursos">
-    <h2 id="t-recursos">Todos los recursos</h2>
-    <div class="toolbar">
-      <input type="search" id="buscar" placeholder="Buscar recurso o proveedor" aria-label="Buscar recurso o proveedor">
-      <div class="chips" role="group" aria-label="Filtrar por estado">
-        <button class="chip" type="button" data-f="todos" aria-pressed="true">Todos</button>
-        <button class="chip" type="button" data-f="Con falla" aria-pressed="false">Con falla</button>
-        <button class="chip" type="button" data-f="Disponible" aria-pressed="false">Disponibles</button>
+  <section class="panel" aria-labelledby="t-lista">
+    <div class="list-head">
+      <h2 id="t-lista">Recursos</h2>
+      <div class="tabs" role="group" aria-label="Filtrar">
+        <button class="tab" type="button" data-f="todos" aria-pressed="true">Todos<span class="n" id="n-todos"></span></button>
+        <button class="tab" type="button" data-f="fallas" aria-pressed="false">Con fallas<span class="n" id="n-fallas"></span></button>
       </div>
+      <input type="search" id="buscar" placeholder="Buscar" aria-label="Buscar recurso o proveedor">
     </div>
-    <div class="table-wrap"><table id="tabla"><thead><tr>
-      <th data-k="recurso"><button type="button">Recurso</button></th>
-      <th data-k="proveedor"><button type="button">Proveedor</button></th>
-      <th data-k="estado"><button type="button">Estado</button></th>
-      <th>Últimos días</th>
-      <th data-k="carga_s" class="num"><button type="button">Carga (s)</button></th>
-      <th data-k="disponibilidad" class="num"><button type="button">Disponibilidad</button></th>
-    </tr></thead><tbody></tbody></table></div>
-    <p class="note" id="tabla-pie"></p>
+    <div class="legend">
+      <span><b style="color:var(--fg)">P</b> Proxy</span><span><b style="color:var(--fg)">L</b> Login</span><span><b style="color:var(--fg)">S</b> Sitio</span>
+      <span><i style="background:var(--ok)"></i>Operativo</span><span><i style="background:var(--bad)"></i>Falla</span><span><i style="background:var(--empty)"></i>Sin dato</span>
+    </div>
+    <div id="lista"></div>
   </section>
 </main>
 
-<footer>
-  <div class="gutter">
-    <img src="assets/escudo.webp" alt="" width="44" height="44">
-    <div>Sistema de Bibliotecas · Universitaria Agustiniana<br>Validación automática con Playwright a través del proxy institucional (MuseKnowledge).</div>
-  </div>
-</footer>
+<footer>Sistema de Bibliotecas · Universitaria Agustiniana · <span id="pie"></span></footer>
+
+<div class="tip" id="tip" hidden></div>
 
 <dialog id="dlg" aria-labelledby="dlg-title">
-  <div class="dlg-head"><h2 id="dlg-title">Validar los recursos ahora</h2></div>
+  <div class="dlg-head" id="dlg-title">Validar ahora</div>
   <div class="dlg-body">
-    <p style="margin:0">La solicitud se registra en GitHub y el equipo de monitoreo de la biblioteca la inicia en menos de 5 minutos. La validación completa de los 96 recursos tarda unos 25 minutos.</p>
     <ol>
-      <li>Pulsa <b>Ir a GitHub</b> e inicia sesión con tu cuenta de GitHub autorizada por la biblioteca.</li>
-      <li>Pulsa <b>Run workflow</b> y luego el botón verde <b>Run workflow</b>.</li>
-      <li>Vuelve a esta página: verás <b>Validación en curso</b> y, al terminar, los resultados nuevos.</li>
+      <li>Pulsa <b>Ir a GitHub</b> e inicia sesión.</li>
+      <li>Pulsa <b>Run workflow</b> y confirma.</li>
+      <li>Vuelve aquí: verás <b>Validación en curso</b>.</li>
     </ol>
-    <p class="note">Para cuidar los términos de uso de los proveedores, si ya hubo una validación en los últimos 30 minutos la solicitud no inicia otra.</p>
+    <p>Empieza en menos de 5 min y tarda unos 25 min. Requiere una cuenta autorizada por la biblioteca.</p>
   </div>
   <div class="dlg-foot">
-    <button class="btn btn-ghost" type="button" id="dlg-cerrar">Cancelar</button>
-    <a class="btn btn-primary" id="dlg-ir" href="https://github.com/bibliotecaAgus/monitoreo-recursos/actions/workflows/solicitar-validacion.yml" target="_blank" rel="noopener">Ir a GitHub</a>
+    <button class="btn btn-line" type="button" id="dlg-cerrar">Cancelar</button>
+    <a class="btn btn-gold" id="dlg-ir" href="https://github.com/bibliotecaAgus/monitoreo-recursos/actions/workflows/solicitar-validacion.yml" target="_blank" rel="noopener">Ir a GitHub</a>
   </div>
 </dialog>
 
 <script>
 (function () {
   var REPO = 'bibliotecaAgus/monitoreo-recursos';
+  var SLOTS = 30;
   var pct = new Intl.NumberFormat('es-CO', { style: 'percent', maximumFractionDigits: 1 });
   var num = new Intl.NumberFormat('es-CO', { maximumFractionDigits: 1 });
   var fechaHora = function (iso) { return new Date(iso).toLocaleString('es-CO', { weekday: 'short', day: 'numeric', month: 'short', hour: 'numeric', minute: '2-digit' }); };
@@ -300,301 +232,207 @@
   var dia = function (d) { return new Date(d + 'T12:00:00').toLocaleDateString('es-CO', { day: 'numeric', month: 'short' }); };
   var $ = function (id) { return document.getElementById(id); };
   var el = function (tag, cls, text) { var e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; };
-  var SVG = 'http://www.w3.org/2000/svg';
-  var svgEl = function (tag, attrs) { var e = document.createElementNS(SVG, tag); for (var k in attrs) e.setAttribute(k, attrs[k]); return e; };
-  var cargar = function (archivo, opcional) {
+  var nivel = function (v) { return v == null ? 'none' : v >= 0.999 ? 'ok' : v >= 0.5 ? 'warn' : 'bad'; };
+  var ICONOS = {
+    proxy: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="6" rx="2"/><rect x="3" y="14" width="18" height="6" rx="2"/><path d="M7 7h.01M7 17h.01"/></svg>',
+    login: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>',
+    sitio: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>',
+  };
+  var ICONO_ESTADO = {
+    ok: '<circle cx="12" cy="12" r="10"/><path d="m8 12 3 3 5-6"/>',
+    warn: '<path d="M12 3 2 21h20L12 3z"/><path d="M12 10v5M12 18h.01"/>',
+    bad: '<circle cx="12" cy="12" r="10"/><path d="m9 9 6 6M15 9l-6 6"/>',
+    none: '<circle cx="12" cy="12" r="10"/>',
+  };
+
+  var datos = null, filtro = 'todos';
+
+  // Tooltip único para todas las barras
+  var tip = $('tip');
+  function conTip(nodo, texto) {
+    nodo.addEventListener('mouseenter', function () { tip.textContent = texto; tip.hidden = false; });
+    nodo.addEventListener('mousemove', function (ev) {
+      tip.style.left = Math.min(ev.clientX + 12, window.innerWidth - tip.offsetWidth - 8) + 'px';
+      tip.style.top = (ev.clientY - 36) + 'px';
+    });
+    nodo.addEventListener('mouseleave', function () { tip.hidden = true; });
+    nodo.setAttribute('aria-label', texto);
+  }
+
+  // Barra de latidos: SLOTS posiciones, las más recientes a la derecha, vacías a la izquierda.
+  function latidos(items) {
+    var box = el('div', 'beats');
+    var vacios = Math.max(0, SLOTS - items.length);
+    for (var i = 0; i < vacios; i++) box.append(el('span', 'beat'));
+    items.slice(-SLOTS).forEach(function (it) { var b = el('span', 'beat ' + it.c); conTip(b, it.t); box.append(b); });
+    return box;
+  }
+
+  function cargar(archivo, opcional) {
     return fetch('datos/' + archivo + '?v=' + Date.now()).then(function (r) {
       if (!r.ok) { if (opcional) return null; throw new Error(r.status); }
       return r.json();
     });
-  };
-
-  var datos = null;
-  var heatTodos = false;
-
+  }
   function iniciar() {
     Promise.all([cargar('estado.json'), cargar('historial.json'), cargar('matriz.json', true), cargar('ejecucion.json', true)])
-      .then(function (r) { datos = { estado: r[0], historial: r[1], matriz: r[2] || { dias: [], recursos: [] }, ejecucion: r[3] }; pintar(); })
-      .catch(function () { $('error').hidden = false; $('status-text').textContent = 'Sin datos'; });
+      .then(function (r) { datos = { estado: r[0], historial: r[1], matriz: r[2] || { dias: [], recursos: [] }, ejecucion: r[3] }; $('error').hidden = true; pintar(); })
+      .catch(function () { $('error').hidden = false; });
   }
 
   function pintar() {
-    var estado = datos.estado, historial = datos.historial;
-    var revisados = estado.filter(function (r) { return r.estado !== 'Sin revisar'; });
-    var disp = revisados.filter(function (r) { return r.estado === 'Disponible'; });
-    var fallan = estado.filter(function (r) { return r.estado === 'Con falla'; });
-    var cargas = disp.map(function (r) { return Number(r.carga_s); }).sort(function (a, b) { return a - b; });
-    var ultimo = historial[historial.length - 1], previo = historial[historial.length - 2];
-    var sesionOk = !ultimo || ultimo.sesion === 'OK';
-    var fechas = revisados.map(function (r) { return r.revisado; }).sort();
+    var e = datos.estado, h = datos.historial;
+    var ult = h[h.length - 1];
+    var ok = e.filter(function (r) { return r.estado === 'Disponible'; }).length;
+    var fallan = e.filter(function (r) { return r.estado === 'Con falla'; });
+    var loginOk = !ult || ult.sesion === 'OK';
+    var fechas = e.map(function (r) { return r.revisado; }).filter(Boolean).sort();
 
     // Estado general
-    var linea = $('status-line');
-    linea.className = 'status-line ' + (fallan.length || !sesionOk ? 'is-bad' : 'is-ok');
-    $('status-text').textContent = !sesionOk ? 'La sesión institucional venció: hay que renovar el login'
-      : fallan.length ? fallan.length + (fallan.length === 1 ? ' recurso requiere atención' : ' recursos requieren atención')
-      : 'Todos los recursos están disponibles';
-    $('ultima').textContent = fechas.length ? fechaHora(fechas[fechas.length - 1]) : '—';
+    var tipo = !loginOk ? 'bad' : fallan.length === 0 ? 'ok' : fallan.length > e.length / 2 ? 'bad' : 'warn';
+    $('overall').className = 'overall ' + tipo;
+    $('overall-ico').innerHTML = ICONO_ESTADO[tipo];
+    $('overall-txt').textContent = !loginOk ? 'Login institucional caído'
+      : fallan.length === 0 ? 'Todos los recursos operativos'
+      : ok + ' de ' + e.length + ' recursos operativos';
+    $('overall-sub').textContent = fechas.length ? 'Última validación: ' + fechaHora(fechas[fechas.length - 1]) : '';
 
-    // Indicadores
-    $('k-disp').textContent = disp.length;
-    $('k-total').textContent = estado.length;
-    $('k-fallas').textContent = fallan.length;
-    $('kpi-fallas').classList.toggle('alert', fallan.length > 0);
-    $('k-pct').textContent = revisados.length ? pct.format(disp.length / revisados.length) : '—';
-    $('k-carga').textContent = cargas.length ? num.format(cargas[Math.floor(cargas.length / 2)]) : '—';
-    $('k-sesion').textContent = ultimo ? (sesionOk ? 'Activa' : 'Vencida') : '—';
-    $('kpi-sesion').classList.toggle('alert', !sesionOk);
-    delta($('k-disp-d'), ultimo && previo ? ultimo.disponibles - previo.disponibles : null, 1, 'recursos');
-    delta($('k-fallas-d'), ultimo && previo ? ultimo.con_fallas - previo.con_fallas : null, -1, 'recursos');
-    sparkline($('k-spark'), historial.slice(-14).map(function (h) { return h.disponibilidad != null ? h.disponibilidad : h.disponibles / h.revisados; }));
+    // Componentes
+    var proxyFalla = e.filter(function (r) { return r.etapas && r.etapas.proxy === 'falla'; }).length;
+    var sitioFalla = e.filter(function (r) { return r.etapas && r.etapas.sitio === 'falla'; }).length;
+    var revisados = ult ? ult.revisados : e.length;
+    componente($('c-proxy'), 'proxy', 'Proxy', 'MuseKnowledge', ult ? (ult.proxy_ok != null ? ult.proxy_ok : revisados - proxyFalla) / revisados : null,
+      proxyFalla ? proxyFalla + (proxyFalla === 1 ? ' enlace no pasa' : ' enlaces no pasan') : 'Redirige a los proveedores',
+      h.map(function (d) { var v = d.proxy_ok != null ? d.proxy_ok / d.revisados : null; return { c: nivel(v), t: dia(d.fecha) + ' · ' + (v == null ? 'sin dato' : pct.format(v) + ' de enlaces') }; }));
+    componente($('c-login'), 'login', 'Login', 'Google institucional', ult ? (loginOk ? 1 : 0) : null,
+      loginOk ? 'Sesión activa' : 'Hay que renovar el login',
+      h.map(function (d) { return { c: d.sesion === 'OK' ? 'ok' : 'bad', t: dia(d.fecha) + ' · ' + (d.sesion === 'OK' ? 'sesión activa' : 'sesión vencida') }; }));
+    componente($('c-sitio'), 'sitio', 'Sitios', 'Proveedores', ult ? (ult.sitio_ok != null ? ult.sitio_ok : ult.disponibles) / revisados : null,
+      sitioFalla ? sitioFalla + (sitioFalla === 1 ? ' sitio con falla' : ' sitios con falla') : 'Todos cargan con acceso',
+      h.map(function (d) { var v = (d.sitio_ok != null ? d.sitio_ok : d.disponibles) / d.revisados; return { c: nivel(v), t: dia(d.fecha) + ' · ' + pct.format(v) + ' de sitios' }; }));
 
-    incidentes(fallan);
-    tendencia();
-    proveedores(estado);
-    mapa();
-    lentos(disp);
-    tabla();
+    // Cifras
+    var ult30 = h.slice(-30);
+    var media = ult30.length ? ult30.reduce(function (s, d) { return s + d.disponibles / d.revisados; }, 0) / ult30.length : null;
+    $('s-disp').textContent = ult ? pct.format(ult.disponibles / ult.revisados) : '—';
+    $('s-disp').className = 't-' + nivel(ult ? ult.disponibles / ult.revisados : null);
+    $('s-30').textContent = media == null ? '—' : pct.format(media);
+    $('s-ok').textContent = ok + ' / ' + e.length;
+    $('s-carga').textContent = ult && ult.carga_mediana_s != null ? num.format(ult.carga_mediana_s) + ' s' : '—';
+    $('n-todos').textContent = e.length;
+    $('n-fallas').textContent = fallan.length;
+    $('pie').textContent = 'Datos de ' + h.length + (h.length === 1 ? ' día de validación' : ' días de validación');
+
+    lista();
     ejecucion();
   }
 
-  function delta(nodo, d, bueno, unidad) {
-    if (d == null) { nodo.textContent = 'Sin validación anterior para comparar'; nodo.className = 'delta'; return; }
-    nodo.textContent = d === 0 ? 'Igual que la validación anterior' : (d > 0 ? '+' : '−') + Math.abs(d) + ' ' + unidad + ' frente a la anterior';
-    nodo.className = 'delta' + (d === 0 ? '' : (d * bueno > 0 ? ' up' : ' down'));
-  }
-
-  function sparkline(box, valores) {
+  function componente(box, clave, nombre, detalle, valor, resumen, beats) {
+    var n = nivel(valor), etiqueta = { ok: 'Operativo', warn: 'Parcial', bad: 'Caído', none: 'Sin dato' }[n];
     box.replaceChildren();
-    if (valores.length < 2) { box.append(el('span', 'delta', 'La tendencia aparece con más días de validación')); return; }
-    var W = 160, H = 30, min = Math.min.apply(null, valores.concat([0.9])), max = 1;
-    var x = function (i) { return (i / (valores.length - 1)) * (W - 4) + 2; };
-    var y = function (v) { return H - 3 - ((v - min) / (max - min || 1)) * (H - 6); };
-    var svg = svgEl('svg', { width: W, height: H, viewBox: '0 0 ' + W + ' ' + H, 'aria-hidden': 'true' });
-    svg.append(svgEl('path', { d: valores.map(function (v, i) { return (i ? 'L' : 'M') + x(i) + ',' + y(v); }).join(''), fill: 'none', stroke: 'var(--gold-ink)', 'stroke-width': 2, 'stroke-linecap': 'round', 'stroke-linejoin': 'round' }));
-    svg.append(svgEl('circle', { cx: x(valores.length - 1), cy: y(valores[valores.length - 1]), r: 3, fill: 'var(--gold-ink)' }));
-    box.append(svg);
+    var head = el('div', 'comp-head');
+    var ico = el('span', 'comp-ico'); ico.innerHTML = ICONOS[clave];
+    var nm = el('div', 'comp-name', nombre); nm.append(el('small', null, detalle));
+    var val = el('div', 'comp-val t-' + n, valor == null ? '—' : pct.format(valor)); val.append(el('small', null, etiqueta));
+    head.append(ico, nm, val);
+    var foot = el('div', 'comp-foot');
+    foot.append(el('span', null, resumen), el('span', null, 'Últimos ' + SLOTS + ' días'));
+    box.append(head, latidos(beats), foot);
   }
 
-  function incidentes(fallan) {
-    var box = $('incidents');
-    if (!fallan.length) {
-      var ok = el('div', 'all-good', 'Todos los recursos pasaron la última validación.');
-      box.replaceChildren(ok); return;
-    }
-    box.replaceChildren.apply(box, fallan.map(function (r) {
-      var art = el('article', 'incident');
-      var cuerpo = el('div');
-      cuerpo.append(el('h3', null, r.recurso));
-      var tags = el('div', 'tags');
-      tags.append(el('span', 'tag bad', r.falla || 'Falla'), el('span', 'tag', r.proveedor));
-      if (r.disponibilidad != null && r.dias_revisados > 1) tags.append(el('span', 'tag', 'Disponible ' + pct.format(r.disponibilidad) + ' de los días'));
-      cuerpo.append(tags);
-      var det = el('details'); det.append(el('summary', null, 'Detalle técnico'), el('div', 'detail', r.detalle));
-      cuerpo.append(det);
-      art.append(cuerpo);
-      if (r.url) { var a = el('a', 'open', 'Abrir recurso ↗'); a.href = r.url; a.target = '_blank'; a.rel = 'noopener'; art.append(a); }
-      return art;
-    }));
-  }
-
-  function tendencia() {
-    var box = $('chart-tendencia');
-    box.replaceChildren();
-    var h = datos.historial.slice(-30).map(function (r) { return { fecha: r.fecha, v: r.disponibilidad != null ? r.disponibilidad : r.disponibles / r.revisados, ok: r.disponibles, bad: r.con_fallas }; });
-    if (!h.length) { box.append(el('div', 'empty', 'Aún no hay validaciones completas.')); return; }
-    var W = Math.max(280, box.clientWidth), H = 240, top = 12, bottom = 28;
-    var minV = Math.min.apply(null, h.map(function (r) { return r.v; }));
-    var lo = Math.max(0, Math.floor((Math.min(minV, 0.9) - 0.02) * 20) / 20);
-    var y = function (v) { return top + (1 - (v - lo) / (1 - lo)) * (H - top - bottom); };
-    var svg = svgEl('svg', { width: '100%', viewBox: '0 0 ' + W + ' ' + H, role: 'img', 'aria-label': 'Tendencia de disponibilidad' });
-    box.append(svg);
-    var paso = 1 - lo > 0.3 ? 0.1 : 0.05;
-    var ticks = []; for (var t = 1; t >= lo - 0.0001; t -= paso) ticks.push(Math.round(t * 1000) / 1000);
-    var probe = svgEl('text', {}); probe.textContent = pct.format(0.875); svg.append(probe);
-    var left = Math.ceil(probe.getComputedTextLength()) + 12; probe.remove();
-    ticks.forEach(function (t) {
-      svg.append(svgEl('line', { x1: left, x2: W - 8, y1: y(t), y2: y(t), stroke: 'var(--grid)' }));
-      var l = svgEl('text', { x: left - 8, y: y(t), dy: '0.32em', 'text-anchor': 'end' }); l.textContent = pct.format(t); svg.append(l);
-    });
-    var n = h.length;
-    var x = function (i) { return n === 1 ? (left + W - 8) / 2 : left + 10 + (i / (n - 1)) * (W - 8 - left - 20); };
-    var defs = svgEl('defs', {});
-    var grad = svgEl('linearGradient', { id: 'g-area', x1: 0, y1: 0, x2: 0, y2: 1 });
-    [[0, .28], [.5, .1], [1, 0]].forEach(function (s) { grad.append(svgEl('stop', { offset: s[0], style: 'stop-color: var(--gold); stop-opacity: ' + s[1] })); });
-    defs.append(grad); svg.append(defs);
-    if (n > 1) {
-      var linea = h.map(function (r, i) { return (i ? 'L' : 'M') + x(i) + ',' + y(r.v); }).join('');
-      svg.append(svgEl('path', { d: linea + 'L' + x(n - 1) + ',' + y(lo) + 'L' + x(0) + ',' + y(lo) + 'Z', fill: 'url(#g-area)' }));
-      svg.append(svgEl('path', { d: linea, fill: 'none', stroke: 'var(--gold-ink)', 'stroke-width': 2.5, 'stroke-linecap': 'round', 'stroke-linejoin': 'round' }));
-    }
-    h.forEach(function (r, i) { svg.append(svgEl('circle', { cx: x(i), cy: y(r.v), r: i === n - 1 ? 5 : 3, fill: r.bad ? 'var(--bad)' : 'var(--ok)', stroke: 'var(--panel)', 'stroke-width': 2 })); });
-    var cada = Math.ceil(n / Math.max(1, Math.floor((W - left) / 70)));
-    h.forEach(function (r, i) { if (i % cada === 0 || i === n - 1) { var l = svgEl('text', { x: x(i), y: H - 8, 'text-anchor': 'middle' }); l.textContent = dia(r.fecha); svg.append(l); } });
-    var ult = h[n - 1];
-    var etiqueta = svgEl('text', { x: x(n - 1), y: y(ult.v) - 12, 'text-anchor': n === 1 ? 'middle' : 'end', style: 'fill: var(--fg); font-weight: 600' });
-    etiqueta.textContent = pct.format(ult.v); svg.append(etiqueta);
-    var tip = el('div', 'tip'); tip.hidden = true; box.append(tip);
-    var zona = svgEl('rect', { x: left, y: 0, width: W - left, height: H - bottom, fill: 'transparent' });
-    zona.addEventListener('mousemove', function (ev) {
-      var b = svg.getBoundingClientRect(), px = (ev.clientX - b.left) * (W / b.width), i = 0, best = Infinity;
-      h.forEach(function (r, j) { var d = Math.abs(x(j) - px); if (d < best) { best = d; i = j; } });
-      var r = h[i];
-      tip.replaceChildren(el('b', null, dia(r.fecha) + ' · ' + pct.format(r.v)), el('div', null, r.ok + ' disponibles · ' + r.bad + ' con falla'));
-      tip.hidden = false;
-      var bx = box.getBoundingClientRect();
-      tip.style.left = Math.max(0, Math.min(ev.clientX - bx.left + 14, box.clientWidth - tip.offsetWidth)) + 'px';
-      tip.style.top = Math.max(0, ev.clientY - bx.top - 50) + 'px';
-    });
-    zona.addEventListener('mouseleave', function () { tip.hidden = true; });
-    svg.append(zona);
-    if (n < 3) box.append(el('p', 'note', 'La línea de tendencia se completa a medida que se acumulan validaciones diarias.'));
-  }
-
-  function proveedores(estado) {
-    var g = {};
-    estado.forEach(function (r) { var p = g[r.proveedor] || (g[r.proveedor] = { n: r.proveedor, t: 0, ok: 0 }); p.t++; if (r.estado === 'Disponible') p.ok++; });
-    var filas = Object.values(g).sort(function (a, b) { return b.t - a.t || a.n.localeCompare(b.n); });
-    var box = $('chart-proveedores');
-    box.replaceChildren.apply(box, filas.map(function (p) {
-      var f = el('div', 'hbar'), nombre = el('span', 'name', p.n + ' (' + p.t + ')'); nombre.title = p.n;
-      var track = el('div', 'track');
-      var ok = el('div', 'fill ok'); ok.style.width = (p.ok / p.t * 100) + '%';
-      var bad = el('div', 'fill bad'); bad.style.width = ((p.t - p.ok) / p.t * 100) + '%';
-      if (p.ok && p.ok < p.t) { ok.style.borderRadius = '7px 0 0 7px'; bad.style.borderRadius = '0 7px 7px 0'; }
-      track.append(ok, bad);
-      var n = el('span', 'n', pct.format(p.ok / p.t));
-      if (p.ok < p.t) n.style.color = 'var(--bad)';
-      f.append(nombre, track, n);
-      return f;
-    }));
-  }
-
-  function mapa() {
-    var m = datos.matriz, box = $('heat');
-    box.replaceChildren();
-    if (!m.dias.length) { box.append(el('div', 'empty', 'Aún no hay validaciones completas.')); return; }
-    var conFalla = function (r) { return r.estados.some(function (e) { return e === 0; }); };
-    var filas = m.recursos.slice().sort(function (a, b) { return (conFalla(b) - conFalla(a)) || a.recurso.localeCompare(b.recurso); });
-    var fallaron = filas.filter(conFalla).length;
-    if (!heatTodos) filas = filas.slice(0, Math.max(12, fallaron));
-    $('heat-all').textContent = heatTodos ? 'Mostrar menos' : 'Mostrar los ' + m.recursos.length + ' recursos';
-    $('heat-all').setAttribute('aria-pressed', String(heatTodos));
-    box.style.gridTemplateColumns = 'minmax(140px, 260px) repeat(' + m.dias.length + ', minmax(14px, 28px))';
-    box.append(el('span'));
-    var cada = Math.ceil(m.dias.length / 10);
-    m.dias.forEach(function (d, i) { box.append(el('span', 'day', i % cada === 0 || i === m.dias.length - 1 ? dia(d) : '')); });
-    filas.forEach(function (r) {
-      var nombre = el('span', 'name', r.recurso); nombre.title = r.recurso + ' · ' + r.proveedor; box.append(nombre);
-      r.estados.forEach(function (e, i) {
-        var c = el('span', 'cell' + (e === 1 ? ' ok' : e === 0 ? ' bad' : ''));
-        c.title = r.recurso + ' · ' + dia(m.dias[i]) + ': ' + (e === 1 ? 'disponible' : e === 0 ? 'con falla' : 'sin validar') + (r.cargas[i] != null ? ' (' + num.format(r.cargas[i]) + ' s)' : '');
-        box.append(c);
-      });
-    });
-  }
-
-  function lentos(disp) {
-    var box = $('chart-carga');
-    var top = disp.slice().sort(function (a, b) { return b.carga_s - a.carga_s; }).slice(0, 10);
-    if (!top.length) { box.replaceChildren(el('div', 'empty', 'Sin datos de carga.')); return; }
-    var max = Math.max(20, top[0].carga_s);
-    box.replaceChildren.apply(box, top.map(function (r) {
-      var f = el('div', 'hbar'), nombre = el('span', 'name', r.recurso); nombre.title = r.recurso;
-      var track = el('div', 'track'), fill = el('div', 'fill' + (r.carga_s > 15 ? ' warn' : '')); fill.style.width = (r.carga_s / max * 100) + '%';
-      track.append(fill);
-      f.append(nombre, track, el('span', 'n', num.format(r.carga_s) + ' s'));
-      return f;
-    }));
-  }
-
-  var orden = { k: 'estado', dir: 1 }, filtro = 'todos';
-  function tabla() {
-    var cuerpo = $('tabla').querySelector('tbody'), q = $('buscar').value.trim().toLowerCase();
-    var hist = {}; datos.matriz.recursos.forEach(function (r) { hist[r.recurso] = r.estados.slice(-10); });
+  function lista() {
+    var q = $('buscar').value.trim().toLowerCase();
+    var porRecurso = {};
+    datos.matriz.recursos.forEach(function (r) { porRecurso[r.recurso] = r; });
+    var dias = datos.matriz.dias;
     var filas = datos.estado.filter(function (r) {
-      return (filtro === 'todos' || r.estado === filtro) && (!q || (r.recurso + ' ' + r.proveedor).toLowerCase().indexOf(q) >= 0);
-    }).sort(function (a, b) {
-      var va = a[orden.k], vb = b[orden.k];
-      if (orden.k === 'estado') { va = va === 'Con falla' ? 0 : va === 'Disponible' ? 2 : 1; vb = vb === 'Con falla' ? 0 : vb === 'Disponible' ? 2 : 1; }
-      if (va == null) return 1; if (vb == null) return -1;
-      return (typeof va === 'number' ? va - vb : String(va).localeCompare(String(vb), 'es')) * orden.dir || a.recurso.localeCompare(b.recurso, 'es');
+      return (filtro === 'todos' || r.estado === 'Con falla') && (!q || (r.recurso + ' ' + r.proveedor).toLowerCase().indexOf(q) >= 0);
     });
-    cuerpo.replaceChildren.apply(cuerpo, filas.map(function (r) {
-      var tr = el('tr'), nombre = el('td');
-      if (r.url) { var a = el('a', null, r.recurso); a.href = r.url; a.target = '_blank'; a.rel = 'noopener'; nombre.append(a); } else nombre.textContent = r.recurso;
-      var est = el('td'); est.append(el('span', 'pill' + (r.estado === 'Con falla' ? ' bad' : r.estado === 'Disponible' ? '' : ' none'), r.estado));
-      var sp = el('td'), s = el('span', 'spark'); (hist[r.recurso] || []).forEach(function (e) { s.append(el('i', e === 1 ? 'ok' : e === 0 ? 'bad' : '')); }); sp.append(s);
-      tr.append(nombre, el('td', null, r.proveedor), est, sp,
-        el('td', 'num', r.carga_s == null ? '—' : num.format(r.carga_s)),
-        el('td', 'num', r.disponibilidad == null ? '—' : pct.format(r.disponibilidad)));
-      return tr;
-    }));
-    $('tabla-pie').textContent = filas.length + ' de ' + datos.estado.length + ' recursos';
-    document.querySelectorAll('#tabla th[data-k]').forEach(function (th) { th.setAttribute('aria-sort', th.dataset.k === orden.k ? (orden.dir === 1 ? 'ascending' : 'descending') : 'none'); });
+    var box = $('lista');
+    box.replaceChildren();
+    if (!filas.length) { box.append(el('div', 'empty', filtro === 'fallas' && !q ? 'Ningún recurso con fallas' : 'Sin resultados')); return; }
+
+    // Grupos: primero los que fallan, luego por proveedor
+    var grupos = [];
+    var fallan = filas.filter(function (r) { return r.estado === 'Con falla'; });
+    if (fallan.length) grupos.push({ nombre: 'Con fallas', filas: fallan, abierto: true, alerta: true });
+    var resto = {};
+    filas.filter(function (r) { return r.estado !== 'Con falla'; }).forEach(function (r) { (resto[r.proveedor] = resto[r.proveedor] || []).push(r); });
+    Object.keys(resto).sort(function (a, b) { return resto[b].length - resto[a].length || a.localeCompare(b); }).forEach(function (p) {
+      grupos.push({ nombre: p, filas: resto[p], abierto: !!q || resto[p].length < 20 });
+    });
+
+    grupos.forEach(function (g) {
+      var det = el('details', 'group'); det.open = g.abierto;
+      var sum = el('summary', g.alerta ? 't-bad' : null, g.nombre);
+      sum.append(el('span', 'cnt', g.filas.length + (g.filas.length === 1 ? ' recurso' : ' recursos')));
+      det.append(sum);
+      g.filas.sort(function (a, b) { return a.recurso.localeCompare(b.recurso, 'es'); }).forEach(function (r) { det.append(fila(r, porRecurso[r.recurso], dias)); });
+      box.append(det);
+    });
   }
 
-  // Estado de la validación (en curso / solicitada) y botón
+  var NOMBRE_ETAPA = { proxy: 'Proxy', login: 'Login', sitio: 'Sitio' };
+  function fila(r, hist, dias) {
+    var row = el('div', 'mon');
+    var u = r.disponibilidad;
+    var up = el('span', 'up ' + nivel(u), u == null ? '—' : pct.format(u));
+    conTip(up, 'Disponible ' + (u == null ? 'sin dato' : pct.format(u)) + ' de ' + r.dias_revisados + (r.dias_revisados === 1 ? ' día' : ' días'));
+    var nm = el('div', 'mon-name');
+    var a = el('a', null, r.recurso); if (r.url) { a.href = r.url; a.target = '_blank'; a.rel = 'noopener'; }
+    nm.append(a);
+    nm.append(r.estado === 'Con falla' ? el('small', 't-bad', r.falla + ' · ' + r.proveedor) : el('small', null, r.proveedor + (r.carga_s != null ? ' · ' + num.format(r.carga_s) + ' s' : '')));
+    var st = el('div', 'stages');
+    ['proxy', 'login', 'sitio'].forEach(function (k) {
+      var v = r.etapas ? r.etapas[k] : null;
+      var s = el('span', 'stg ' + (v === 'ok' ? 'ok' : v === 'falla' ? 'bad' : 'none'), k.charAt(0).toUpperCase());
+      conTip(s, NOMBRE_ETAPA[k] + ': ' + (v === 'ok' ? 'operativo' : v === 'falla' ? 'falla' : 'sin dato'));
+      st.append(s);
+    });
+    var items = (hist ? hist.estados : []).map(function (v, i) {
+      var etapa = hist.fallas && hist.fallas[i];
+      return { c: v === 1 ? 'ok' : v === 0 ? 'bad' : '', t: dia(dias[i]) + ' · ' + (v === 1 ? 'operativo' + (hist.cargas[i] != null ? ' (' + num.format(hist.cargas[i]) + ' s)' : '') : v === 0 ? 'falla' + (etapa ? ' en ' + NOMBRE_ETAPA[etapa].toLowerCase() : '') : 'sin dato') };
+    });
+    row.append(up, nm, st, latidos(items));
+    return row;
+  }
+
+  // Validación en curso / solicitada
   var refresco = null;
   function ejecucion() {
-    var e = datos.ejecucion, nodo = $('run-state'), btn = $('btn-validar');
+    var e = datos.ejecucion, run = $('run'), btn = $('btn-validar');
     var enCurso = e && e.estado === 'en_curso' && Date.now() - Date.parse(e.inicio) < 2 * 3600e3;
     btn.disabled = !!enCurso;
-    if (enCurso) {
-      nodo.className = 'run-state active';
-      nodo.replaceChildren(el('span', 'spin'), 'Validación ' + (e.origen === 'manual' ? 'solicitada' : 'automática') + ' en curso (inició a las ' + hora(e.inicio) + '). Los resultados se actualizan solos.');
-    } else {
-      nodo.className = 'run-state';
-      nodo.textContent = e && e.estado === 'fallida' ? 'La última validación no pudo iniciar sesión. El equipo de la biblioteca debe renovar el login.'
-        : 'La próxima validación automática es a las 7:00 a. m.';
-      solicitudPendiente(e);
-    }
+    run.hidden = !enCurso;
+    if (enCurso) run.replaceChildren(el('span', 'spin'), 'Validando desde ' + hora(e.inicio));
+    else solicitudPendiente(e);
     clearTimeout(refresco);
-    refresco = setTimeout(function () {
-      Promise.all([cargar('estado.json'), cargar('historial.json'), cargar('matriz.json', true), cargar('ejecucion.json', true)])
-        .then(function (r) { datos = { estado: r[0], historial: r[1], matriz: r[2] || datos.matriz, ejecucion: r[3] }; pintar(); })
-        .catch(function () {});
-    }, enCurso ? 60e3 : 5 * 60e3);
+    refresco = setTimeout(iniciar, enCurso ? 60e3 : 5 * 60e3);
   }
-
-  // Si alguien pidió una validación en GitHub y aún no empieza, mostrarlo.
   function solicitudPendiente(e) {
     fetch('https://api.github.com/repos/' + REPO + '/actions/workflows/solicitar-validacion.yml/runs?event=workflow_dispatch&per_page=1')
       .then(function (r) { return r.ok ? r.json() : null; })
       .then(function (j) {
         var run = j && j.workflow_runs && j.workflow_runs[0];
         if (!run || (e && Date.parse(run.created_at) <= Date.parse(e.inicio))) return;
-        var min = Math.round((Date.now() - Date.parse(run.created_at)) / 60e3);
-        if (min > 15) return;
-        var nodo = $('run-state');
-        nodo.className = 'run-state active';
-        nodo.replaceChildren(el('span', 'spin'), 'Solicitud recibida ' + (min < 1 ? 'hace un momento' : 'hace ' + min + ' min') + '. La validación empezará en menos de 5 minutos.');
+        if (Date.now() - Date.parse(run.created_at) > 15 * 60e3) return;
+        var nodo = $('run'); nodo.hidden = false;
+        nodo.replaceChildren(el('span', 'spin'), 'Solicitud recibida, inicia pronto');
       })
       .catch(function () {});
   }
 
-  // Controles
   $('btn-validar').addEventListener('click', function () { $('dlg').showModal(); });
   $('dlg-cerrar').addEventListener('click', function () { $('dlg').close(); });
   $('dlg-ir').addEventListener('click', function () { setTimeout(function () { $('dlg').close(); }, 300); });
-  $('heat-all').addEventListener('click', function () { heatTodos = !heatTodos; mapa(); });
-  $('buscar').addEventListener('input', tabla);
-  document.querySelectorAll('.chips .chip').forEach(function (c) {
-    c.addEventListener('click', function () {
-      filtro = c.dataset.f;
-      document.querySelectorAll('.chips .chip').forEach(function (o) { o.setAttribute('aria-pressed', String(o === c)); });
-      tabla();
+  $('buscar').addEventListener('input', function () { if (datos) lista(); });
+  document.querySelectorAll('.tab').forEach(function (t) {
+    t.addEventListener('click', function () {
+      filtro = t.dataset.f;
+      document.querySelectorAll('.tab').forEach(function (o) { o.setAttribute('aria-pressed', String(o === t)); });
+      if (datos) lista();
     });
   });
-  document.querySelectorAll('#tabla th[data-k] button').forEach(function (b) {
-    b.addEventListener('click', function () {
-      var k = b.parentElement.dataset.k;
-      if (k === orden.k) orden.dir = -orden.dir; else { orden.k = k; orden.dir = (k === 'carga_s') ? -1 : 1; }
-      tabla();
-    });
-  });
-  var ancho = window.innerWidth;
-  window.addEventListener('resize', function () { if (datos && Math.abs(window.innerWidth - ancho) > 40) { ancho = window.innerWidth; tendencia(); } });
 
   iniciar();
 })();

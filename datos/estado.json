@@ -4,6 +4,11 @@
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/hightechjournals/fromDatabasesLayer?accountid=25548",
   "estado": "Disponible",
+  "etapas": {
+   "proxy": "ok",
+   "login": "ok",
+   "sitio": "ok"
+  },
   "falla": "",
   "detalle": "",
   "carga_s": 6.8,
@@ -16,6 +21,11 @@
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/artshumanities/arts/fromDatabasesLayer?accountid=25548",
   "estado": "Disponible",
+  "etapas": {
+   "proxy": "ok",
+   "login": "ok",
+   "sitio": "ok"
+  },
   "falla": "",
   "detalle": "",
   "carga_s": 6.6,
@@ -28,6 +38,11 @@
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/biologicalscience1",
   "estado": "Disponible",
+  "etapas": {
+   "proxy": "ok",
+   "login": "ok",
+   "sitio": "ok"
+  },
   "falla": "",
   "detalle": "",
   "carga_s": 7,
@@ -40,6 +55,11 @@
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/cbcacomplete/index?accountid=2554",
   "estado": "Con falla",
+  "etapas": {
+   "proxy": "ok",
+   "login": "ok",
+   "sitio": "falla"
+  },
   "falla": "Contenido inesperado",
   "detalle": "No aparece: Acceso proporcionado por Universidad Agustiniana",
   "carga_s": 8.8,
@@ -52,6 +72,11 @@
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/canadiannews/index?accountid=25548",
   "estado": "Disponible",
+  "etapas": {
+   "proxy": "ok",
+   "login": "ok",
+   "sitio": "ok"
+  },
   "falla": "",
   "detalle": "",
   "carga_s": 6.9,
@@ -64,6 +89,11 @@
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/career/index?accountid=25548",
   "estado": "Disponible",
+  "etapas": {
+   "proxy": "ok",
+   "login": "ok",
+   "sitio": "ok"
+  },
   "falla": "",
   "detalle": "",
   "carga_s": 6.7,
@@ -76,6 +106,11 @@
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/compscijour",
   "estado": "Disponible",
+  "etapas": {
+   "proxy": "ok",
+   "login": "ok",
+   "sitio": "ok"
+  },
   "falla": "",
   "detalle": "",
   "carga_s": 6.4,
@@ -88,6 +123,11 @@
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/index?accountid=25548&selectids=1006520,1006520",
   "estado": "Disponible",
+  "etapas": {
+   "proxy": "ok",
+   "login": "ok",
+   "sitio": "ok"
+  },
   "falla": "",
   "detalle": "",
   "carga_s": 6.7,
@@ -100,6 +140,11 @@
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/coronavirus",
   "estado": "Disponible",
+  "etapas": {
+   "proxy": "ok",
+   "login": "ok",
+   "sitio": "ok"
+  },
   "falla": "",
   "detalle": "",
   "carga_s": 6.2,
@@ -112,6 +157,11 @@
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/criminaljusticeperiodicals/index?accountid=25548",
   "estado": "Disponible",
+  "etapas": {
+   "proxy": "ok",
+   "login": "ok",
+   "sitio": "ok"
+  },
   "falla": "",
   "detalle": "",
   "carga_s": 11.1,
@@ -124,6 +174,11 @@
   "proveedor": "ICONTEC",
   "url": "https://itmsp.museknowledge.com/UniAgu?groupID=1&action=source&sourceID=ICONTECeCollection",
   "estado": "Disponible",
+  "etapas": {
+   "proxy": "ok",
+   "login": "ok",
+   "sitio": "ok"
+  },
   "falla": "",
   "detalle": "",
   "carga_s": 5.5,
@@ -136,6 +191,11 @@
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/engineeringjournals/fromDatabasesLayer?accountid=25548",
   "estado": "Disponible",
+  "etapas": {
+   "proxy": "ok",
+   "login": "ok",
+   "sitio": "ok"
+  },
   "falla": "",
   "detalle": "",
   "carga_s": 9,
@@ -148,6 +208,11 @@
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/globalwires/news/?accountid=25548",
   "estado": "Disponible",
+  "etapas": {
+   "proxy": "ok",
+   "login": "ok",
+   "sitio": "ok"
+  },
   "falla": "",
   "detalle": "",
   "carga_s": 7.1,
@@ -160,6 +225,11 @@
   "proveedor": "enLegislación",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://uniagustiniana.enlegislacion.com/",
   "estado": "Disponible",
+  "etapas": {
+   "proxy": "ok",
+   "login": "ok",
+   "sitio": "ok"
+  },
   "falla": "",
   "detalle": "",
   "carga_s": 5.9,
@@ -172,6 +242,11 @@
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/healthcomplete?accountid=25548",
   "estado": "Disponible",
+  "etapas": {
+   "proxy": "ok",
+   "login": "ok",
+   "sitio": "ok"
+  },
   "falla": "",
   "detalle": "",
   "carga_s": 6.5,
@@ -184,6 +259,11 @@
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/index?accountid=25548&selectids=1006481,1006481",
   "estado": "Disponible",
+  "etapas": {
+   "proxy": "ok",
+   "login": "ok",
+   "sitio": "ok"
+  },
   "falla": "",
   "detalle": "",
   "carga_s": 6.6,
@@ -196,6 +276,11 @@
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/internationalnews1/index?accountid=25548",
   "estado": "Disponible",
+  "etapas": {
+   "proxy": "ok",
+   "login": "ok",
+   "sitio": "ok"
+  },
   "falla": "",
   "detalle": "",
   "carga_s": 6.6,
@@ -208,6 +293,11 @@
   "proveedor": "Legis",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.legiscomex.com/",
   "estado": "Disponible",
+  "etapas": {
+   "proxy": "ok",
+   "login": "ok",
+   "sitio": "ok"
+  },
   "falla": "",
   "detalle": "",
   "carga_s": 22.4,
@@ -220,6 +310,11 @@
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/libraryscience/index?accountid=25548",
   "estado": "Disponible",
+  "etapas": {
+   "proxy": "ok",
+   "login": "ok",
+   "sitio": "ok"
+  },
   "falla": "",
   "detalle": "",
   "carga_s": 7.1,
@@ -232,6 +327,11 @@
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/linguistics/index?accountid=25548",
   "estado": "Disponible",
+  "etapas": {
+   "proxy": "ok",
+   "login": "ok",
+   "sitio": "ok"
+  },
   "falla": "",
   "detalle": "",
   "carga_s": 6.4,
@@ -244,6 +344,11 @@
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/materialsscijournals/fromDatabasesLayer?accountid=25548",
   "estado": "Disponible",
+  "etapas": {
+   "proxy": "ok",
+   "login": "ok",
+   "sitio": "ok"
+  },
   "falla": "",
   "detalle": "",
   "carga_s": 7,
@@ -256,6 +361,11 @@
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/military/index?accountid=25548",
   "estado": "Disponible",
+  "etapas": {
+   "proxy": "ok",
+   "login": "ok",
+   "sitio": "ok"
+  },
   "falla": "",
   "detalle": "",
   "carga_s": 6.7,
@@ -268,6 +378,11 @@
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/nahp",
   "estado": "Disponible",
+  "etapas": {
+   "proxy": "ok",
+   "login": "ok",
+   "sitio": "ok"
+  },
   "falla": "",
   "detalle": "",
   "carga_s": 8.4,
@@ -280,6 +395,11 @@
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/politicalscience/index?accountid=25548",
   "estado": "Disponible",
+  "etapas": {
+   "proxy": "ok",
+   "login": "ok",
+   "sitio": "ok"
+  },
   "falla": "",
   "detalle": "",
   "carga_s": 6.3,
@@ -292,6 +412,11 @@
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/centralnew?accountid=25548",
   "estado": "Disponible",
+  "etapas": {
+   "proxy": "ok",
+   "login": "ok",
+   "sitio": "ok"
+  },
   "falla": "",
   "detalle": "",
   "carga_s": 7.9,
@@ -304,6 +429,11 @@
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/publiccontent/fromDatabasesLayer?accountid=25548uniagus",
   "estado": "Disponible",
+  "etapas": {
+   "proxy": "ok",
+   "login": "ok",
+   "sitio": "ok"
+  },
   "falla": "",
   "detalle": "",
   "carga_s": 6.7,
@@ -316,6 +446,11 @@
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/publichealth/index?accountid=25548",
   "estado": "Disponible",
+  "etapas": {
+   "proxy": "ok",
+   "login": "ok",
+   "sitio": "ok"
+  },
   "falla": "",
   "detalle": "",
   "carga_s": 6.5,
@@ -328,6 +463,11 @@
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/religion/index?accountid=25548",
   "estado": "Disponible",
+  "etapas": {
+   "proxy": "ok",
+   "login": "ok",
+   "sitio": "ok"
+  },
   "falla": "",
   "detalle": "",
   "carga_s": 6.3,
@@ -340,6 +480,11 @@
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/pqrl/index?accountid=25548",
   "estado": "Disponible",
+  "etapas": {
+   "proxy": "ok",
+   "login": "ok",
+   "sitio": "ok"
+  },
   "falla": "",
   "detalle": "",
   "carga_s": 6.5,
@@ -352,6 +497,11 @@
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/socscijournals/index?accountid=25548",
   "estado": "Disponible",
+  "etapas": {
+   "proxy": "ok",
+   "login": "ok",
+   "sitio": "ok"
+  },
   "falla": "",
   "detalle": "",
   "carga_s": 6.3,
@@ -364,6 +514,11 @@
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/sociology/index?accountid=25548",
   "estado": "Disponible",
+  "etapas": {
+   "proxy": "ok",
+   "login": "ok",
+   "sitio": "ok"
+  },
   "falla": "",
   "detalle": "",
   "carga_s": 6.5,
@@ -376,6 +531,11 @@
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/usnews/index?accountid=25548",
   "estado": "Disponible",
+  "etapas": {
+   "proxy": "ok",
+   "login": "ok",
+   "sitio": "ok"
+  },
   "falla": "",
   "detalle": "",
   "carga_s": 6.6,
@@ -388,6 +548,11 @@
   "proveedor": "Virtual Pro",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.virtualpro.co/instituciones/universidad-agustiniana",
   "estado": "Con falla",
+  "etapas": {
+   "proxy": "ok",
+   "login": "ok",
+   "sitio": "falla"
+  },
   "falla": "Sin respuesta",
   "detalle": "Sin respuesta en 45000 ms",
   "carga_s": 45,
@@ -400,6 +565,11 @@
   "proveedor": "OpenAIRE",
   "url": "https://login.recursoselectronicos.uniagustiniana.edu.co/login?url=https://www.openaire.eu/",
   "estado": "Con falla",
+  "etapas": {
+   "proxy": "falla",
+   "login": null,
+   "sitio": null
+  },
   "falla": "Dominio inesperado",
   "detalle": "Dominio final itmsp.museknowledge.com, se esperaba www.openaire.eu",
   "carga_s": 4,
@@ -412,6 +582,11 @@
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://ebookcentral.proquest.com/lib/bibliounc-ebooks/home.action",
   "estado": "Disponible",
+  "etapas": {
+   "proxy": "ok",
+   "login": "ok",
+   "sitio": "ok"
+  },
   "falla": "",
   "detalle": "",
   "carga_s": 5.5,
@@ -424,6 +599,11 @@
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/?accountid=25548&selectids=10000449,1007399",
   "estado": "Disponible",
+  "etapas": {
+   "proxy": "ok",
+   "login": "ok",
+   "sitio": "ok"
+  },
   "falla": "",
   "detalle": "",
   "carga_s": 13.3,
@@ -436,6 +616,11 @@
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/?accountid=25548&selectids=1007399",
   "estado": "Disponible",
+  "etapas": {
+   "proxy": "ok",
+   "login": "ok",
+   "sitio": "ok"
+  },
   "falla": "",
   "detalle": "",
   "carga_s": 6.2,
@@ -448,6 +633,11 @@
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/suppeducationindex?accountid=25548",
   "estado": "Disponible",
+  "etapas": {
+   "proxy": "ok",
+   "login": "ok",
+   "sitio": "ok"
+  },
   "falla": "",
   "detalle": "",
   "carga_s": 6.5,
@@ -460,6 +650,11 @@
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/agricolamodule?accountid=25548",
   "estado": "Disponible",
+  "etapas": {
+   "proxy": "ok",
+   "login": "ok",
+   "sitio": "ok"
+  },
   "falla": "",
   "detalle": "",
   "carga_s": 6.3,
@@ -472,6 +667,11 @@
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/asfa?accountid=25548",
   "estado": "Disponible",
+  "etapas": {
+   "proxy": "ok",
+   "login": "ok",
+   "sitio": "ok"
+  },
   "falla": "",
   "detalle": "",
   "carga_s": 6.4,
@@ -484,6 +684,11 @@
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/asfabiological?accountid=25548",
   "estado": "Disponible",
+  "etapas": {
+   "proxy": "ok",
+   "login": "ok",
+   "sitio": "ok"
+  },
   "falla": "",
   "detalle": "",
   "carga_s": 7.1,
@@ -496,6 +701,11 @@
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/asfaocean?accountid=25548",
   "estado": "Disponible",
+  "etapas": {
+   "proxy": "ok",
+   "login": "ok",
+   "sitio": "ok"
+  },
   "falla": "",
   "detalle": "",
   "carga_s": 7.1,
@@ -508,6 +718,11 @@
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/asfaaquaticpollution?accountid=25548",
   "estado": "Disponible",
+  "etapas": {
+   "proxy": "ok",
+   "login": "ok",
+   "sitio": "ok"
+  },
   "falla": "",
   "detalle": "",
   "carga_s": 6.1,
@@ -520,6 +735,11 @@
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/asfaaquaculture?accountid=25548",
   "estado": "Disponible",
+  "etapas": {
+   "proxy": "ok",
+   "login": "ok",
+   "sitio": "ok"
+  },
   "falla": "",
   "detalle": "",
   "carga_s": 6.9,
@@ -532,6 +752,11 @@
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/asfamarine?accountid=25548",
   "estado": "Disponible",
+  "etapas": {
+   "proxy": "ok",
+   "login": "ok",
+   "sitio": "ok"
+  },
   "falla": "",
   "detalle": "",
   "carga_s": 6.8,
@@ -544,6 +769,11 @@
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/oceanic?accountid=25548",
   "estado": "Disponible",
+  "etapas": {
+   "proxy": "ok",
+   "login": "ok",
+   "sitio": "ok"
+  },
   "falla": "",
   "detalle": "",
   "carga_s": 6.1,
@@ -556,6 +786,11 @@
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/esindex?accountid=25548",
   "estado": "Disponible",
+  "etapas": {
+   "proxy": "ok",
+   "login": "ok",
+   "sitio": "ok"
+  },
   "falla": "",
   "detalle": "",
   "carga_s": 6.7,
@@ -568,6 +803,11 @@
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/globalnews?accountid=25548",
   "estado": "Disponible",
+  "etapas": {
+   "proxy": "ok",
+   "login": "ok",
+   "sitio": "ok"
+  },
   "falla": "",
   "detalle": "",
   "carga_s": 6.5,
@@ -580,6 +820,11 @@
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/bhi?accountid=25548",
   "estado": "Disponible",
+  "etapas": {
+   "proxy": "ok",
+   "login": "ok",
+   "sitio": "ok"
+  },
   "falla": "",
   "detalle": "",
   "carga_s": 6.6,
@@ -592,6 +837,11 @@
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/mgamodule?accountid=25548",
   "estado": "Disponible",
+  "etapas": {
+   "proxy": "ok",
+   "login": "ok",
+   "sitio": "ok"
+  },
   "falla": "",
   "detalle": "",
   "carga_s": 6.7,
@@ -604,6 +854,11 @@
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/pq1appliedlifesciences?accountid=25548",
   "estado": "Disponible",
+  "etapas": {
+   "proxy": "ok",
+   "login": "ok",
+   "sitio": "ok"
+  },
   "falla": "",
   "detalle": "",
   "carga_s": 9.6,
@@ -616,6 +871,11 @@
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/advancedtechaerospace?accountid=25548",
   "estado": "Disponible",
+  "etapas": {
+   "proxy": "ok",
+   "login": "ok",
+   "sitio": "ok"
+  },
   "falla": "",
   "detalle": "",
   "carga_s": 6.5,
@@ -628,6 +888,11 @@
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/engcoll?accountid=25548",
   "estado": "Disponible",
+  "etapas": {
+   "proxy": "ok",
+   "login": "ok",
+   "sitio": "ok"
+  },
   "falla": "",
   "detalle": "",
   "carga_s": 6.5,
@@ -640,6 +905,11 @@
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/mscoll?accountid=25548",
   "estado": "Disponible",
+  "etapas": {
+   "proxy": "ok",
+   "login": "ok",
+   "sitio": "ok"
+  },
   "falla": "",
   "detalle": "",
   "carga_s": 6.7,
@@ -652,6 +922,11 @@
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/pq1business?accountid=25548",
   "estado": "Disponible",
+  "etapas": {
+   "proxy": "ok",
+   "login": "ok",
+   "sitio": "ok"
+  },
   "falla": "",
   "detalle": "",
   "carga_s": 10.4,
@@ -664,6 +939,11 @@
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/pq1education?accountid=25548",
   "estado": "Disponible",
+  "etapas": {
+   "proxy": "ok",
+   "login": "ok",
+   "sitio": "ok"
+  },
   "falla": "",
   "detalle": "",
   "carga_s": 8.8,
@@ -676,6 +956,11 @@
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/ema?accountid=25548",
   "estado": "Disponible",
+  "etapas": {
+   "proxy": "ok",
+   "login": "ok",
+   "sitio": "ok"
+  },
   "falla": "",
   "detalle": "",
   "carga_s": 6.2,
@@ -688,6 +973,11 @@
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/pq1healthnursing?accountid=25548",
   "estado": "Disponible",
+  "etapas": {
+   "proxy": "ok",
+   "login": "ok",
+   "sitio": "ok"
+  },
   "falla": "",
   "detalle": "",
   "carga_s": 7.6,
@@ -700,6 +990,11 @@
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/britishnursingindexft?accountid=25548",
   "estado": "Disponible",
+  "etapas": {
+   "proxy": "ok",
+   "login": "ok",
+   "sitio": "ok"
+  },
   "falla": "",
   "detalle": "",
   "carga_s": 6.8,
@@ -712,6 +1007,11 @@
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/healthmedresearch?accountid=25548",
   "estado": "Disponible",
+  "etapas": {
+   "proxy": "ok",
+   "login": "ok",
+   "sitio": "ok"
+  },
   "falla": "",
   "detalle": "",
   "carga_s": 6.8,
@@ -724,6 +1024,11 @@
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/pq1psychology?accountid=25548",
   "estado": "Disponible",
+  "etapas": {
+   "proxy": "ok",
+   "login": "ok",
+   "sitio": "ok"
+  },
   "falla": "",
   "detalle": "",
   "carga_s": 9.2,
@@ -736,6 +1041,11 @@
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/pq1religionphilosophy?accountid=25548",
   "estado": "Disponible",
+  "etapas": {
+   "proxy": "ok",
+   "login": "ok",
+   "sitio": "ok"
+  },
   "falla": "",
   "detalle": "",
   "carga_s": 7.5,
@@ -748,6 +1058,11 @@
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/philosophyjournals?accountid=25548",
   "estado": "Disponible",
+  "etapas": {
+   "proxy": "ok",
+   "login": "ok",
+   "sitio": "ok"
+  },
   "falla": "",
   "detalle": "",
   "carga_s": 7.3,
@@ -760,6 +1075,11 @@
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/religionarchive?accountid=25548",
   "estado": "Disponible",
+  "etapas": {
+   "proxy": "ok",
+   "login": "ok",
+   "sitio": "ok"
+  },
   "falla": "",
   "detalle": "",
   "carga_s": 6.4,
@@ -772,6 +1092,11 @@
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/pq1socialsciences?accountid=25548",
   "estado": "Disponible",
+  "etapas": {
+   "proxy": "ok",
+   "login": "ok",
+   "sitio": "ok"
+  },
   "falla": "",
   "detalle": "",
   "carga_s": 7.4,
@@ -784,6 +1109,11 @@
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/criminology?accountid=25548",
   "estado": "Disponible",
+  "etapas": {
+   "proxy": "ok",
+   "login": "ok",
+   "sitio": "ok"
+  },
   "falla": "",
   "detalle": "",
   "carga_s": 6.2,
@@ -796,6 +1126,11 @@
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/libraryinformation?accountid=25548",
   "estado": "Disponible",
+  "etapas": {
+   "proxy": "ok",
+   "login": "ok",
+   "sitio": "ok"
+  },
   "falla": "",
   "detalle": "",
   "carga_s": 6.1,
@@ -808,6 +1143,11 @@
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/linguistics1?accountid=25548",
   "estado": "Disponible",
+  "etapas": {
+   "proxy": "ok",
+   "login": "ok",
+   "sitio": "ok"
+  },
   "falla": "",
   "detalle": "",
   "carga_s": 6.2,
@@ -820,6 +1160,11 @@
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/politics?accountid=25548",
   "estado": "Disponible",
+  "etapas": {
+   "proxy": "ok",
+   "login": "ok",
+   "sitio": "ok"
+  },
   "falla": "",
   "detalle": "",
   "carga_s": 5.8,
@@ -832,6 +1177,11 @@
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/sociologysocialsciences?accountid=25548",
   "estado": "Disponible",
+  "etapas": {
+   "proxy": "ok",
+   "login": "ok",
+   "sitio": "ok"
+  },
   "falla": "",
   "detalle": "",
   "carga_s": 6.1,
@@ -844,6 +1194,11 @@
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/pq1sustainability?accountid=25548",
   "estado": "Disponible",
+  "etapas": {
+   "proxy": "ok",
+   "login": "ok",
+   "sitio": "ok"
+  },
   "falla": "",
   "detalle": "",
   "carga_s": 11.6,
@@ -856,6 +1211,11 @@
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/pqrlbusiness?accountid=25548",
   "estado": "Disponible",
+  "etapas": {
+   "proxy": "ok",
+   "login": "ok",
+   "sitio": "ok"
+  },
   "falla": "",
   "detalle": "",
   "carga_s": 7.2,
@@ -868,6 +1228,11 @@
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/pqrlhealth?accountid=25548",
   "estado": "Disponible",
+  "etapas": {
+   "proxy": "ok",
+   "login": "ok",
+   "sitio": "ok"
+  },
   "falla": "",
   "detalle": "",
   "carga_s": 7,
@@ -880,6 +1245,11 @@
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/pqrlhistory?accountid=25548",
   "estado": "Disponible",
+  "etapas": {
+   "proxy": "ok",
+   "login": "ok",
+   "sitio": "ok"
+  },
   "falla": "",
   "detalle": "",
   "carga_s": 6.2,
@@ -892,6 +1262,11 @@
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/pqrllitlang?accountid=25548",
   "estado": "Disponible",
+  "etapas": {
+   "proxy": "ok",
+   "login": "ok",
+   "sitio": "ok"
+  },
   "falla": "",
   "detalle": "",
   "carga_s": 7,
@@ -904,6 +1279,11 @@
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/pqrlscitech?accountid=25548",
   "estado": "Disponible",
+  "etapas": {
+   "proxy": "ok",
+   "login": "ok",
+   "sitio": "ok"
+  },
   "falla": "",
   "detalle": "",
   "carga_s": 6.1,
@@ -916,6 +1296,11 @@
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/pqrlsocsci?accountid=25548",
   "estado": "Disponible",
+  "etapas": {
+   "proxy": "ok",
+   "login": "ok",
+   "sitio": "ok"
+  },
   "falla": "",
   "detalle": "",
   "carga_s": 7.5,
@@ -928,6 +1313,11 @@
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/pqrlarts?accountid=25548",
   "estado": "Disponible",
+  "etapas": {
+   "proxy": "ok",
+   "login": "ok",
+   "sitio": "ok"
+  },
   "falla": "",
   "detalle": "",
   "carga_s": 6.5,
@@ -940,6 +1330,11 @@
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/careerbusiness?accountid=25548",
   "estado": "Disponible",
+  "etapas": {
+   "proxy": "ok",
+   "login": "ok",
+   "sitio": "ok"
+  },
   "falla": "",
   "detalle": "",
   "carga_s": 6.2,
@@ -952,6 +1347,11 @@
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/careerhealth?accountid=25548",
   "estado": "Disponible",
+  "etapas": {
+   "proxy": "ok",
+   "login": "ok",
+   "sitio": "ok"
+  },
   "falla": "",
   "detalle": "",
   "carga_s": 6.5,
@@ -964,6 +1364,11 @@
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/careerhistory?accountid=25548",
   "estado": "Disponible",
+  "etapas": {
+   "proxy": "ok",
+   "login": "ok",
+   "sitio": "ok"
+  },
   "falla": "",
   "detalle": "",
   "carga_s": 6.2,
@@ -976,6 +1381,11 @@
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/careerlitlang?accountid=25548",
   "estado": "Disponible",
+  "etapas": {
+   "proxy": "ok",
+   "login": "ok",
+   "sitio": "ok"
+  },
   "falla": "",
   "detalle": "",
   "carga_s": 6.5,
@@ -988,6 +1398,11 @@
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/careerscitech?accountid=25548",
   "estado": "Disponible",
+  "etapas": {
+   "proxy": "ok",
+   "login": "ok",
+   "sitio": "ok"
+  },
   "falla": "",
   "detalle": "",
   "carga_s": 7.6,
@@ -1000,6 +1415,11 @@
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/careersocsci?accountid=25548",
   "estado": "Disponible",
+  "etapas": {
+   "proxy": "ok",
+   "login": "ok",
+   "sitio": "ok"
+  },
   "falla": "",
   "detalle": "",
   "carga_s": 6.1,
@@ -1012,6 +1432,11 @@
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/careerarts?accountid=25548",
   "estado": "Disponible",
+  "etapas": {
+   "proxy": "ok",
+   "login": "ok",
+   "sitio": "ok"
+  },
   "falla": "",
   "detalle": "",
   "carga_s": 7.9,
@@ -1024,6 +1449,11 @@
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/cbcacompletebusiness?accountid=25548",
   "estado": "Disponible",
+  "etapas": {
+   "proxy": "ok",
+   "login": "ok",
+   "sitio": "ok"
+  },
   "falla": "",
   "detalle": "",
   "carga_s": 6.4,
@@ -1036,6 +1466,11 @@
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/cbcacompletehealth?accountid=25548",
   "estado": "Disponible",
+  "etapas": {
+   "proxy": "ok",
+   "login": "ok",
+   "sitio": "ok"
+  },
   "falla": "",
   "detalle": "",
   "carga_s": 6.2,
@@ -1048,6 +1483,11 @@
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/cbcacompletehistory?accountid=25548",
   "estado": "Disponible",
+  "etapas": {
+   "proxy": "ok",
+   "login": "ok",
+   "sitio": "ok"
+  },
   "falla": "",
   "detalle": "",
   "carga_s": 6.2,
@@ -1060,6 +1500,11 @@
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/cbcacompletelitlang?accountid=25548",
   "estado": "Disponible",
+  "etapas": {
+   "proxy": "ok",
+   "login": "ok",
+   "sitio": "ok"
+  },
   "falla": "",
   "detalle": "",
   "carga_s": 6,
@@ -1072,6 +1517,11 @@
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/cbcacompletescitech?accountid=25548",
   "estado": "Disponible",
+  "etapas": {
+   "proxy": "ok",
+   "login": "ok",
+   "sitio": "ok"
+  },
   "falla": "",
   "detalle": "",
   "carga_s": 6.5,
@@ -1084,6 +1534,11 @@
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/cbcacompletesocsci?accountid=25548",
   "estado": "Disponible",
+  "etapas": {
+   "proxy": "ok",
+   "login": "ok",
+   "sitio": "ok"
+  },
   "falla": "",
   "detalle": "",
   "carga_s": 7,
@@ -1096,6 +1551,11 @@
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/cbcacompletearts?accountid=25548",
   "estado": "Disponible",
+  "etapas": {
+   "proxy": "ok",
+   "login": "ok",
+   "sitio": "ok"
+  },
   "falla": "",
   "detalle": "",
   "carga_s": 10.5,
@@ -1108,6 +1568,11 @@
   "proveedor": "El Tiempo",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.eltiempo.com/login",
   "estado": "Disponible",
+  "etapas": {
+   "proxy": "ok",
+   "login": "ok",
+   "sitio": "ok"
+  },
   "falla": "",
   "detalle": "",
   "carga_s": 3.8,
@@ -1120,6 +1585,11 @@
   "proveedor": "Unicórdoba",
   "url": "https://revistas-unicordoba-edu-co.recursoselectronicos.uniagustiniana.edu.co/index.php/dersoc",
   "estado": "Con falla",
+  "etapas": {
+   "proxy": "falla",
+   "login": null,
+   "sitio": null
+  },
   "falla": "Error de conexión",
   "detalle": "page.goto: net::ERR_NAME_NOT_RESOLVED at https://revistas-unicordoba-edu-co.recursoselectronicos.uniagustiniana.edu.co/index.php/dersoc",
   "carga_s": 0.1,
@@ -1132,6 +1602,11 @@
   "proveedor": "e-Libro",
   "url": "https://itmsp.museknowledge.com/UniAgu?qurl=https%3A%2F%2Felibro.net%2Fes%2Flc%2Funiagustiniana%2Finicio%2F",
   "estado": "Disponible",
+  "etapas": {
+   "proxy": "ok",
+   "login": "ok",
+   "sitio": "ok"
+  },
   "falla": "",
   "detalle": "",
   "carga_s": 5.7,
@@ -1144,6 +1619,11 @@
   "proveedor": "Bibliotele",
   "url": "https://itmsp.museknowledge.com/UniAgu?groupID=1&action=source&sourceID=Bibliotele",
   "estado": "Disponible",
+  "etapas": {
+   "proxy": "ok",
+   "login": "ok",
+   "sitio": "ok"
+  },
   "falla": "",
   "detalle": "",
   "carga_s": 11.3,
