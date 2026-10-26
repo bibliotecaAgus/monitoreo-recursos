@@ -64,5 +64,16 @@
   "proxy_ok": 94,
   "sitio_ok": 93,
   "carga_mediana_s": 6.4
+ },
+ {
+  "fecha": "2026-10-26T19:00:19.096Z",
+  "sesion": "OK",
+  "revisados": 96,
+  "disponibles": 91,
+  "con_fallas": 5,
+  "disponibilidad": 0.948,
+  "proxy_ok": 94,
+  "sitio_ok": 91,
+  "carga_mediana_s": 6.4
  }
 ]
