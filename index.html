@@ -147,9 +147,9 @@
       <h1><small>Sistema de Bibliotecas</small>Estado de recursos electrónicos</h1>
     </div>
     <div class="top-actions">
-      <span class="auto" title="La validación se ejecuta sola todos los días">
+      <span class="auto" title="La validación se ejecuta sola todos los días a las 7:00 a. m. y a las 12:00 m.">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
-        Automático · 7:00 a. m.
+        Automático · 7:00 a. m. y 12:00 m.
       </span>
       <button class="btn btn-gold" id="btn-validar" type="button">
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-3-6.7"/><path d="M21 4v5h-5"/></svg>
@@ -178,8 +178,8 @@
   </section>
 
   <section class="panel stats" aria-label="Cifras">
-    <div class="stat"><b id="s-disp">—</b><span>Disponibilidad hoy</span></div>
-    <div class="stat"><b id="s-30">—</b><span>Promedio 30 días</span></div>
+    <div class="stat"><b id="s-disp">—</b><span>Disponibilidad (última)</span></div>
+    <div class="stat"><b id="s-30">—</b><span>Promedio 30 validaciones</span></div>
     <div class="stat"><b id="s-ok">—</b><span>Recursos operativos</span></div>
     <div class="stat"><b id="s-carga">—</b><span>Carga típica</span></div>
   </section>
@@ -213,7 +213,7 @@
       <li>Pulsa <b>Run workflow</b> y confirma.</li>
       <li>Vuelve aquí: verás <b>Validación en curso</b>.</li>
     </ol>
-    <p>Empieza en menos de 5 min y tarda unos 25 min. Requiere una cuenta autorizada por la biblioteca.</p>
+    <p>Empieza en menos de 5 min y tarda unos 25 min. Además se valida solo a las 7:00 a. m. y a las 12:00 m. Requiere una cuenta autorizada por la biblioteca.</p>
   </div>
   <div class="dlg-foot">
     <button class="btn btn-line" type="button" id="dlg-cerrar">Cancelar</button>
@@ -229,7 +229,7 @@
   var num = new Intl.NumberFormat('es-CO', { maximumFractionDigits: 1 });
   var fechaHora = function (iso) { return new Date(iso).toLocaleString('es-CO', { weekday: 'short', day: 'numeric', month: 'short', hour: 'numeric', minute: '2-digit' }); };
   var hora = function (iso) { return new Date(iso).toLocaleTimeString('es-CO', { hour: 'numeric', minute: '2-digit' }); };
-  var dia = function (d) { return new Date(d + 'T12:00:00').toLocaleDateString('es-CO', { day: 'numeric', month: 'short' }); };
+  var dia = function (d) { var f = new Date(d.length === 10 ? d + 'T12:00:00' : d); return f.toLocaleDateString('es-CO', { day: 'numeric', month: 'short' }) + (d.length === 10 ? '' : ', ' + f.toLocaleTimeString('es-CO', { hour: 'numeric', minute: '2-digit' })); };
   var $ = function (id) { return document.getElementById(id); };
   var el = function (tag, cls, text) { var e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; };
   var nivel = function (v) { return v == null ? 'none' : v >= 0.999 ? 'ok' : v >= 0.5 ? 'warn' : 'bad'; };
@@ -283,6 +283,8 @@
   function pintar() {
     var e = datos.estado, h = datos.historial;
     var ult = h[h.length - 1];
+    var completas = h.filter(function (d) { return d.sesion === 'OK'; });
+    var ultC = completas[completas.length - 1];
     var ok = e.filter(function (r) { return r.estado === 'Disponible'; }).length;
     var fallan = e.filter(function (r) { return r.estado === 'Con falla'; });
     var loginOk = !ult || ult.sesion === 'OK';
@@ -295,33 +297,36 @@
     $('overall-txt').textContent = !loginOk ? 'Login institucional caído'
       : fallan.length === 0 ? 'Todos los recursos operativos'
       : ok + ' de ' + e.length + ' recursos operativos';
-    $('overall-sub').textContent = fechas.length ? 'Última validación: ' + fechaHora(fechas[fechas.length - 1]) : '';
+    $('overall-sub').textContent = !loginOk
+      ? 'Validación del ' + fechaHora(ult.fecha) + ': Google pidió volver a iniciar sesión. Recursos según la validación del ' + (ultC ? fechaHora(ultC.fecha) : '—') + '.'
+      : fechas.length ? 'Última validación: ' + fechaHora(fechas[fechas.length - 1]) : '';
 
     // Componentes
     var proxyFalla = e.filter(function (r) { return r.etapas && r.etapas.proxy === 'falla'; }).length;
     var sitioFalla = e.filter(function (r) { return r.etapas && r.etapas.sitio === 'falla'; }).length;
-    var revisados = ult ? ult.revisados : e.length;
-    componente($('c-proxy'), 'proxy', 'Proxy', 'MuseKnowledge', ult ? (ult.proxy_ok != null ? ult.proxy_ok : revisados - proxyFalla) / revisados : null,
+    var revisados = ultC ? ultC.revisados : e.length;
+    var sinDato = function (d) { return { c: '', t: dia(d.fecha) + ' · sin validar (falló el login)' }; };
+    componente($('c-proxy'), 'proxy', 'Proxy', 'MuseKnowledge', ultC ? (ultC.proxy_ok != null ? ultC.proxy_ok : revisados - proxyFalla) / revisados : null,
       proxyFalla ? proxyFalla + (proxyFalla === 1 ? ' enlace no pasa' : ' enlaces no pasan') : 'Redirige a los proveedores',
-      h.map(function (d) { var v = d.proxy_ok != null ? d.proxy_ok / d.revisados : null; return { c: nivel(v), t: dia(d.fecha) + ' · ' + (v == null ? 'sin dato' : pct.format(v) + ' de enlaces') }; }));
+      h.map(function (d) { if (d.sesion !== 'OK') return sinDato(d); var v = d.proxy_ok != null ? d.proxy_ok / d.revisados : null; return { c: nivel(v), t: dia(d.fecha) + ' · ' + (v == null ? 'sin dato' : pct.format(v) + ' de enlaces') }; }));
     componente($('c-login'), 'login', 'Login', 'Google institucional', ult ? (loginOk ? 1 : 0) : null,
-      loginOk ? 'Sesión activa' : 'Hay que renovar el login',
+      loginOk ? 'Sesión activa' : 'Google pide volver a iniciar sesión',
       h.map(function (d) { return { c: d.sesion === 'OK' ? 'ok' : 'bad', t: dia(d.fecha) + ' · ' + (d.sesion === 'OK' ? 'sesión activa' : 'sesión vencida') }; }));
-    componente($('c-sitio'), 'sitio', 'Sitios', 'Proveedores', ult ? (ult.sitio_ok != null ? ult.sitio_ok : ult.disponibles) / revisados : null,
+    componente($('c-sitio'), 'sitio', 'Sitios', 'Proveedores', ultC ? (ultC.sitio_ok != null ? ultC.sitio_ok : ultC.disponibles) / revisados : null,
       sitioFalla ? sitioFalla + (sitioFalla === 1 ? ' sitio con falla' : ' sitios con falla') : 'Todos cargan con acceso',
-      h.map(function (d) { var v = (d.sitio_ok != null ? d.sitio_ok : d.disponibles) / d.revisados; return { c: nivel(v), t: dia(d.fecha) + ' · ' + pct.format(v) + ' de sitios' }; }));
+      h.map(function (d) { if (d.sesion !== 'OK') return sinDato(d); var v = (d.sitio_ok != null ? d.sitio_ok : d.disponibles) / d.revisados; return { c: nivel(v), t: dia(d.fecha) + ' · ' + pct.format(v) + ' de sitios' }; }));
 
     // Cifras
-    var ult30 = h.slice(-30);
+    var ult30 = completas.slice(-30);
     var media = ult30.length ? ult30.reduce(function (s, d) { return s + d.disponibles / d.revisados; }, 0) / ult30.length : null;
-    $('s-disp').textContent = ult ? pct.format(ult.disponibles / ult.revisados) : '—';
-    $('s-disp').className = 't-' + nivel(ult ? ult.disponibles / ult.revisados : null);
+    $('s-disp').textContent = ultC ? pct.format(ultC.disponibles / ultC.revisados) : '—';
+    $('s-disp').className = 't-' + nivel(ultC ? ultC.disponibles / ultC.revisados : null);
     $('s-30').textContent = media == null ? '—' : pct.format(media);
     $('s-ok').textContent = ok + ' / ' + e.length;
-    $('s-carga').textContent = ult && ult.carga_mediana_s != null ? num.format(ult.carga_mediana_s) + ' s' : '—';
+    $('s-carga').textContent = ultC && ultC.carga_mediana_s != null ? num.format(ultC.carga_mediana_s) + ' s' : '—';
     $('n-todos').textContent = e.length;
     $('n-fallas').textContent = fallan.length;
-    $('pie').textContent = 'Datos de ' + h.length + (h.length === 1 ? ' día de validación' : ' días de validación');
+    $('pie').textContent = h.length + (h.length === 1 ? ' validación registrada' : ' validaciones registradas');
 
     lista();
     ejecucion();
@@ -336,7 +341,7 @@
     var val = el('div', 'comp-val t-' + n, valor == null ? '—' : pct.format(valor)); val.append(el('small', null, etiqueta));
     head.append(ico, nm, val);
     var foot = el('div', 'comp-foot');
-    foot.append(el('span', null, resumen), el('span', null, 'Últimos ' + SLOTS + ' días'));
+    foot.append(el('span', null, resumen), el('span', null, 'Últimas ' + SLOTS + ' validaciones'));
     box.append(head, latidos(beats), foot);
   }
 
@@ -377,7 +382,8 @@
     var row = el('div', 'mon');
     var u = r.disponibilidad;
     var up = el('span', 'up ' + nivel(u), u == null ? '—' : pct.format(u));
-    conTip(up, 'Disponible ' + (u == null ? 'sin dato' : pct.format(u)) + ' de ' + r.dias_revisados + (r.dias_revisados === 1 ? ' día' : ' días'));
+    var nv = r.validaciones != null ? r.validaciones : r.dias_revisados;
+    conTip(up, 'Disponible ' + (u == null ? 'sin dato' : pct.format(u)) + ' de ' + nv + (nv === 1 ? ' validación' : ' validaciones'));
     var nm = el('div', 'mon-name');
     var a = el('a', null, r.recurso); if (r.url) { a.href = r.url; a.target = '_blank'; a.rel = 'noopener'; }
     nm.append(a);
@@ -391,7 +397,7 @@
     });
     var items = (hist ? hist.estados : []).map(function (v, i) {
       var etapa = hist.fallas && hist.fallas[i];
-      return { c: v === 1 ? 'ok' : v === 0 ? 'bad' : '', t: dia(dias[i]) + ' · ' + (v === 1 ? 'operativo' + (hist.cargas[i] != null ? ' (' + num.format(hist.cargas[i]) + ' s)' : '') : v === 0 ? 'falla' + (etapa ? ' en ' + NOMBRE_ETAPA[etapa].toLowerCase() : '') : 'sin dato') };
+      return { c: v === 1 ? 'ok' : v === 0 ? 'bad' : '', t: dia(dias[i]) + ' · ' + (v === 1 ? 'operativo' + (hist.cargas[i] != null ? ' (' + num.format(hist.cargas[i]) + ' s)' : '') : v === 0 ? 'falla' + (etapa ? ' en ' + NOMBRE_ETAPA[etapa].toLowerCase() : '') : etapa === 'login' ? 'sin validar (falló el login)' : 'sin dato') };
     });
     row.append(up, nm, st, latidos(items));
     return row;

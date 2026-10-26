@@ -14,7 +14,7 @@
   "carga_s": 6.8,
   "revisado": "2026-10-23T15:53:16.317Z",
   "disponibilidad": 1,
-  "dias_revisados": 1
+  "validaciones": 2
  },
  {
   "recurso": "Arts & Humanities Database",
@@ -31,7 +31,7 @@
   "carga_s": 6.6,
   "revisado": "2026-10-23T15:53:27.874Z",
   "disponibilidad": 1,
-  "dias_revisados": 1
+  "validaciones": 2
  },
  {
   "recurso": "Biological Science Collection (Biomedicina)",
@@ -48,7 +48,7 @@
   "carga_s": 7,
   "revisado": "2026-10-23T15:53:39.904Z",
   "disponibilidad": 1,
-  "dias_revisados": 1
+  "validaciones": 2
  },
  {
   "recurso": "Canadian Business & Current Affairs Database",
@@ -65,7 +65,7 @@
   "carga_s": 8.8,
   "revisado": "2026-10-23T15:53:53.717Z",
   "disponibilidad": 0,
-  "dias_revisados": 1
+  "validaciones": 2
  },
  {
   "recurso": "Canadian Newsstream",
@@ -82,7 +82,7 @@
   "carga_s": 6.9,
   "revisado": "2026-10-23T15:54:05.675Z",
   "disponibilidad": 1,
-  "dias_revisados": 1
+  "validaciones": 2
  },
  {
   "recurso": "Career and Technical Education (ProQuest)",
@@ -99,7 +99,7 @@
   "carga_s": 6.7,
   "revisado": "2026-10-23T15:54:17.384Z",
   "disponibilidad": 1,
-  "dias_revisados": 1
+  "validaciones": 2
  },
  {
   "recurso": "Computer Science Database",
@@ -116,7 +116,7 @@
   "carga_s": 6.4,
   "revisado": "2026-10-23T15:54:28.752Z",
   "disponibilidad": 1,
-  "dias_revisados": 1
+  "validaciones": 2
  },
  {
   "recurso": "Consumer Health Database",
@@ -133,7 +133,7 @@
   "carga_s": 6.7,
   "revisado": "2026-10-23T15:54:40.490Z",
   "disponibilidad": 1,
-  "dias_revisados": 1
+  "validaciones": 2
  },
  {
   "recurso": "Coronavirus Research Database (ProQuest)",
@@ -150,7 +150,7 @@
   "carga_s": 6.2,
   "revisado": "2026-10-23T15:54:51.659Z",
   "disponibilidad": 1,
-  "dias_revisados": 1
+  "validaciones": 2
  },
  {
   "recurso": "Criminal Justice Database (ProQuest)",
@@ -167,7 +167,7 @@
   "carga_s": 11.1,
   "revisado": "2026-10-23T15:55:07.823Z",
   "disponibilidad": 1,
-  "dias_revisados": 1
+  "validaciones": 2
  },
  {
   "recurso": "E-Collection",
@@ -184,7 +184,7 @@
   "carga_s": 5.5,
   "revisado": "2026-10-23T15:55:18.378Z",
   "disponibilidad": 1,
-  "dias_revisados": 1
+  "validaciones": 2
  },
  {
   "recurso": "Engineering Database",
@@ -201,7 +201,7 @@
   "carga_s": 9,
   "revisado": "2026-10-23T15:55:32.402Z",
   "disponibilidad": 1,
-  "dias_revisados": 1
+  "validaciones": 2
  },
  {
   "recurso": "Global Breaking Newswires",
@@ -218,7 +218,7 @@
   "carga_s": 7.1,
   "revisado": "2026-10-23T15:55:44.544Z",
   "disponibilidad": 1,
-  "dias_revisados": 1
+  "validaciones": 2
  },
  {
   "recurso": "Gran base de datos Premium",
@@ -235,7 +235,7 @@
   "carga_s": 5.9,
   "revisado": "2026-10-23T15:55:55.415Z",
   "disponibilidad": 1,
-  "dias_revisados": 1
+  "validaciones": 2
  },
  {
   "recurso": "Health & Medical Collection (ProQuest)",
@@ -252,7 +252,7 @@
   "carga_s": 6.5,
   "revisado": "2026-10-23T15:56:06.928Z",
   "disponibilidad": 1,
-  "dias_revisados": 1
+  "validaciones": 2
  },
  {
   "recurso": "Healthcare Administration Database",
@@ -269,7 +269,7 @@
   "carga_s": 6.6,
   "revisado": "2026-10-23T15:56:18.519Z",
   "disponibilidad": 1,
-  "dias_revisados": 1
+  "validaciones": 2
  },
  {
   "recurso": "International Newsstream (ProQuest)",
@@ -286,7 +286,7 @@
   "carga_s": 6.6,
   "revisado": "2026-10-23T15:56:30.118Z",
   "disponibilidad": 1,
-  "dias_revisados": 1
+  "validaciones": 2
  },
  {
   "recurso": "Legiscomex",
@@ -303,7 +303,7 @@
   "carga_s": 22.4,
   "revisado": "2026-10-23T15:56:57.499Z",
   "disponibilidad": 1,
-  "dias_revisados": 1
+  "validaciones": 2
  },
  {
   "recurso": "Library Science Database (ProQuest)",
@@ -320,7 +320,7 @@
   "carga_s": 7.1,
   "revisado": "2026-10-23T15:57:09.571Z",
   "disponibilidad": 1,
-  "dias_revisados": 1
+  "validaciones": 2
  },
  {
   "recurso": "Linguistics Database (ProQuest)",
@@ -337,7 +337,7 @@
   "carga_s": 6.4,
   "revisado": "2026-10-23T15:57:20.938Z",
   "disponibilidad": 1,
-  "dias_revisados": 1
+  "validaciones": 2
  },
  {
   "recurso": "Materials Science Database",
@@ -354,7 +354,7 @@
   "carga_s": 7,
   "revisado": "2026-10-23T15:57:33.002Z",
   "disponibilidad": 1,
-  "dias_revisados": 1
+  "validaciones": 2
  },
  {
   "recurso": "Military Database (ProQuest)",
@@ -371,7 +371,7 @@
   "carga_s": 6.7,
   "revisado": "2026-10-23T15:57:44.748Z",
   "disponibilidad": 1,
-  "dias_revisados": 1
+  "validaciones": 2
  },
  {
   "recurso": "Nursing & Allied Health Database",
@@ -388,7 +388,7 @@
   "carga_s": 8.4,
   "revisado": "2026-10-23T15:57:58.202Z",
   "disponibilidad": 1,
-  "dias_revisados": 1
+  "validaciones": 2
  },
  {
   "recurso": "Political Science Database",
@@ -405,7 +405,7 @@
   "carga_s": 6.3,
   "revisado": "2026-10-23T15:58:09.514Z",
   "disponibilidad": 1,
-  "dias_revisados": 1
+  "validaciones": 2
  },
  {
   "recurso": "ProQuest Central Premium",
@@ -422,7 +422,7 @@
   "carga_s": 7.9,
   "revisado": "2026-10-23T15:58:22.430Z",
   "disponibilidad": 1,
-  "dias_revisados": 1
+  "validaciones": 2
  },
  {
   "recurso": "Publicly Available Content Database",
@@ -439,7 +439,7 @@
   "carga_s": 6.7,
   "revisado": "2026-10-23T15:58:34.132Z",
   "disponibilidad": 1,
-  "dias_revisados": 1
+  "validaciones": 2
  },
  {
   "recurso": "Public Health Database",
@@ -456,7 +456,7 @@
   "carga_s": 6.5,
   "revisado": "2026-10-23T15:58:45.627Z",
   "disponibilidad": 1,
-  "dias_revisados": 1
+  "validaciones": 2
  },
  {
   "recurso": "Religion Database (ProQuest)",
@@ -473,7 +473,7 @@
   "carga_s": 6.3,
   "revisado": "2026-10-23T15:58:56.942Z",
   "disponibilidad": 1,
-  "dias_revisados": 1
+  "validaciones": 2
  },
  {
   "recurso": "Research Library (ProQuest)",
@@ -490,7 +490,7 @@
   "carga_s": 6.5,
   "revisado": "2026-10-23T15:59:08.497Z",
   "disponibilidad": 1,
-  "dias_revisados": 1
+  "validaciones": 2
  },
  {
   "recurso": "Social Science Database (ProQuest)",
@@ -507,7 +507,7 @@
   "carga_s": 6.3,
   "revisado": "2026-10-23T15:59:19.834Z",
   "disponibilidad": 1,
-  "dias_revisados": 1
+  "validaciones": 2
  },
  {
   "recurso": "Sociology Database (ProQuest)",
@@ -524,7 +524,7 @@
   "carga_s": 6.5,
   "revisado": "2026-10-23T15:59:31.314Z",
   "disponibilidad": 1,
-  "dias_revisados": 1
+  "validaciones": 2
  },
  {
   "recurso": "US Newsstream",
@@ -541,7 +541,7 @@
   "carga_s": 6.6,
   "revisado": "2026-10-23T15:59:42.897Z",
   "disponibilidad": 1,
-  "dias_revisados": 1
+  "validaciones": 2
  },
  {
   "recurso": "Virtual Pro",
@@ -557,8 +557,8 @@
   "detalle": "Sin respuesta en 45000 ms",
   "carga_s": 45,
   "revisado": "2026-10-23T16:00:32.928Z",
-  "disponibilidad": 0,
-  "dias_revisados": 1
+  "disponibilidad": 0.5,
+  "validaciones": 2
  },
  {
   "recurso": "OpenAire",
@@ -575,7 +575,7 @@
   "carga_s": 4,
   "revisado": "2026-10-23T16:00:41.965Z",
   "disponibilidad": 0,
-  "dias_revisados": 1
+  "validaciones": 2
  },
  {
   "recurso": "Ebook Central",
@@ -592,7 +592,7 @@
   "carga_s": 5.5,
   "revisado": "2026-10-23T16:00:52.489Z",
   "disponibilidad": 1,
-  "dias_revisados": 1
+  "validaciones": 2
  },
  {
   "recurso": "Education Research Index",
@@ -608,8 +608,8 @@
   "detalle": "",
   "carga_s": 13.3,
   "revisado": "2026-10-23T16:01:10.789Z",
-  "disponibilidad": 1,
-  "dias_revisados": 1
+  "disponibilidad": 0.5,
+  "validaciones": 2
  },
  {
   "recurso": "Eric",
@@ -626,7 +626,7 @@
   "carga_s": 6.2,
   "revisado": "2026-10-23T16:01:22.012Z",
   "disponibilidad": 1,
-  "dias_revisados": 1
+  "validaciones": 2
  },
  {
   "recurso": "Supplemental Education Index",
@@ -643,7 +643,7 @@
   "carga_s": 6.5,
   "revisado": "2026-10-23T16:01:33.566Z",
   "disponibilidad": 1,
-  "dias_revisados": 1
+  "validaciones": 2
  },
  {
   "recurso": "Agrícola",
@@ -660,7 +660,7 @@
   "carga_s": 6.3,
   "revisado": "2026-10-23T16:01:44.862Z",
   "disponibilidad": 1,
-  "dias_revisados": 1
+  "validaciones": 2
  },
  {
   "recurso": "ASFA: Aquatic Sciences and Fisheries Abstracts",
@@ -677,7 +677,7 @@
   "carga_s": 6.4,
   "revisado": "2026-10-23T16:01:56.316Z",
   "disponibilidad": 1,
-  "dias_revisados": 1
+  "validaciones": 2
  },
  {
   "recurso": "Aquatic Science & Fisheries Abstracts (ASFA) 1: Biological Sciences & Living Resources",
@@ -694,7 +694,7 @@
   "carga_s": 7.1,
   "revisado": "2026-10-23T16:02:08.433Z",
   "disponibilidad": 1,
-  "dias_revisados": 1
+  "validaciones": 2
  },
  {
   "recurso": "Aquatic Science & Fisheries Abstracts (ASFA) 2: Ocean Technology, Policy & Non-Living Resources",
@@ -711,7 +711,7 @@
   "carga_s": 7.1,
   "revisado": "2026-10-23T16:02:20.491Z",
   "disponibilidad": 1,
-  "dias_revisados": 1
+  "validaciones": 2
  },
  {
   "recurso": "Aquatic Science & Fisheries Abstracts (ASFA) 3: Aquatic Pollution & Environmental Quality",
@@ -728,7 +728,7 @@
   "carga_s": 6.1,
   "revisado": "2026-10-23T16:02:31.614Z",
   "disponibilidad": 1,
-  "dias_revisados": 1
+  "validaciones": 2
  },
  {
   "recurso": "Aquatic Science & Fisheries Abstracts (ASFA) Aquaculture Abstracts",
@@ -745,7 +745,7 @@
   "carga_s": 6.9,
   "revisado": "2026-10-23T16:02:43.532Z",
   "disponibilidad": 1,
-  "dias_revisados": 1
+  "validaciones": 2
  },
  {
   "recurso": "Aquatic Science & Fisheries Abstracts (ASFA) Marine Biotechnology Abstracts",
@@ -762,7 +762,7 @@
   "carga_s": 6.8,
   "revisado": "2026-10-23T16:02:55.296Z",
   "disponibilidad": 1,
-  "dias_revisados": 1
+  "validaciones": 2
  },
  {
   "recurso": "Oceanic Abstracts",
@@ -779,7 +779,7 @@
   "carga_s": 6.1,
   "revisado": "2026-10-23T16:03:06.382Z",
   "disponibilidad": 1,
-  "dias_revisados": 1
+  "validaciones": 2
  },
  {
   "recurso": "Environmental Science Index",
@@ -796,7 +796,7 @@
   "carga_s": 6.7,
   "revisado": "2026-10-23T16:03:18.099Z",
   "disponibilidad": 1,
-  "dias_revisados": 1
+  "validaciones": 2
  },
  {
   "recurso": "Global Newsstream Collection",
@@ -813,7 +813,7 @@
   "carga_s": 6.5,
   "revisado": "2026-10-23T16:03:29.562Z",
   "disponibilidad": 1,
-  "dias_revisados": 1
+  "validaciones": 2
  },
  {
   "recurso": "Humanities Index",
@@ -830,7 +830,7 @@
   "carga_s": 6.6,
   "revisado": "2026-10-23T16:03:41.185Z",
   "disponibilidad": 1,
-  "dias_revisados": 1
+  "validaciones": 2
  },
  {
   "recurso": "Meteorological & Geoastrophysical Abstracts",
@@ -847,7 +847,7 @@
   "carga_s": 6.7,
   "revisado": "2026-10-23T16:03:52.895Z",
   "disponibilidad": 1,
-  "dias_revisados": 1
+  "validaciones": 2
  },
  {
   "recurso": "ProQuest One Applied & Life Sciences",
@@ -864,7 +864,7 @@
   "carga_s": 9.6,
   "revisado": "2026-10-23T16:04:07.481Z",
   "disponibilidad": 1,
-  "dias_revisados": 1
+  "validaciones": 2
  },
  {
   "recurso": "Advanced Technologies & Computer Science Collection",
@@ -881,7 +881,7 @@
   "carga_s": 6.5,
   "revisado": "2026-10-23T16:04:19.030Z",
   "disponibilidad": 1,
-  "dias_revisados": 1
+  "validaciones": 2
  },
  {
   "recurso": "Engineering Collection",
@@ -898,7 +898,7 @@
   "carga_s": 6.5,
   "revisado": "2026-10-23T16:04:30.561Z",
   "disponibilidad": 1,
-  "dias_revisados": 1
+  "validaciones": 2
  },
  {
   "recurso": "Materials Science Collection",
@@ -915,7 +915,7 @@
   "carga_s": 6.7,
   "revisado": "2026-10-23T16:04:42.314Z",
   "disponibilidad": 1,
-  "dias_revisados": 1
+  "validaciones": 2
  },
  {
   "recurso": "ProQuest One Business",
@@ -932,7 +932,7 @@
   "carga_s": 10.4,
   "revisado": "2026-10-23T16:04:57.721Z",
   "disponibilidad": 1,
-  "dias_revisados": 1
+  "validaciones": 2
  },
  {
   "recurso": "ProQuest One Education",
@@ -949,7 +949,7 @@
   "carga_s": 8.8,
   "revisado": "2026-10-23T16:05:11.567Z",
   "disponibilidad": 1,
-  "dias_revisados": 1
+  "validaciones": 2
  },
  {
   "recurso": "Education Magazine Archive",
@@ -966,7 +966,7 @@
   "carga_s": 6.2,
   "revisado": "2026-10-23T16:05:22.768Z",
   "disponibilidad": 1,
-  "dias_revisados": 1
+  "validaciones": 2
  },
  {
   "recurso": "ProQuest One Health & Nursing",
@@ -983,7 +983,7 @@
   "carga_s": 7.6,
   "revisado": "2026-10-23T16:05:35.385Z",
   "disponibilidad": 1,
-  "dias_revisados": 1
+  "validaciones": 2
  },
  {
   "recurso": "British Nursing Collection",
@@ -1000,7 +1000,7 @@
   "carga_s": 6.8,
   "revisado": "2026-10-23T16:05:47.218Z",
   "disponibilidad": 1,
-  "dias_revisados": 1
+  "validaciones": 2
  },
  {
   "recurso": "Health & Medical Research Collection",
@@ -1017,7 +1017,7 @@
   "carga_s": 6.8,
   "revisado": "2026-10-23T16:05:59.014Z",
   "disponibilidad": 1,
-  "dias_revisados": 1
+  "validaciones": 2
  },
  {
   "recurso": "ProQuest One Psychology",
@@ -1034,7 +1034,7 @@
   "carga_s": 9.2,
   "revisado": "2026-10-23T16:06:13.262Z",
   "disponibilidad": 1,
-  "dias_revisados": 1
+  "validaciones": 2
  },
  {
   "recurso": "ProQuest One Religion & Philosophy",
@@ -1051,7 +1051,7 @@
   "carga_s": 7.5,
   "revisado": "2026-10-23T16:06:25.799Z",
   "disponibilidad": 1,
-  "dias_revisados": 1
+  "validaciones": 2
  },
  {
   "recurso": "Philosophy Research Collection",
@@ -1068,7 +1068,7 @@
   "carga_s": 7.3,
   "revisado": "2026-10-23T16:06:38.074Z",
   "disponibilidad": 1,
-  "dias_revisados": 1
+  "validaciones": 2
  },
  {
   "recurso": "Religion Archive Collection",
@@ -1085,7 +1085,7 @@
   "carga_s": 6.4,
   "revisado": "2026-10-23T16:06:49.516Z",
   "disponibilidad": 1,
-  "dias_revisados": 1
+  "validaciones": 2
  },
  {
   "recurso": "ProQuest One Social Sciences",
@@ -1102,7 +1102,7 @@
   "carga_s": 7.4,
   "revisado": "2026-10-23T16:07:01.982Z",
   "disponibilidad": 1,
-  "dias_revisados": 1
+  "validaciones": 2
  },
  {
   "recurso": "Criminology Collection",
@@ -1119,7 +1119,7 @@
   "carga_s": 6.2,
   "revisado": "2026-10-23T16:07:13.222Z",
   "disponibilidad": 1,
-  "dias_revisados": 1
+  "validaciones": 2
  },
  {
   "recurso": "Library & Information Science Collection",
@@ -1136,7 +1136,7 @@
   "carga_s": 6.1,
   "revisado": "2026-10-23T16:07:24.329Z",
   "disponibilidad": 1,
-  "dias_revisados": 1
+  "validaciones": 2
  },
  {
   "recurso": "Linguistics Collection",
@@ -1153,7 +1153,7 @@
   "carga_s": 6.2,
   "revisado": "2026-10-23T16:07:35.513Z",
   "disponibilidad": 1,
-  "dias_revisados": 1
+  "validaciones": 2
  },
  {
   "recurso": "Politics Collection",
@@ -1170,7 +1170,7 @@
   "carga_s": 5.8,
   "revisado": "2026-10-23T16:07:46.290Z",
   "disponibilidad": 1,
-  "dias_revisados": 1
+  "validaciones": 2
  },
  {
   "recurso": "Sociology & Social Sciences Collection",
@@ -1187,7 +1187,7 @@
   "carga_s": 6.1,
   "revisado": "2026-10-23T16:07:57.439Z",
   "disponibilidad": 1,
-  "dias_revisados": 1
+  "validaciones": 2
  },
  {
   "recurso": "ProQuest One Sustainability",
@@ -1204,7 +1204,7 @@
   "carga_s": 11.6,
   "revisado": "2026-10-23T16:08:14.059Z",
   "disponibilidad": 1,
-  "dias_revisados": 1
+  "validaciones": 2
  },
  {
   "recurso": "Research Library: Business",
@@ -1221,7 +1221,7 @@
   "carga_s": 7.2,
   "revisado": "2026-10-23T16:08:26.248Z",
   "disponibilidad": 1,
-  "dias_revisados": 1
+  "validaciones": 2
  },
  {
   "recurso": "Research Library: Health & Medicine",
@@ -1238,7 +1238,7 @@
   "carga_s": 7,
   "revisado": "2026-10-23T16:08:38.302Z",
   "disponibilidad": 1,
-  "dias_revisados": 1
+  "validaciones": 2
  },
  {
   "recurso": "Research Library: History",
@@ -1255,7 +1255,7 @@
   "carga_s": 6.2,
   "revisado": "2026-10-23T16:08:49.546Z",
   "disponibilidad": 1,
-  "dias_revisados": 1
+  "validaciones": 2
  },
  {
   "recurso": "Research Library: Literature & Language",
@@ -1272,7 +1272,7 @@
   "carga_s": 7,
   "revisado": "2026-10-23T16:09:01.578Z",
   "disponibilidad": 1,
-  "dias_revisados": 1
+  "validaciones": 2
  },
  {
   "recurso": "Research Library: Science & Technology",
@@ -1289,7 +1289,7 @@
   "carga_s": 6.1,
   "revisado": "2026-10-23T16:09:12.719Z",
   "disponibilidad": 1,
-  "dias_revisados": 1
+  "validaciones": 2
  },
  {
   "recurso": "Research Library: Social Sciences",
@@ -1306,7 +1306,7 @@
   "carga_s": 7.5,
   "revisado": "2026-10-23T16:09:25.279Z",
   "disponibilidad": 1,
-  "dias_revisados": 1
+  "validaciones": 2
  },
  {
   "recurso": "Research Library: The Arts",
@@ -1323,7 +1323,7 @@
   "carga_s": 6.5,
   "revisado": "2026-10-23T16:09:36.751Z",
   "disponibilidad": 1,
-  "dias_revisados": 1
+  "validaciones": 2
  },
  {
   "recurso": "Career & Technical Education Database: Business",
@@ -1340,7 +1340,7 @@
   "carga_s": 6.2,
   "revisado": "2026-10-23T16:09:47.965Z",
   "disponibilidad": 1,
-  "dias_revisados": 1
+  "validaciones": 2
  },
  {
   "recurso": "Career & Technical Education Database: Health & Medicine",
@@ -1357,7 +1357,7 @@
   "carga_s": 6.5,
   "revisado": "2026-10-23T16:09:59.494Z",
   "disponibilidad": 1,
-  "dias_revisados": 1
+  "validaciones": 2
  },
  {
   "recurso": "Career & Technical Education Database: History",
@@ -1374,7 +1374,7 @@
   "carga_s": 6.2,
   "revisado": "2026-10-23T16:10:10.661Z",
   "disponibilidad": 1,
-  "dias_revisados": 1
+  "validaciones": 2
  },
  {
   "recurso": "Career & Technical Education Database: Literature & Language",
@@ -1391,7 +1391,7 @@
   "carga_s": 6.5,
   "revisado": "2026-10-23T16:10:22.127Z",
   "disponibilidad": 1,
-  "dias_revisados": 1
+  "validaciones": 2
  },
  {
   "recurso": "Career & Technical Education Database: Science & Technology",
@@ -1408,7 +1408,7 @@
   "carga_s": 7.6,
   "revisado": "2026-10-23T16:10:34.776Z",
   "disponibilidad": 1,
-  "dias_revisados": 1
+  "validaciones": 2
  },
  {
   "recurso": "Career & Technical Education Database: Social Sciences",
@@ -1425,7 +1425,7 @@
   "carga_s": 6.1,
   "revisado": "2026-10-23T16:10:45.841Z",
   "disponibilidad": 1,
-  "dias_revisados": 1
+  "validaciones": 2
  },
  {
   "recurso": "Career & Technical Education Database: The Arts",
@@ -1442,7 +1442,7 @@
   "carga_s": 7.9,
   "revisado": "2026-10-23T16:10:58.762Z",
   "disponibilidad": 1,
-  "dias_revisados": 1
+  "validaciones": 2
  },
  {
   "recurso": "Canadian Business & Current Affairs Database: Business",
@@ -1459,7 +1459,7 @@
   "carga_s": 6.4,
   "revisado": "2026-10-23T16:11:10.143Z",
   "disponibilidad": 1,
-  "dias_revisados": 1
+  "validaciones": 2
  },
  {
   "recurso": "Canadian Business & Current Affairs Database: Health & Medicine",
@@ -1476,7 +1476,7 @@
   "carga_s": 6.2,
   "revisado": "2026-10-23T16:11:21.377Z",
   "disponibilidad": 1,
-  "dias_revisados": 1
+  "validaciones": 2
  },
  {
   "recurso": "Canadian Business & Current Affairs Database: History",
@@ -1493,7 +1493,7 @@
   "carga_s": 6.2,
   "revisado": "2026-10-23T16:11:32.593Z",
   "disponibilidad": 1,
-  "dias_revisados": 1
+  "validaciones": 2
  },
  {
   "recurso": "Canadian Business & Current Affairs Database: Literature & Language",
@@ -1510,7 +1510,7 @@
   "carga_s": 6,
   "revisado": "2026-10-23T16:11:43.613Z",
   "disponibilidad": 1,
-  "dias_revisados": 1
+  "validaciones": 2
  },
  {
   "recurso": "Canadian Business & Current Affairs Database: Science & Technology",
@@ -1527,7 +1527,7 @@
   "carga_s": 6.5,
   "revisado": "2026-10-23T16:11:55.160Z",
   "disponibilidad": 1,
-  "dias_revisados": 1
+  "validaciones": 2
  },
  {
   "recurso": "Canadian Business & Current Affairs Database: Social Sciences",
@@ -1544,7 +1544,7 @@
   "carga_s": 7,
   "revisado": "2026-10-23T16:12:07.172Z",
   "disponibilidad": 1,
-  "dias_revisados": 1
+  "validaciones": 2
  },
  {
   "recurso": "Canadian Business & Current Affairs Database: The Arts",
@@ -1561,7 +1561,7 @@
   "carga_s": 10.5,
   "revisado": "2026-10-23T16:12:22.638Z",
   "disponibilidad": 1,
-  "dias_revisados": 1
+  "validaciones": 2
  },
  {
   "recurso": "El Tiempo",
@@ -1577,8 +1577,8 @@
   "detalle": "",
   "carga_s": 3.8,
   "revisado": "2026-10-23T16:12:31.423Z",
-  "disponibilidad": 1,
-  "dias_revisados": 1
+  "disponibilidad": 0.5,
+  "validaciones": 2
  },
  {
   "recurso": "Revista Derecho y Sociedad",
@@ -1595,7 +1595,7 @@
   "carga_s": 0.1,
   "revisado": "2026-10-23T16:12:36.541Z",
   "disponibilidad": 0,
-  "dias_revisados": 1
+  "validaciones": 2
  },
  {
   "recurso": "E-Libro",
@@ -1612,7 +1612,7 @@
   "carga_s": 5.7,
   "revisado": "2026-10-23T16:12:47.233Z",
   "disponibilidad": 1,
-  "dias_revisados": 1
+  "validaciones": 2
  },
  {
   "recurso": "Bibliotele",
@@ -1629,6 +1629,6 @@
   "carga_s": 11.3,
   "revisado": "2026-10-23T16:13:03.564Z",
   "disponibilidad": 1,
-  "dias_revisados": 1
+  "validaciones": 2
  }
 ]

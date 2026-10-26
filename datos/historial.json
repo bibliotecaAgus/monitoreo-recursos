@@ -1,13 +1,57 @@
 [
  {
+  "fecha": "2026-10-22T21:41:37.011Z",
+  "sesion": "Falla",
+  "revisados": 0,
+  "disponibles": 0,
+  "con_fallas": 0,
+  "disponibilidad": null,
+  "proxy_ok": 0,
+  "sitio_ok": 0,
+  "carga_mediana_s": null
+ },
+ {
+  "fecha": "2026-10-23T14:17:24.224Z",
+  "sesion": "Falla",
+  "revisados": 0,
+  "disponibles": 0,
+  "con_fallas": 0,
+  "disponibilidad": null,
+  "proxy_ok": 0,
+  "sitio_ok": 0,
+  "carga_mediana_s": null
+ },
+ {
+  "fecha": "2026-10-23T14:26:05.684Z",
+  "sesion": "OK",
+  "revisados": 96,
+  "disponibles": 91,
+  "con_fallas": 5,
+  "disponibilidad": 0.948,
   "proxy_ok": 94,
-  "sitio_ok": 92,
-  "fecha": "2026-10-23",
+  "sitio_ok": 91,
+  "carga_mediana_s": 6.7
+ },
+ {
+  "fecha": "2026-10-23T15:53:09.461Z",
+  "sesion": "OK",
   "revisados": 96,
   "disponibles": 92,
   "con_fallas": 4,
   "disponibilidad": 0.958,
-  "carga_mediana_s": 6.6,
-  "sesion": "OK"
+  "proxy_ok": 94,
+  "sitio_ok": 92,
+  "carga_mediana_s": 6.6
+ },
+ {
+  "fecha": "2026-10-26T13:11:54.377Z",
+  "sesion": "Falla",
+  "revisados": 0,
+  "disponibles": 0,
+  "con_fallas": 0,
+  "disponibilidad": null,
+  "proxy_ok": 0,
+  "sitio_ok": 0,
+  "carga_mediana_s": null
  }
 ]
