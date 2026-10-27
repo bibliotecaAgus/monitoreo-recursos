@@ -1,5 +1,7 @@
 {
- "estado": "en_curso",
+ "estado": "fallida",
  "origen": "automatica",
- "inicio": "2026-10-27T19:00:02.490Z"
+ "inicio": "2026-10-27T19:00:02.490Z",
+ "fin": "2026-10-27T19:22:48.973Z",
+ "mensaje": "La validación se interrumpió (el equipo entró en espera o se cerró el navegador)."
 }
