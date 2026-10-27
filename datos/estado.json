@@ -3,16 +3,16 @@
   "recurso": "Advanced Technologies & Aerospace Database",
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/hightechjournals/fromDatabasesLayer?accountid=25548",
-  "estado": "Disponible",
+  "estado": "Con falla",
   "etapas": {
    "proxy": "ok",
    "login": "ok",
-   "sitio": "ok"
+   "sitio": "falla"
   },
-  "falla": "",
-  "detalle": "",
-  "carga_s": 10.4,
-  "revisado": "2026-10-27T16:08:18.697Z",
+  "falla": "Error de conexión",
+  "detalle": "page.waitForTimeout: Target page, context or browser has been closed",
+  "carga_s": 4.8,
+  "revisado": "2026-10-27T16:23:12.479Z",
   "origen": "equipo",
   "disponibilidad": 1,
   "validaciones": 5
