@@ -1,6 +1,8 @@
 {
- "estado": "en_curso",
+ "estado": "fallida",
  "origen": "manual",
  "solicitante": "bibliotecaAgus",
- "inicio": "2026-10-27T16:07:50.432Z"
+ "inicio": "2026-10-27T16:07:50.432Z",
+ "fin": "2026-10-27T16:12:49.526Z",
+ "mensaje": "La validación se interrumpió (el equipo entró en espera o se cerró el navegador)."
 }
