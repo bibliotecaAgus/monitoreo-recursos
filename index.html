@@ -41,7 +41,8 @@
   .btn { font: inherit; font-weight: 600; border: 0; border-radius: 999px; padding: 9px 18px; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; white-space: nowrap; }
   .btn-gold { background: var(--gold); color: var(--navy); }
   .btn-gold:hover { background: #ebcd8c; }
-  .btn-gold:disabled { opacity: .55; cursor: not-allowed; }
+  .btn-gold[aria-disabled] { opacity: .55; pointer-events: none; }
+  a.btn:hover { text-decoration: none; }
   .btn-line { background: transparent; color: var(--fg); border: 1px solid var(--line); }
   .btn:focus-visible, .tab:focus-visible, input:focus-visible, summary:focus-visible, a:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
 
@@ -119,13 +120,6 @@
 
   .tip { position: fixed; z-index: 10; pointer-events: none; background: var(--navy); color: #fff; border-radius: 8px; padding: 6px 10px; font-size: 12px; white-space: nowrap; box-shadow: 0 6px 18px rgb(0 0 0 / .25); }
 
-  dialog { border: 0; border-radius: var(--r); padding: 0; max-width: min(460px, calc(100vw - 32px)); background: var(--panel); color: var(--fg); box-shadow: 0 20px 60px rgb(0 0 0 / .3); }
-  dialog::backdrop { background: rgb(23 39 65 / .55); }
-  .dlg-head { background: var(--navy); color: #fff; padding: 14px 20px; border-bottom: 3px solid var(--gold); font-weight: 700; }
-  .dlg-body { padding: 16px 20px; display: flex; flex-direction: column; gap: 10px; }
-  .dlg-body ol { margin: 0; padding-left: 20px; display: grid; gap: 4px; }
-  .dlg-body p { margin: 0; color: var(--muted); font-size: 13px; }
-  .dlg-foot { display: flex; justify-content: flex-end; gap: 10px; padding: 0 20px 16px; }
 
   footer { text-align: center; font-size: 12px; color: var(--muted); padding-bottom: 28px; }
 
@@ -151,10 +145,10 @@
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
         Automático · 7:00 a. m. y 12:00 m.
       </span>
-      <button class="btn btn-gold" id="btn-validar" type="button">
+      <a class="btn btn-gold" id="btn-validar" target="_blank" rel="noopener" title="Abre la validación con tu correo @uniagustiniana.edu.co">
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-3-6.7"/><path d="M21 4v5h-5"/></svg>
-        Validar ahora
-      </button>
+        Validar recursos
+      </a>
     </div>
   </div>
 </header>
@@ -205,29 +199,10 @@
 
 <div class="tip" id="tip" hidden></div>
 
-<dialog id="dlg" aria-labelledby="dlg-title">
-  <div class="dlg-head" id="dlg-title">Validar ahora</div>
-  <div class="dlg-body">
-    <b>Desde tu computador</b>
-    <ol>
-      <li>En Chrome, pulsa el icono del escudo <b>Validador biblioteca</b> (junto a la barra de direcciones).</li>
-      <li>Pulsa <b>Validar recursos</b>. Tarda unos 20 min; los resultados aparecen aquí al terminar.</li>
-    </ol>
-    <p>¿No tienes la extensión? <a href="descargas/validador-recursos.zip">Descárgala</a> y sigue la <a href="descargas/instalar-extension.html" target="_blank" rel="noopener">guía de instalación</a>.</p>
-    <b>Sin la extensión</b>
-    <p>Pide la validación al equipo de monitoreo con tu correo @uniagustiniana.edu.co. Empieza en menos de 5 min si el equipo está encendido.</p>
-    <p>Requiere un correo autorizado por la biblioteca. Además se valida solo a las 7:00 a. m. y a las 12:00 m.</p>
-  </div>
-  <div class="dlg-foot">
-    <button class="btn btn-line" type="button" id="dlg-cerrar">Cerrar</button>
-    <a class="btn btn-gold" id="dlg-ir" href="https://github.com/bibliotecaAgus/monitoreo-recursos/actions/workflows/solicitar-validacion.yml" target="_blank" rel="noopener">Pedir al equipo</a>
-  </div>
-</dialog>
 
 <script>
 (function () {
-  // Aplicación de Google Apps Script que registra la solicitud con el correo institucional.
-  // Vacía: el botón muestra el procedimiento por GitHub.
+  // Aplicación de Google Apps Script: valida el correo institucional y pide la validación al equipo de monitoreo.
   var URL_VALIDAR = 'https://script.google.com/a/macros/uniagustiniana.edu.co/s/AKfycbwc_RA4Am-Mfytuh8tnijD4qHF0I7BNaXOn5ovK4clDDzjau7pzsPByKdGuBNQXJVEb/exec';
   var SLOTS = 30;
   var pct = new Intl.NumberFormat('es-CO', { style: 'percent', maximumFractionDigits: 1 });
@@ -414,7 +389,7 @@
     var e = datos.ejecucion, run = $('run'), btn = $('btn-validar');
     var enCurso = e && e.estado === 'en_curso' && Date.now() - Date.parse(e.inicio) < 2 * 3600e3;
     var interrumpida = e && e.estado === 'fallida' && /interrumpi/.test(e.mensaje || '');
-    btn.disabled = !!enCurso;
+    btn.toggleAttribute('aria-disabled', !!enCurso);
     run.hidden = !enCurso && !interrumpida;
     if (enCurso) run.replaceChildren(el('span', 'spin'), 'Validando desde ' + hora(e.inicio));
     else if (interrumpida) run.replaceChildren('Validación de las ' + hora(e.inicio) + ' interrumpida; se reintenta sola');
@@ -422,10 +397,7 @@
     refresco = setTimeout(iniciar, enCurso ? 60e3 : 5 * 60e3);
   }
 
-  if (URL_VALIDAR) $('dlg-ir').href = URL_VALIDAR;
-  $('btn-validar').addEventListener('click', function () { $('dlg').showModal(); });
-  $('dlg-cerrar').addEventListener('click', function () { $('dlg').close(); });
-  $('dlg-ir').addEventListener('click', function () { setTimeout(function () { $('dlg').close(); }, 300); });
+  $('btn-validar').href = URL_VALIDAR;
   $('buscar').addEventListener('input', function () { if (datos) lista(); });
   document.querySelectorAll('.tab').forEach(function (t) {
     t.addEventListener('click', function () {
