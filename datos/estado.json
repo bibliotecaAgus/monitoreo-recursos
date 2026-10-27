@@ -11,8 +11,8 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 6.3,
-  "revisado": "2026-10-26T19:00:25.591Z",
+  "carga_s": 6.8,
+  "revisado": "2026-10-27T13:28:18.820Z",
   "disponibilidad": 1,
   "validaciones": 4
  },
@@ -29,7 +29,7 @@
   "falla": "",
   "detalle": "",
   "carga_s": 6.5,
-  "revisado": "2026-10-26T19:00:37.172Z",
+  "revisado": "2026-10-27T13:28:30.378Z",
   "disponibilidad": 1,
   "validaciones": 4
  },
@@ -45,8 +45,8 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 6.3,
-  "revisado": "2026-10-26T19:00:48.511Z",
+  "carga_s": 6.5,
+  "revisado": "2026-10-27T13:28:41.889Z",
   "disponibilidad": 1,
   "validaciones": 4
  },
@@ -62,8 +62,8 @@
   },
   "falla": "Contenido inesperado",
   "detalle": "No aparece: Acceso proporcionado por Universidad Agustiniana",
-  "carga_s": 7.4,
-  "revisado": "2026-10-26T19:01:00.912Z",
+  "carga_s": 7.7,
+  "revisado": "2026-10-27T13:28:54.647Z",
   "disponibilidad": 0,
   "validaciones": 4
  },
@@ -79,8 +79,8 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 6.6,
-  "revisado": "2026-10-26T19:01:12.554Z",
+  "carga_s": 6.4,
+  "revisado": "2026-10-27T13:29:05.747Z",
   "disponibilidad": 1,
   "validaciones": 4
  },
@@ -96,8 +96,8 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 7.2,
-  "revisado": "2026-10-26T19:01:24.766Z",
+  "carga_s": 6.4,
+  "revisado": "2026-10-27T13:29:17.155Z",
   "disponibilidad": 1,
   "validaciones": 4
  },
@@ -113,8 +113,8 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 5.9,
-  "revisado": "2026-10-26T19:01:35.649Z",
+  "carga_s": 6.5,
+  "revisado": "2026-10-27T13:29:28.662Z",
   "disponibilidad": 1,
   "validaciones": 4
  },
@@ -122,16 +122,16 @@
   "recurso": "Consumer Health Database",
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/index?accountid=25548&selectids=1006520,1006520",
-  "estado": "Disponible",
+  "estado": "Con falla",
   "etapas": {
    "proxy": "ok",
    "login": "ok",
-   "sitio": "ok"
+   "sitio": "falla"
   },
-  "falla": "",
-  "detalle": "",
-  "carga_s": 6.4,
-  "revisado": "2026-10-26T19:01:47.051Z",
+  "falla": "Error de conexión",
+  "detalle": "page.waitForTimeout: Target page, context or browser has been closed",
+  "carga_s": 2.2,
+  "revisado": "2026-10-27T13:29:35.854Z",
   "disponibilidad": 1,
   "validaciones": 4
  },

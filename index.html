@@ -223,7 +223,9 @@
 
 <script>
 (function () {
-  var REPO = 'bibliotecaAgus/monitoreo-recursos';
+  // Aplicación de Google Apps Script que registra la solicitud con el correo institucional.
+  // Vacía: el botón muestra el procedimiento por GitHub.
+  var URL_VALIDAR = 'https://script.google.com/a/macros/uniagustiniana.edu.co/s/AKfycbwc_RA4Am-Mfytuh8tnijD4qHF0I7BNaXOn5ovK4clDDzjau7pzsPByKdGuBNQXJVEb/exec';
   var SLOTS = 30;
   var pct = new Intl.NumberFormat('es-CO', { style: 'percent', maximumFractionDigits: 1 });
   var num = new Intl.NumberFormat('es-CO', { maximumFractionDigits: 1 });
@@ -403,32 +405,24 @@
     return row;
   }
 
-  // Validación en curso / solicitada
+  // Validación en curso o interrumpida (datos/ejecucion.json)
   var refresco = null;
   function ejecucion() {
     var e = datos.ejecucion, run = $('run'), btn = $('btn-validar');
     var enCurso = e && e.estado === 'en_curso' && Date.now() - Date.parse(e.inicio) < 2 * 3600e3;
+    var interrumpida = e && e.estado === 'fallida' && /interrumpi/.test(e.mensaje || '');
     btn.disabled = !!enCurso;
-    run.hidden = !enCurso;
+    run.hidden = !enCurso && !interrumpida;
     if (enCurso) run.replaceChildren(el('span', 'spin'), 'Validando desde ' + hora(e.inicio));
-    else solicitudPendiente(e);
+    else if (interrumpida) run.replaceChildren('Validación de las ' + hora(e.inicio) + ' interrumpida; se reintenta sola');
     clearTimeout(refresco);
     refresco = setTimeout(iniciar, enCurso ? 60e3 : 5 * 60e3);
   }
-  function solicitudPendiente(e) {
-    fetch('https://api.github.com/repos/' + REPO + '/actions/workflows/solicitar-validacion.yml/runs?event=workflow_dispatch&per_page=1')
-      .then(function (r) { return r.ok ? r.json() : null; })
-      .then(function (j) {
-        var run = j && j.workflow_runs && j.workflow_runs[0];
-        if (!run || (e && Date.parse(run.created_at) <= Date.parse(e.inicio))) return;
-        if (Date.now() - Date.parse(run.created_at) > 15 * 60e3) return;
-        var nodo = $('run'); nodo.hidden = false;
-        nodo.replaceChildren(el('span', 'spin'), 'Solicitud recibida, inicia pronto');
-      })
-      .catch(function () {});
-  }
 
-  $('btn-validar').addEventListener('click', function () { $('dlg').showModal(); });
+  $('btn-validar').addEventListener('click', function () {
+    if (URL_VALIDAR) window.open(URL_VALIDAR, '_blank', 'noopener');
+    else $('dlg').showModal();
+  });
   $('dlg-cerrar').addEventListener('click', function () { $('dlg').close(); });
   $('dlg-ir').addEventListener('click', function () { setTimeout(function () { $('dlg').close(); }, 300); });
   $('buscar').addEventListener('input', function () { if (datos) lista(); });
