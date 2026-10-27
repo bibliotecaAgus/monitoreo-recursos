@@ -1,0 +1,674 @@
+[
+ {
+  "nombre": "Advanced Technologies & Aerospace Database",
+  "url_entrada": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/hightechjournals/fromDatabasesLayer?accountid=25548",
+  "dominio_final": "www.proquest.com",
+  "texto_esperado": "Advanced Technologies & Aerospace Database|Acceso proporcionado por Universidad Agustiniana",
+  "proveedor": "ProQuest"
+ },
+ {
+  "nombre": "Arts & Humanities Database",
+  "url_entrada": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/artshumanities/arts/fromDatabasesLayer?accountid=25548",
+  "dominio_final": "www.proquest.com",
+  "texto_esperado": "Arts & Humanities Database|Acceso proporcionado por Universidad Agustiniana",
+  "proveedor": "ProQuest"
+ },
+ {
+  "nombre": "Biological Science Collection (Biomedicina)",
+  "url_entrada": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/biologicalscience1",
+  "dominio_final": "www.proquest.com",
+  "texto_esperado": "Biological Science Collection|Acceso proporcionado por Universidad Agustiniana",
+  "proveedor": "ProQuest"
+ },
+ {
+  "nombre": "Canadian Business & Current Affairs Database",
+  "url_entrada": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/cbcacomplete/index?accountid=2554",
+  "dominio_final": "www.proquest.com",
+  "texto_esperado": "Canadian Business & Current Affairs Database|Acceso proporcionado por Universidad Agustiniana",
+  "proveedor": "ProQuest"
+ },
+ {
+  "nombre": "Canadian Newsstream",
+  "url_entrada": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/canadiannews/index?accountid=25548",
+  "dominio_final": "www.proquest.com",
+  "texto_esperado": "Canadian Newsstream Collection|Acceso proporcionado por Universidad Agustiniana",
+  "proveedor": "ProQuest"
+ },
+ {
+  "nombre": "Career and Technical Education (ProQuest)",
+  "url_entrada": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/career/index?accountid=25548",
+  "dominio_final": "www.proquest.com",
+  "texto_esperado": "Career & Technical Education Database|Acceso proporcionado por Universidad Agustiniana",
+  "proveedor": "ProQuest"
+ },
+ {
+  "nombre": "Computer Science Database",
+  "url_entrada": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/compscijour",
+  "dominio_final": "www.proquest.com",
+  "texto_esperado": "Computer Science Database|Acceso proporcionado por Universidad Agustiniana",
+  "proveedor": "ProQuest"
+ },
+ {
+  "nombre": "Consumer Health Database",
+  "url_entrada": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/index?accountid=25548&selectids=1006520,1006520",
+  "dominio_final": "www.proquest.com",
+  "texto_esperado": "Consumer Health Database|Acceso proporcionado por Universidad Agustiniana",
+  "proveedor": "ProQuest"
+ },
+ {
+  "nombre": "Coronavirus Research Database (ProQuest)",
+  "url_entrada": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/coronavirus",
+  "dominio_final": "www.proquest.com",
+  "texto_esperado": "Coronavirus Research Database|Acceso proporcionado por Universidad Agustiniana",
+  "proveedor": "ProQuest"
+ },
+ {
+  "nombre": "Criminal Justice Database (ProQuest)",
+  "url_entrada": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/criminaljusticeperiodicals/index?accountid=25548",
+  "dominio_final": "www.proquest.com",
+  "texto_esperado": "Criminal Justice Database|Acceso proporcionado por Universidad Agustiniana",
+  "proveedor": "ProQuest"
+ },
+ {
+  "nombre": "E-Collection",
+  "url_entrada": "https://itmsp.museknowledge.com/UniAgu?groupID=1&action=source&sourceID=ICONTECeCollection",
+  "dominio_final": "ecollection.icontec.org",
+  "texto_esperado": "Exhibir todas las normas|SALIR",
+  "proveedor": "ICONTEC"
+ },
+ {
+  "nombre": "Engineering Database",
+  "url_entrada": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/engineeringjournals/fromDatabasesLayer?accountid=25548",
+  "dominio_final": "www.proquest.com",
+  "texto_esperado": "Engineering Database|Acceso proporcionado por Universidad Agustiniana",
+  "proveedor": "ProQuest"
+ },
+ {
+  "nombre": "Global Breaking Newswires",
+  "url_entrada": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/globalwires/news/?accountid=25548",
+  "dominio_final": "www.proquest.com",
+  "texto_esperado": "Global Breaking Newswires|Acceso proporcionado por Universidad Agustiniana",
+  "proveedor": "ProQuest"
+ },
+ {
+  "nombre": "Gran base de datos Premium",
+  "url_entrada": "https://itmsp.museknowledge.com/UniAgu?url=https://uniagustiniana.enlegislacion.com/",
+  "dominio_final": "uniagustiniana.enlegislacion.com",
+  "texto_esperado": "GRAN BASE DE DATOS PREMIUM|INCLUIDAS EN SU SUSCRIPCIÓN",
+  "proveedor": "enLegislación"
+ },
+ {
+  "nombre": "Health & Medical Collection (ProQuest)",
+  "url_entrada": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/healthcomplete?accountid=25548",
+  "dominio_final": "www.proquest.com",
+  "texto_esperado": "Health & Medical Collection|Acceso proporcionado por Universidad Agustiniana",
+  "proveedor": "ProQuest"
+ },
+ {
+  "nombre": "Healthcare Administration Database",
+  "url_entrada": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/index?accountid=25548&selectids=1006481,1006481",
+  "dominio_final": "www.proquest.com",
+  "texto_esperado": "Healthcare Administration Database|Acceso proporcionado por Universidad Agustiniana",
+  "proveedor": "ProQuest"
+ },
+ {
+  "nombre": "International Newsstream (ProQuest)",
+  "url_entrada": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/internationalnews1/index?accountid=25548",
+  "dominio_final": "www.proquest.com",
+  "texto_esperado": "International Newsstream Collection|Acceso proporcionado por Universidad Agustiniana",
+  "proveedor": "ProQuest"
+ },
+ {
+  "nombre": "Legiscomex",
+  "url_entrada": "https://itmsp.museknowledge.com/UniAgu?url=https://www.legiscomex.com/",
+  "dominio_final": "www.legiscomex.com",
+  "texto_esperado": "Sistema de inteligencia comercial",
+  "proveedor": "Legis"
+ },
+ {
+  "nombre": "Library Science Database (ProQuest)",
+  "url_entrada": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/libraryscience/index?accountid=25548",
+  "dominio_final": "www.proquest.com",
+  "texto_esperado": "Library Science Database|Acceso proporcionado por Universidad Agustiniana",
+  "proveedor": "ProQuest"
+ },
+ {
+  "nombre": "Linguistics Database (ProQuest)",
+  "url_entrada": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/linguistics/index?accountid=25548",
+  "dominio_final": "www.proquest.com",
+  "texto_esperado": "Linguistics Database|Acceso proporcionado por Universidad Agustiniana",
+  "proveedor": "ProQuest"
+ },
+ {
+  "nombre": "Materials Science Database",
+  "url_entrada": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/materialsscijournals/fromDatabasesLayer?accountid=25548",
+  "dominio_final": "www.proquest.com",
+  "texto_esperado": "Materials Science Database|Acceso proporcionado por Universidad Agustiniana",
+  "proveedor": "ProQuest"
+ },
+ {
+  "nombre": "Military Database (ProQuest)",
+  "url_entrada": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/military/index?accountid=25548",
+  "dominio_final": "www.proquest.com",
+  "texto_esperado": "Military Database|Acceso proporcionado por Universidad Agustiniana",
+  "proveedor": "ProQuest"
+ },
+ {
+  "nombre": "Nursing & Allied Health Database",
+  "url_entrada": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/nahp",
+  "dominio_final": "www.proquest.com",
+  "texto_esperado": "Nursing & Allied Health Collection|Acceso proporcionado por Universidad Agustiniana",
+  "proveedor": "ProQuest"
+ },
+ {
+  "nombre": "Political Science Database",
+  "url_entrada": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/politicalscience/index?accountid=25548",
+  "dominio_final": "www.proquest.com",
+  "texto_esperado": "Political Science Database|Acceso proporcionado por Universidad Agustiniana",
+  "proveedor": "ProQuest"
+ },
+ {
+  "nombre": "ProQuest Central Premium",
+  "url_entrada": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/centralnew?accountid=25548",
+  "dominio_final": "www.proquest.com",
+  "texto_esperado": "ProQuest Central Premium|Acceso proporcionado por Universidad Agustiniana",
+  "proveedor": "ProQuest"
+ },
+ {
+  "nombre": "Publicly Available Content Database",
+  "url_entrada": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/publiccontent/fromDatabasesLayer?accountid=25548uniagus",
+  "dominio_final": "www.proquest.com",
+  "texto_esperado": "Publicly Available Content Database|Acceso proporcionado por Universidad Agustiniana",
+  "proveedor": "ProQuest"
+ },
+ {
+  "nombre": "Public Health Database",
+  "url_entrada": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/publichealth/index?accountid=25548",
+  "dominio_final": "www.proquest.com",
+  "texto_esperado": "Public Health Database|Acceso proporcionado por Universidad Agustiniana",
+  "proveedor": "ProQuest"
+ },
+ {
+  "nombre": "Religion Database (ProQuest)",
+  "url_entrada": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/religion/index?accountid=25548",
+  "dominio_final": "www.proquest.com",
+  "texto_esperado": "Religion Collection|Acceso proporcionado por Universidad Agustiniana",
+  "proveedor": "ProQuest"
+ },
+ {
+  "nombre": "Research Library (ProQuest)",
+  "url_entrada": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/pqrl/index?accountid=25548",
+  "dominio_final": "www.proquest.com",
+  "texto_esperado": "Research Library|Acceso proporcionado por Universidad Agustiniana",
+  "proveedor": "ProQuest"
+ },
+ {
+  "nombre": "Social Science Database (ProQuest)",
+  "url_entrada": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/socscijournals/index?accountid=25548",
+  "dominio_final": "www.proquest.com",
+  "texto_esperado": "Social Science Database|Acceso proporcionado por Universidad Agustiniana",
+  "proveedor": "ProQuest"
+ },
+ {
+  "nombre": "Sociology Database (ProQuest)",
+  "url_entrada": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/sociology/index?accountid=25548",
+  "dominio_final": "www.proquest.com",
+  "texto_esperado": "Sociology Database|Acceso proporcionado por Universidad Agustiniana",
+  "proveedor": "ProQuest"
+ },
+ {
+  "nombre": "US Newsstream",
+  "url_entrada": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/usnews/index?accountid=25548",
+  "dominio_final": "www.proquest.com",
+  "texto_esperado": "U.S. Newsstream Collection|Acceso proporcionado por Universidad Agustiniana",
+  "proveedor": "ProQuest"
+ },
+ {
+  "nombre": "Virtual Pro",
+  "url_entrada": "https://itmsp.museknowledge.com/UniAgu?url=https://www.virtualpro.co/instituciones/universidad-agustiniana",
+  "dominio_final": "www.virtualpro.co",
+  "texto_esperado": "Universitaria Agustiniana",
+  "proveedor": "Virtual Pro"
+ },
+ {
+  "nombre": "OpenAire",
+  "url_entrada": "https://login.recursoselectronicos.uniagustiniana.edu.co/login?url=https://www.openaire.eu/",
+  "dominio_final": "www.openaire.eu",
+  "texto_esperado": "OpenAIRE",
+  "proveedor": "OpenAIRE"
+ },
+ {
+  "nombre": "Ebook Central",
+  "url_entrada": "https://itmsp.museknowledge.com/UniAgu?url=https://ebookcentral.proquest.com/lib/bibliounc-ebooks/home.action",
+  "dominio_final": "ebookcentral.proquest.com",
+  "texto_esperado": "Ebook Central|Universidad Agustiniana",
+  "proveedor": "ProQuest"
+ },
+ {
+  "nombre": "Education Research Index",
+  "url_entrada": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/?accountid=25548&selectids=10000449,1007399",
+  "dominio_final": "www.proquest.com",
+  "texto_esperado": "Acceso proporcionado por Universidad Agustiniana",
+  "proveedor": "ProQuest"
+ },
+ {
+  "nombre": "Eric",
+  "url_entrada": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/?accountid=25548&selectids=1007399",
+  "dominio_final": "www.proquest.com",
+  "texto_esperado": "ERIC|Acceso proporcionado por Universidad Agustiniana",
+  "proveedor": "ProQuest"
+ },
+ {
+  "nombre": "Supplemental Education Index",
+  "url_entrada": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/suppeducationindex?accountid=25548",
+  "dominio_final": "www.proquest.com",
+  "texto_esperado": "Supplemental Education Index|Acceso proporcionado por Universidad Agustiniana",
+  "proveedor": "ProQuest"
+ },
+ {
+  "nombre": "Agrícola",
+  "url_entrada": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/agricolamodule?accountid=25548",
+  "dominio_final": "www.proquest.com",
+  "texto_esperado": "AGRICOLA|Acceso proporcionado por Universidad Agustiniana",
+  "proveedor": "ProQuest"
+ },
+ {
+  "nombre": "ASFA: Aquatic Sciences and Fisheries Abstracts",
+  "url_entrada": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/asfa?accountid=25548",
+  "dominio_final": "www.proquest.com",
+  "texto_esperado": "ASFA: Aquatic Sciences and Fisheries Abstracts|Acceso proporcionado por Universidad Agustiniana",
+  "proveedor": "ProQuest"
+ },
+ {
+  "nombre": "Aquatic Science & Fisheries Abstracts (ASFA) 1: Biological Sciences & Living Resources",
+  "url_entrada": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/asfabiological?accountid=25548",
+  "dominio_final": "www.proquest.com",
+  "texto_esperado": "Aquatic Science & Fisheries Abstracts (ASFA) 1: Biological Sciences & Living Resources|Acceso proporcionado por Universidad Agustiniana",
+  "proveedor": "ProQuest"
+ },
+ {
+  "nombre": "Aquatic Science & Fisheries Abstracts (ASFA) 2: Ocean Technology, Policy & Non-Living Resources",
+  "url_entrada": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/asfaocean?accountid=25548",
+  "dominio_final": "www.proquest.com",
+  "texto_esperado": "Aquatic Science & Fisheries Abstracts (ASFA) 2: Ocean Technology, Policy & Non-Living Resources|Acceso proporcionado por Universidad Agustiniana",
+  "proveedor": "ProQuest"
+ },
+ {
+  "nombre": "Aquatic Science & Fisheries Abstracts (ASFA) 3: Aquatic Pollution & Environmental Quality",
+  "url_entrada": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/asfaaquaticpollution?accountid=25548",
+  "dominio_final": "www.proquest.com",
+  "texto_esperado": "Aquatic Science & Fisheries Abstracts (ASFA) 3: Aquatic Pollution & Environmental Quality|Acceso proporcionado por Universidad Agustiniana",
+  "proveedor": "ProQuest"
+ },
+ {
+  "nombre": "Aquatic Science & Fisheries Abstracts (ASFA) Aquaculture Abstracts",
+  "url_entrada": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/asfaaquaculture?accountid=25548",
+  "dominio_final": "www.proquest.com",
+  "texto_esperado": "Aquatic Science & Fisheries Abstracts (ASFA) Aquaculture Abstracts|Acceso proporcionado por Universidad Agustiniana",
+  "proveedor": "ProQuest"
+ },
+ {
+  "nombre": "Aquatic Science & Fisheries Abstracts (ASFA) Marine Biotechnology Abstracts",
+  "url_entrada": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/asfamarine?accountid=25548",
+  "dominio_final": "www.proquest.com",
+  "texto_esperado": "Aquatic Science & Fisheries Abstracts (ASFA) Marine Biotechnology Abstracts|Acceso proporcionado por Universidad Agustiniana",
+  "proveedor": "ProQuest"
+ },
+ {
+  "nombre": "Oceanic Abstracts",
+  "url_entrada": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/oceanic?accountid=25548",
+  "dominio_final": "www.proquest.com",
+  "texto_esperado": "Oceanic Abstracts|Acceso proporcionado por Universidad Agustiniana",
+  "proveedor": "ProQuest"
+ },
+ {
+  "nombre": "Environmental Science Index",
+  "url_entrada": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/esindex?accountid=25548",
+  "dominio_final": "www.proquest.com",
+  "texto_esperado": "Environmental Science Index|Acceso proporcionado por Universidad Agustiniana",
+  "proveedor": "ProQuest"
+ },
+ {
+  "nombre": "Global Newsstream Collection",
+  "url_entrada": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/globalnews?accountid=25548",
+  "dominio_final": "www.proquest.com",
+  "texto_esperado": "Global Newsstream Collection|Acceso proporcionado por Universidad Agustiniana",
+  "proveedor": "ProQuest"
+ },
+ {
+  "nombre": "Humanities Index",
+  "url_entrada": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/bhi?accountid=25548",
+  "dominio_final": "www.proquest.com",
+  "texto_esperado": "Humanities Index|Acceso proporcionado por Universidad Agustiniana",
+  "proveedor": "ProQuest"
+ },
+ {
+  "nombre": "Meteorological & Geoastrophysical Abstracts",
+  "url_entrada": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/mgamodule?accountid=25548",
+  "dominio_final": "www.proquest.com",
+  "texto_esperado": "Meteorological & Geoastrophysical Abstracts|Acceso proporcionado por Universidad Agustiniana",
+  "proveedor": "ProQuest"
+ },
+ {
+  "nombre": "ProQuest One Applied & Life Sciences",
+  "url_entrada": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/pq1appliedlifesciences?accountid=25548",
+  "dominio_final": "www.proquest.com",
+  "texto_esperado": "ProQuest One Applied & Life Sciences|Acceso proporcionado por Universidad Agustiniana",
+  "proveedor": "ProQuest"
+ },
+ {
+  "nombre": "Advanced Technologies & Computer Science Collection",
+  "url_entrada": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/advancedtechaerospace?accountid=25548",
+  "dominio_final": "www.proquest.com",
+  "texto_esperado": "Advanced Technologies & Computer Science Collection|Acceso proporcionado por Universidad Agustiniana",
+  "proveedor": "ProQuest"
+ },
+ {
+  "nombre": "Engineering Collection",
+  "url_entrada": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/engcoll?accountid=25548",
+  "dominio_final": "www.proquest.com",
+  "texto_esperado": "Engineering Collection|Acceso proporcionado por Universidad Agustiniana",
+  "proveedor": "ProQuest"
+ },
+ {
+  "nombre": "Materials Science Collection",
+  "url_entrada": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/mscoll?accountid=25548",
+  "dominio_final": "www.proquest.com",
+  "texto_esperado": "Materials Science Collection|Acceso proporcionado por Universidad Agustiniana",
+  "proveedor": "ProQuest"
+ },
+ {
+  "nombre": "ProQuest One Business",
+  "url_entrada": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/pq1business?accountid=25548",
+  "dominio_final": "www.proquest.com",
+  "texto_esperado": "ProQuest One Business|Acceso proporcionado por Universidad Agustiniana",
+  "proveedor": "ProQuest"
+ },
+ {
+  "nombre": "ProQuest One Education",
+  "url_entrada": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/pq1education?accountid=25548",
+  "dominio_final": "www.proquest.com",
+  "texto_esperado": "ProQuest One Education|Acceso proporcionado por Universidad Agustiniana",
+  "proveedor": "ProQuest"
+ },
+ {
+  "nombre": "Education Magazine Archive",
+  "url_entrada": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/ema?accountid=25548",
+  "dominio_final": "www.proquest.com",
+  "texto_esperado": "Education Magazine Archive|Acceso proporcionado por Universidad Agustiniana",
+  "proveedor": "ProQuest"
+ },
+ {
+  "nombre": "ProQuest One Health & Nursing",
+  "url_entrada": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/pq1healthnursing?accountid=25548",
+  "dominio_final": "www.proquest.com",
+  "texto_esperado": "ProQuest One Health & Nursing|Acceso proporcionado por Universidad Agustiniana",
+  "proveedor": "ProQuest"
+ },
+ {
+  "nombre": "British Nursing Collection",
+  "url_entrada": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/britishnursingindexft?accountid=25548",
+  "dominio_final": "www.proquest.com",
+  "texto_esperado": "British Nursing Collection|Acceso proporcionado por Universidad Agustiniana",
+  "proveedor": "ProQuest"
+ },
+ {
+  "nombre": "Health & Medical Research Collection",
+  "url_entrada": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/healthmedresearch?accountid=25548",
+  "dominio_final": "www.proquest.com",
+  "texto_esperado": "Health & Medical Research Collection|Acceso proporcionado por Universidad Agustiniana",
+  "proveedor": "ProQuest"
+ },
+ {
+  "nombre": "ProQuest One Psychology",
+  "url_entrada": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/pq1psychology?accountid=25548",
+  "dominio_final": "www.proquest.com",
+  "texto_esperado": "ProQuest One Psychology|Acceso proporcionado por Universidad Agustiniana",
+  "proveedor": "ProQuest"
+ },
+ {
+  "nombre": "ProQuest One Religion & Philosophy",
+  "url_entrada": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/pq1religionphilosophy?accountid=25548",
+  "dominio_final": "www.proquest.com",
+  "texto_esperado": "ProQuest One Religion & Philosophy|Acceso proporcionado por Universidad Agustiniana",
+  "proveedor": "ProQuest"
+ },
+ {
+  "nombre": "Philosophy Research Collection",
+  "url_entrada": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/philosophyjournals?accountid=25548",
+  "dominio_final": "www.proquest.com",
+  "texto_esperado": "Philosophy Research Collection|Acceso proporcionado por Universidad Agustiniana",
+  "proveedor": "ProQuest"
+ },
+ {
+  "nombre": "Religion Archive Collection",
+  "url_entrada": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/religionarchive?accountid=25548",
+  "dominio_final": "www.proquest.com",
+  "texto_esperado": "Religion Archive Collection|Acceso proporcionado por Universidad Agustiniana",
+  "proveedor": "ProQuest"
+ },
+ {
+  "nombre": "ProQuest One Social Sciences",
+  "url_entrada": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/pq1socialsciences?accountid=25548",
+  "dominio_final": "www.proquest.com",
+  "texto_esperado": "ProQuest One Social Sciences|Acceso proporcionado por Universidad Agustiniana",
+  "proveedor": "ProQuest"
+ },
+ {
+  "nombre": "Criminology Collection",
+  "url_entrada": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/criminology?accountid=25548",
+  "dominio_final": "www.proquest.com",
+  "texto_esperado": "Criminology Collection|Acceso proporcionado por Universidad Agustiniana",
+  "proveedor": "ProQuest"
+ },
+ {
+  "nombre": "Library & Information Science Collection",
+  "url_entrada": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/libraryinformation?accountid=25548",
+  "dominio_final": "www.proquest.com",
+  "texto_esperado": "Library & Information Science Collection|Acceso proporcionado por Universidad Agustiniana",
+  "proveedor": "ProQuest"
+ },
+ {
+  "nombre": "Linguistics Collection",
+  "url_entrada": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/linguistics1?accountid=25548",
+  "dominio_final": "www.proquest.com",
+  "texto_esperado": "Linguistics Collection|Acceso proporcionado por Universidad Agustiniana",
+  "proveedor": "ProQuest"
+ },
+ {
+  "nombre": "Politics Collection",
+  "url_entrada": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/politics?accountid=25548",
+  "dominio_final": "www.proquest.com",
+  "texto_esperado": "Politics Collection|Acceso proporcionado por Universidad Agustiniana",
+  "proveedor": "ProQuest"
+ },
+ {
+  "nombre": "Sociology & Social Sciences Collection",
+  "url_entrada": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/sociologysocialsciences?accountid=25548",
+  "dominio_final": "www.proquest.com",
+  "texto_esperado": "Sociology & Social Sciences Collection|Acceso proporcionado por Universidad Agustiniana",
+  "proveedor": "ProQuest"
+ },
+ {
+  "nombre": "ProQuest One Sustainability",
+  "url_entrada": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/pq1sustainability?accountid=25548",
+  "dominio_final": "www.proquest.com",
+  "texto_esperado": "ProQuest One Sustainability|Acceso proporcionado por Universidad Agustiniana",
+  "proveedor": "ProQuest"
+ },
+ {
+  "nombre": "Research Library: Business",
+  "url_entrada": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/pqrlbusiness?accountid=25548",
+  "dominio_final": "www.proquest.com",
+  "texto_esperado": "Research Library: Business|Acceso proporcionado por Universidad Agustiniana",
+  "proveedor": "ProQuest"
+ },
+ {
+  "nombre": "Research Library: Health & Medicine",
+  "url_entrada": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/pqrlhealth?accountid=25548",
+  "dominio_final": "www.proquest.com",
+  "texto_esperado": "Research Library: Health & Medicine|Acceso proporcionado por Universidad Agustiniana",
+  "proveedor": "ProQuest"
+ },
+ {
+  "nombre": "Research Library: History",
+  "url_entrada": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/pqrlhistory?accountid=25548",
+  "dominio_final": "www.proquest.com",
+  "texto_esperado": "Research Library: History|Acceso proporcionado por Universidad Agustiniana",
+  "proveedor": "ProQuest"
+ },
+ {
+  "nombre": "Research Library: Literature & Language",
+  "url_entrada": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/pqrllitlang?accountid=25548",
+  "dominio_final": "www.proquest.com",
+  "texto_esperado": "Research Library: Literature & Language|Acceso proporcionado por Universidad Agustiniana",
+  "proveedor": "ProQuest"
+ },
+ {
+  "nombre": "Research Library: Science & Technology",
+  "url_entrada": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/pqrlscitech?accountid=25548",
+  "dominio_final": "www.proquest.com",
+  "texto_esperado": "Research Library: Science & Technology|Acceso proporcionado por Universidad Agustiniana",
+  "proveedor": "ProQuest"
+ },
+ {
+  "nombre": "Research Library: Social Sciences",
+  "url_entrada": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/pqrlsocsci?accountid=25548",
+  "dominio_final": "www.proquest.com",
+  "texto_esperado": "Research Library: Social Sciences|Acceso proporcionado por Universidad Agustiniana",
+  "proveedor": "ProQuest"
+ },
+ {
+  "nombre": "Research Library: The Arts",
+  "url_entrada": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/pqrlarts?accountid=25548",
+  "dominio_final": "www.proquest.com",
+  "texto_esperado": "Research Library: The Arts|Acceso proporcionado por Universidad Agustiniana",
+  "proveedor": "ProQuest"
+ },
+ {
+  "nombre": "Career & Technical Education Database: Business",
+  "url_entrada": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/careerbusiness?accountid=25548",
+  "dominio_final": "www.proquest.com",
+  "texto_esperado": "Career & Technical Education Database: Business|Acceso proporcionado por Universidad Agustiniana",
+  "proveedor": "ProQuest"
+ },
+ {
+  "nombre": "Career & Technical Education Database: Health & Medicine",
+  "url_entrada": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/careerhealth?accountid=25548",
+  "dominio_final": "www.proquest.com",
+  "texto_esperado": "Career & Technical Education Database: Health & Medicine|Acceso proporcionado por Universidad Agustiniana",
+  "proveedor": "ProQuest"
+ },
+ {
+  "nombre": "Career & Technical Education Database: History",
+  "url_entrada": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/careerhistory?accountid=25548",
+  "dominio_final": "www.proquest.com",
+  "texto_esperado": "Career & Technical Education Database: History|Acceso proporcionado por Universidad Agustiniana",
+  "proveedor": "ProQuest"
+ },
+ {
+  "nombre": "Career & Technical Education Database: Literature & Language",
+  "url_entrada": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/careerlitlang?accountid=25548",
+  "dominio_final": "www.proquest.com",
+  "texto_esperado": "Career & Technical Education Database: Literature & Language|Acceso proporcionado por Universidad Agustiniana",
+  "proveedor": "ProQuest"
+ },
+ {
+  "nombre": "Career & Technical Education Database: Science & Technology",
+  "url_entrada": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/careerscitech?accountid=25548",
+  "dominio_final": "www.proquest.com",
+  "texto_esperado": "Career & Technical Education Database: Science & Technology|Acceso proporcionado por Universidad Agustiniana",
+  "proveedor": "ProQuest"
+ },
+ {
+  "nombre": "Career & Technical Education Database: Social Sciences",
+  "url_entrada": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/careersocsci?accountid=25548",
+  "dominio_final": "www.proquest.com",
+  "texto_esperado": "Career & Technical Education Database: Social Sciences|Acceso proporcionado por Universidad Agustiniana",
+  "proveedor": "ProQuest"
+ },
+ {
+  "nombre": "Career & Technical Education Database: The Arts",
+  "url_entrada": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/careerarts?accountid=25548",
+  "dominio_final": "www.proquest.com",
+  "texto_esperado": "Career & Technical Education Database: The Arts|Acceso proporcionado por Universidad Agustiniana",
+  "proveedor": "ProQuest"
+ },
+ {
+  "nombre": "Canadian Business & Current Affairs Database: Business",
+  "url_entrada": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/cbcacompletebusiness?accountid=25548",
+  "dominio_final": "www.proquest.com",
+  "texto_esperado": "Canadian Business & Current Affairs Database: Business|Acceso proporcionado por Universidad Agustiniana",
+  "proveedor": "ProQuest"
+ },
+ {
+  "nombre": "Canadian Business & Current Affairs Database: Health & Medicine",
+  "url_entrada": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/cbcacompletehealth?accountid=25548",
+  "dominio_final": "www.proquest.com",
+  "texto_esperado": "Canadian Business & Current Affairs Database: Health & Medicine|Acceso proporcionado por Universidad Agustiniana",
+  "proveedor": "ProQuest"
+ },
+ {
+  "nombre": "Canadian Business & Current Affairs Database: History",
+  "url_entrada": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/cbcacompletehistory?accountid=25548",
+  "dominio_final": "www.proquest.com",
+  "texto_esperado": "Canadian Business & Current Affairs Database: History|Acceso proporcionado por Universidad Agustiniana",
+  "proveedor": "ProQuest"
+ },
+ {
+  "nombre": "Canadian Business & Current Affairs Database: Literature & Language",
+  "url_entrada": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/cbcacompletelitlang?accountid=25548",
+  "dominio_final": "www.proquest.com",
+  "texto_esperado": "Canadian Business & Current Affairs Database: Literature & Language|Acceso proporcionado por Universidad Agustiniana",
+  "proveedor": "ProQuest"
+ },
+ {
+  "nombre": "Canadian Business & Current Affairs Database: Science & Technology",
+  "url_entrada": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/cbcacompletescitech?accountid=25548",
+  "dominio_final": "www.proquest.com",
+  "texto_esperado": "Canadian Business & Current Affairs Database: Science & Technology|Acceso proporcionado por Universidad Agustiniana",
+  "proveedor": "ProQuest"
+ },
+ {
+  "nombre": "Canadian Business & Current Affairs Database: Social Sciences",
+  "url_entrada": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/cbcacompletesocsci?accountid=25548",
+  "dominio_final": "www.proquest.com",
+  "texto_esperado": "Canadian Business & Current Affairs Database: Social Sciences|Acceso proporcionado por Universidad Agustiniana",
+  "proveedor": "ProQuest"
+ },
+ {
+  "nombre": "Canadian Business & Current Affairs Database: The Arts",
+  "url_entrada": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/cbcacompletearts?accountid=25548",
+  "dominio_final": "www.proquest.com",
+  "texto_esperado": "Canadian Business & Current Affairs Database: The Arts|Acceso proporcionado por Universidad Agustiniana",
+  "proveedor": "ProQuest"
+ },
+ {
+  "nombre": "El Tiempo",
+  "url_entrada": "https://itmsp.museknowledge.com/UniAgu?url=https://www.eltiempo.com/login",
+  "dominio_final": "itmsp.museknowledge.com",
+  "texto_esperado": "Credenciales de acceso El Tiempo",
+  "proveedor": "El Tiempo"
+ },
+ {
+  "nombre": "Revista Derecho y Sociedad",
+  "url_entrada": "https://revistas-unicordoba-edu-co.recursoselectronicos.uniagustiniana.edu.co/index.php/dersoc",
+  "dominio_final": "revistas.unicordoba.edu.co",
+  "texto_esperado": "Derecho y Sociedad",
+  "proveedor": "Unicórdoba"
+ },
+ {
+  "nombre": "E-Libro",
+  "url_entrada": "https://itmsp.museknowledge.com/UniAgu?qurl=https%3A%2F%2Felibro.net%2Fes%2Flc%2Funiagustiniana%2Finicio%2F",
+  "dominio_final": "elibro.net",
+  "texto_esperado": "Universitaria Agustiniana",
+  "proveedor": "e-Libro"
+ },
+ {
+  "nombre": "Bibliotele",
+  "url_entrada": "https://itmsp.museknowledge.com/UniAgu?groupID=1&action=source&sourceID=Bibliotele",
+  "dominio_final": "academic.bibliotele.com",
+  "texto_esperado": "Continuar viendo",
+  "proveedor": "Bibliotele"
+ }
+]

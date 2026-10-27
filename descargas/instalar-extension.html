@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Instalar el Validador de recursos</title>
+<link rel="icon" href="../assets/escudo.webp">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap">
+<style>
+  :root { --navy: #172741; --gold: #e0be74; --bg: #f3f5f9; --panel: #fff; --fg: #172741; --muted: #66728a; --line: #e2e7ef; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #0d1524; --panel: #152138; --fg: #e8edf6; --muted: #9eabc2; --line: #24324d; color-scheme: dark; } }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 15px/1.6 "Montserrat", "Segoe UI", system-ui, sans-serif; }
+  header { background: var(--navy); color: #fff; border-bottom: 3px solid var(--gold); }
+  header div, main { max-width: 760px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+  header div { padding-block: 14px; }
+  header small { display: block; color: var(--gold); font-size: 12px; font-weight: 600; }
+  header b { font-size: 18px; }
+  main { padding-block: 24px 40px; display: grid; gap: 16px; }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 20px 22px; }
+  h2 { margin: 0 0 8px; font-size: 16px; }
+  ol { margin: 0; padding-left: 22px; display: grid; gap: 8px; }
+  code { background: rgb(127 127 127 / .15); border-radius: 6px; padding: 1px 6px; font-size: 14px; }
+  .btn { display: inline-block; font-weight: 700; border-radius: 999px; padding: 11px 20px; background: var(--gold); color: var(--navy); text-decoration: none; }
+  .btn:focus-visible { outline: 3px solid var(--fg); outline-offset: 2px; }
+  p { margin: 0; color: var(--muted); }
+  a { color: inherit; font-weight: 600; }
+</style>
+</head>
+<body>
+<header><div><small>Sistema de Bibliotecas · Uniagustiniana</small><b>Instalar el Validador de recursos</b></div></header>
+<main>
+  <section class="card">
+    <h2>1. Descargar</h2>
+    <p style="margin-bottom:12px">Funciona en Google Chrome en Windows o Mac.</p>
+    <a class="btn" href="validador-recursos.zip">Descargar validador-recursos.zip</a>
+  </section>
+  <section class="card">
+    <h2>2. Descomprimir</h2>
+    <ol>
+      <li>Abre la carpeta <b>Descargas</b>, clic derecho sobre <code>validador-recursos.zip</code> → <b>Extraer todo…</b></li>
+      <li>Mueve la carpeta extraída a un lugar donde no la borres, por ejemplo <code>Documentos\Validador biblioteca</code>. Chrome la usa desde ahí.</li>
+    </ol>
+  </section>
+  <section class="card">
+    <h2>3. Instalar en Chrome</h2>
+    <ol>
+      <li>En la barra de direcciones escribe <code>chrome://extensions</code> y pulsa Enter.</li>
+      <li>Arriba a la derecha activa <b>Modo de desarrollador</b>.</li>
+      <li>Pulsa <b>Cargar descomprimida</b> y elige la carpeta del paso 2 (la que contiene <code>manifest.json</code>).</li>
+      <li>Pulsa el icono de la pieza de rompecabezas junto a la barra de direcciones y fija (📌) <b>Validador biblioteca</b>.</li>
+    </ol>
+  </section>
+  <section class="card">
+    <h2>4. Validar</h2>
+    <ol>
+      <li>Asegúrate de que Chrome tenga abierta tu cuenta <b>@uniagustiniana.edu.co</b> y de que la biblioteca haya autorizado tu correo.</li>
+      <li>Pulsa el escudo <b>Validador biblioteca</b> → <b>Validar recursos</b>.</li>
+      <li>Se abre una ventana aparte que carga los recursos uno por uno: no la cierres. Puedes seguir trabajando en otras ventanas.</li>
+      <li>Al terminar (unos 20 minutos) los resultados se envían solos y aparecen en la <a href="../">página de estado</a>.</li>
+    </ol>
+  </section>
+  <section class="card">
+    <h2>Actualizar</h2>
+    <p>Cuando la biblioteca publique una versión nueva, descarga el zip otra vez, reemplaza el contenido de la carpeta y pulsa el botón de recargar (⟳) de la extensión en <code>chrome://extensions</code>.</p>
+  </section>
+</main>
+</body>
+</html>

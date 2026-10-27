@@ -208,16 +208,19 @@
 <dialog id="dlg" aria-labelledby="dlg-title">
   <div class="dlg-head" id="dlg-title">Validar ahora</div>
   <div class="dlg-body">
+    <b>Desde tu computador</b>
     <ol>
-      <li>Pulsa <b>Ir a GitHub</b> e inicia sesión.</li>
-      <li>Pulsa <b>Run workflow</b> y confirma.</li>
-      <li>Vuelve aquí: verás <b>Validación en curso</b>.</li>
+      <li>En Chrome, pulsa el icono del escudo <b>Validador biblioteca</b> (junto a la barra de direcciones).</li>
+      <li>Pulsa <b>Validar recursos</b>. Tarda unos 20 min; los resultados aparecen aquí al terminar.</li>
     </ol>
-    <p>Empieza en menos de 5 min y tarda unos 25 min. Además se valida solo a las 7:00 a. m. y a las 12:00 m. Requiere una cuenta autorizada por la biblioteca.</p>
+    <p>¿No tienes la extensión? <a href="descargas/validador-recursos.zip">Descárgala</a> y sigue la <a href="descargas/instalar-extension.html" target="_blank" rel="noopener">guía de instalación</a>.</p>
+    <b>Sin la extensión</b>
+    <p>Pide la validación al equipo de monitoreo con tu correo @uniagustiniana.edu.co. Empieza en menos de 5 min si el equipo está encendido.</p>
+    <p>Requiere un correo autorizado por la biblioteca. Además se valida solo a las 7:00 a. m. y a las 12:00 m.</p>
   </div>
   <div class="dlg-foot">
-    <button class="btn btn-line" type="button" id="dlg-cerrar">Cancelar</button>
-    <a class="btn btn-gold" id="dlg-ir" href="https://github.com/bibliotecaAgus/monitoreo-recursos/actions/workflows/solicitar-validacion.yml" target="_blank" rel="noopener">Ir a GitHub</a>
+    <button class="btn btn-line" type="button" id="dlg-cerrar">Cerrar</button>
+    <a class="btn btn-gold" id="dlg-ir" href="https://github.com/bibliotecaAgus/monitoreo-recursos/actions/workflows/solicitar-validacion.yml" target="_blank" rel="noopener">Pedir al equipo</a>
   </div>
 </dialog>
 
@@ -419,10 +422,8 @@
     refresco = setTimeout(iniciar, enCurso ? 60e3 : 5 * 60e3);
   }
 
-  $('btn-validar').addEventListener('click', function () {
-    if (URL_VALIDAR) window.open(URL_VALIDAR, '_blank', 'noopener');
-    else $('dlg').showModal();
-  });
+  if (URL_VALIDAR) $('dlg-ir').href = URL_VALIDAR;
+  $('btn-validar').addEventListener('click', function () { $('dlg').showModal(); });
   $('dlg-cerrar').addEventListener('click', function () { $('dlg').close(); });
   $('dlg-ir').addEventListener('click', function () { setTimeout(function () { $('dlg').close(); }, 300); });
   $('buscar').addEventListener('input', function () { if (datos) lista(); });

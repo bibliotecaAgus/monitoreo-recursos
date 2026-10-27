@@ -1,6 +1,7 @@
 [
  {
   "fecha": "2026-10-22T21:41:37.011Z",
+  "origen": "equipo",
   "sesion": "Falla",
   "revisados": 0,
   "disponibles": 0,
@@ -12,6 +13,7 @@
  },
  {
   "fecha": "2026-10-23T14:17:24.224Z",
+  "origen": "equipo",
   "sesion": "Falla",
   "revisados": 0,
   "disponibles": 0,
@@ -23,6 +25,7 @@
  },
  {
   "fecha": "2026-10-23T14:26:05.684Z",
+  "origen": "equipo",
   "sesion": "OK",
   "revisados": 96,
   "disponibles": 91,
@@ -34,6 +37,7 @@
  },
  {
   "fecha": "2026-10-23T15:53:09.461Z",
+  "origen": "equipo",
   "sesion": "OK",
   "revisados": 96,
   "disponibles": 92,
@@ -45,6 +49,7 @@
  },
  {
   "fecha": "2026-10-26T13:11:54.377Z",
+  "origen": "equipo",
   "sesion": "Falla",
   "revisados": 0,
   "disponibles": 0,
@@ -56,6 +61,7 @@
  },
  {
   "fecha": "2026-10-26T14:00:17.467Z",
+  "origen": "equipo",
   "sesion": "OK",
   "revisados": 96,
   "disponibles": 93,
@@ -67,6 +73,7 @@
  },
  {
   "fecha": "2026-10-26T19:00:19.096Z",
+  "origen": "equipo",
   "sesion": "OK",
   "revisados": 96,
   "disponibles": 91,
@@ -78,6 +85,7 @@
  },
  {
   "fecha": "2026-10-27T14:46:20.649Z",
+  "origen": "equipo",
   "sesion": "OK",
   "revisados": 96,
   "disponibles": 93,
