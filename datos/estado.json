@@ -10,12 +10,12 @@
    "sitio": "falla"
   },
   "falla": "Contenido inesperado",
-  "detalle": "No aparece: Advanced Technologies & Aerospace Database, Acceso proporcionado por Universidad Agustiniana",
-  "carga_s": 5.8,
-  "revisado": "2026-11-05T15:22:28.879Z",
+  "detalle": "No aparece: Advanced Technologies & Aerospace Database",
+  "carga_s": 10.1,
+  "revisado": "2026-11-05T15:35:52.219Z",
   "origen": "equipo",
-  "disponibilidad": 1,
-  "validaciones": 8
+  "disponibilidad": 0.889,
+  "validaciones": 9
  },
  {
   "recurso": "Arts & Humanities Database",
@@ -29,11 +29,11 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 6.6,
-  "revisado": "2026-11-03T20:28:44.102Z",
+  "carga_s": 7.1,
+  "revisado": "2026-11-05T15:36:04.371Z",
   "origen": "equipo",
   "disponibilidad": 1,
-  "validaciones": 8
+  "validaciones": 9
  },
  {
   "recurso": "Biological Science Collection (Biomedicina)",
@@ -47,11 +47,11 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 6.3,
-  "revisado": "2026-11-03T20:28:55.457Z",
+  "carga_s": 7.4,
+  "revisado": "2026-11-05T15:36:16.826Z",
   "origen": "equipo",
   "disponibilidad": 1,
-  "validaciones": 8
+  "validaciones": 9
  },
  {
   "recurso": "Canadian Business & Current Affairs Database",
@@ -65,101 +65,101 @@
   },
   "falla": "Contenido inesperado",
   "detalle": "No aparece: Acceso proporcionado por Universidad Agustiniana",
-  "carga_s": 7.5,
-  "revisado": "2026-11-03T20:29:07.945Z",
+  "carga_s": 10.1,
+  "revisado": "2026-11-05T15:36:31.908Z",
   "origen": "equipo",
   "disponibilidad": 0,
-  "validaciones": 8
+  "validaciones": 9
  },
  {
   "recurso": "Canadian Newsstream",
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/canadiannews/index?accountid=25548",
-  "estado": "Disponible",
+  "estado": "Con falla",
   "etapas": {
    "proxy": "ok",
    "login": "ok",
-   "sitio": "ok"
+   "sitio": "falla"
   },
-  "falla": "",
-  "detalle": "",
-  "carga_s": 6,
-  "revisado": "2026-11-03T20:29:19.000Z",
+  "falla": "Contenido inesperado",
+  "detalle": "No aparece: Canadian Newsstream Collection, Acceso proporcionado por Universidad Agustiniana",
+  "carga_s": 5.2,
+  "revisado": "2026-11-05T15:36:42.161Z",
   "origen": "equipo",
-  "disponibilidad": 1,
-  "validaciones": 8
+  "disponibilidad": 0.889,
+  "validaciones": 9
  },
  {
   "recurso": "Career and Technical Education (ProQuest)",
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/career/index?accountid=25548",
-  "estado": "Disponible",
+  "estado": "Con falla",
   "etapas": {
    "proxy": "ok",
    "login": "ok",
-   "sitio": "ok"
+   "sitio": "falla"
   },
-  "falla": "",
-  "detalle": "",
-  "carga_s": 7.8,
-  "revisado": "2026-11-03T20:29:31.808Z",
+  "falla": "Contenido inesperado",
+  "detalle": "No aparece: Career & Technical Education Database, Acceso proporcionado por Universidad Agustiniana",
+  "carga_s": 5,
+  "revisado": "2026-11-05T15:36:53.202Z",
   "origen": "equipo",
-  "disponibilidad": 1,
-  "validaciones": 8
+  "disponibilidad": 0.889,
+  "validaciones": 9
  },
  {
   "recurso": "Computer Science Database",
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/compscijour",
-  "estado": "Disponible",
+  "estado": "Con falla",
   "etapas": {
    "proxy": "ok",
    "login": "ok",
-   "sitio": "ok"
+   "sitio": "falla"
   },
-  "falla": "",
-  "detalle": "",
-  "carga_s": 6.3,
-  "revisado": "2026-11-03T20:29:43.093Z",
+  "falla": "Contenido inesperado",
+  "detalle": "No aparece: Computer Science Database, Acceso proporcionado por Universidad Agustiniana",
+  "carga_s": 5.8,
+  "revisado": "2026-11-05T15:37:04.850Z",
   "origen": "equipo",
-  "disponibilidad": 1,
-  "validaciones": 8
+  "disponibilidad": 0.889,
+  "validaciones": 9
  },
  {
   "recurso": "Consumer Health Database",
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/index?accountid=25548&selectids=1006520,1006520",
-  "estado": "Disponible",
+  "estado": "Con falla",
   "etapas": {
    "proxy": "ok",
    "login": "ok",
-   "sitio": "ok"
+   "sitio": "falla"
   },
-  "falla": "",
-  "detalle": "",
-  "carga_s": 6.3,
-  "revisado": "2026-11-03T20:29:54.354Z",
+  "falla": "Contenido inesperado",
+  "detalle": "No aparece: Consumer Health Database, Acceso proporcionado por Universidad Agustiniana",
+  "carga_s": 4.5,
+  "revisado": "2026-11-05T15:37:15.310Z",
   "origen": "equipo",
-  "disponibilidad": 1,
-  "validaciones": 8
+  "disponibilidad": 0.889,
+  "validaciones": 9
  },
  {
   "recurso": "Coronavirus Research Database (ProQuest)",
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/coronavirus",
-  "estado": "Disponible",
+  "estado": "Con falla",
   "etapas": {
    "proxy": "ok",
    "login": "ok",
-   "sitio": "ok"
+   "sitio": "falla"
   },
-  "falla": "",
-  "detalle": "",
-  "carga_s": 5.8,
-  "revisado": "2026-11-03T20:30:05.117Z",
+  "falla": "Contenido inesperado",
+  "detalle": "No aparece: Coronavirus Research Database, Acceso proporcionado por Universidad Agustiniana",
+  "carga_s": 4.6,
+  "revisado": "2026-11-05T15:37:25.753Z",
   "origen": "equipo",
-  "disponibilidad": 1,
-  "validaciones": 8
+  "disponibilidad": 0.889,
+  "validaciones": 9
  },
  {
   "recurso": "Criminal Justice Database (ProQuest)",
@@ -173,11 +173,11 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 6,
-  "revisado": "2026-11-03T20:30:16.120Z",
+  "carga_s": 7.3,
+  "revisado": "2026-11-05T15:37:39.048Z",
   "origen": "equipo",
   "disponibilidad": 1,
-  "validaciones": 8
+  "validaciones": 9
  },
  {
   "recurso": "E-Collection",
@@ -191,47 +191,47 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 4.9,
-  "revisado": "2026-11-03T20:30:25.987Z",
+  "carga_s": 5.2,
+  "revisado": "2026-11-05T15:37:49.282Z",
   "origen": "equipo",
   "disponibilidad": 1,
-  "validaciones": 8
+  "validaciones": 9
  },
  {
   "recurso": "Engineering Database",
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/engineeringjournals/fromDatabasesLayer?accountid=25548",
-  "estado": "Disponible",
+  "estado": "Con falla",
   "etapas": {
    "proxy": "ok",
    "login": "ok",
-   "sitio": "ok"
+   "sitio": "falla"
   },
-  "falla": "",
-  "detalle": "",
-  "carga_s": 5.7,
-  "revisado": "2026-11-03T20:30:36.733Z",
+  "falla": "Contenido inesperado",
+  "detalle": "No aparece: Engineering Database, Acceso proporcionado por Universidad Agustiniana",
+  "carga_s": 5.9,
+  "revisado": "2026-11-05T15:38:00.167Z",
   "origen": "equipo",
-  "disponibilidad": 1,
-  "validaciones": 8
+  "disponibilidad": 0.889,
+  "validaciones": 9
  },
  {
   "recurso": "Global Breaking Newswires",
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/globalwires/news/?accountid=25548",
-  "estado": "Disponible",
+  "estado": "Con falla",
   "etapas": {
    "proxy": "ok",
    "login": "ok",
-   "sitio": "ok"
+   "sitio": "falla"
   },
-  "falla": "",
-  "detalle": "",
-  "carga_s": 5.9,
-  "revisado": "2026-11-03T20:30:47.598Z",
+  "falla": "Contenido inesperado",
+  "detalle": "No aparece: Global Breaking Newswires, Acceso proporcionado por Universidad Agustiniana",
+  "carga_s": 4.7,
+  "revisado": "2026-11-05T15:38:10.869Z",
   "origen": "equipo",
-  "disponibilidad": 1,
-  "validaciones": 8
+  "disponibilidad": 0.889,
+  "validaciones": 9
  },
  {
   "recurso": "Gran base de datos Premium",
@@ -245,11 +245,11 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 5.6,
-  "revisado": "2026-11-03T20:30:58.191Z",
+  "carga_s": 5.9,
+  "revisado": "2026-11-05T15:38:22.767Z",
   "origen": "equipo",
   "disponibilidad": 1,
-  "validaciones": 8
+  "validaciones": 9
  },
  {
   "recurso": "Health & Medical Collection (ProQuest)",
@@ -263,11 +263,11 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 5.9,
-  "revisado": "2026-11-03T20:31:09.132Z",
+  "carga_s": 19.2,
+  "revisado": "2026-11-05T15:38:46.950Z",
   "origen": "equipo",
   "disponibilidad": 1,
-  "validaciones": 8
+  "validaciones": 9
  },
  {
   "recurso": "Healthcare Administration Database",
@@ -281,29 +281,29 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 5.7,
-  "revisado": "2026-11-03T20:31:19.819Z",
+  "carga_s": 7.3,
+  "revisado": "2026-11-05T15:38:59.236Z",
   "origen": "equipo",
   "disponibilidad": 1,
-  "validaciones": 8
+  "validaciones": 9
  },
  {
   "recurso": "International Newsstream (ProQuest)",
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/internationalnews1/index?accountid=25548",
-  "estado": "Disponible",
+  "estado": "Con falla",
   "etapas": {
    "proxy": "ok",
    "login": "ok",
-   "sitio": "ok"
+   "sitio": "falla"
   },
-  "falla": "",
-  "detalle": "",
-  "carga_s": 6,
-  "revisado": "2026-11-03T20:31:30.865Z",
+  "falla": "Contenido inesperado",
+  "detalle": "No aparece: International Newsstream Collection, Acceso proporcionado por Universidad Agustiniana",
+  "carga_s": 5.9,
+  "revisado": "2026-11-05T15:39:10.146Z",
   "origen": "equipo",
-  "disponibilidad": 1,
-  "validaciones": 8
+  "disponibilidad": 0.889,
+  "validaciones": 9
  },
  {
   "recurso": "Legiscomex",
@@ -317,47 +317,47 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 20.2,
-  "revisado": "2026-11-05T15:24:29.907Z",
+  "carga_s": 22.9,
+  "revisado": "2026-11-05T15:39:39.201Z",
   "origen": "equipo",
-  "disponibilidad": 0.875,
-  "validaciones": 8
+  "disponibilidad": 0.889,
+  "validaciones": 9
  },
  {
   "recurso": "Library Science Database (ProQuest)",
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/libraryscience/index?accountid=25548",
-  "estado": "Disponible",
+  "estado": "Con falla",
   "etapas": {
    "proxy": "ok",
    "login": "ok",
-   "sitio": "ok"
+   "sitio": "falla"
   },
-  "falla": "",
-  "detalle": "",
-  "carga_s": 10.7,
-  "revisado": "2026-10-27T19:46:26.701Z",
+  "falla": "Contenido inesperado",
+  "detalle": "No aparece: Library Science Database, Acceso proporcionado por Universidad Agustiniana",
+  "carga_s": 5.2,
+  "revisado": "2026-11-05T15:39:49.465Z",
   "origen": "equipo",
-  "disponibilidad": 1,
-  "validaciones": 8
+  "disponibilidad": 0.889,
+  "validaciones": 9
  },
  {
   "recurso": "Linguistics Database (ProQuest)",
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/linguistics/index?accountid=25548",
-  "estado": "Disponible",
+  "estado": "Con falla",
   "etapas": {
    "proxy": "ok",
    "login": "ok",
-   "sitio": "ok"
+   "sitio": "falla"
   },
-  "falla": "",
-  "detalle": "",
-  "carga_s": 9,
-  "revisado": "2026-10-27T19:46:40.770Z",
+  "falla": "Contenido inesperado",
+  "detalle": "No aparece: Linguistics Database, Acceso proporcionado por Universidad Agustiniana",
+  "carga_s": 5.9,
+  "revisado": "2026-11-05T15:40:01.051Z",
   "origen": "equipo",
-  "disponibilidad": 1,
-  "validaciones": 8
+  "disponibilidad": 0.889,
+  "validaciones": 9
  },
  {
   "recurso": "Materials Science Database",
@@ -371,11 +371,11 @@
   },
   "falla": "Contenido inesperado",
   "detalle": "No aparece: Materials Science Database, Acceso proporcionado por Universidad Agustiniana",
-  "carga_s": 15.6,
-  "revisado": "2026-11-05T15:24:56.550Z",
+  "carga_s": 11.7,
+  "revisado": "2026-11-05T15:40:18.619Z",
   "origen": "equipo",
-  "disponibilidad": 1,
-  "validaciones": 8
+  "disponibilidad": 0.889,
+  "validaciones": 9
  },
  {
   "recurso": "Military Database (ProQuest)",
@@ -389,11 +389,11 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 9.2,
-  "revisado": "2026-10-27T19:47:08.318Z",
+  "carga_s": 7,
+  "revisado": "2026-11-05T15:40:30.616Z",
   "origen": "equipo",
   "disponibilidad": 1,
-  "validaciones": 8
+  "validaciones": 9
  },
  {
   "recurso": "Nursing & Allied Health Database",
@@ -407,11 +407,11 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 12.6,
-  "revisado": "2026-10-27T19:47:25.932Z",
+  "carga_s": 8.8,
+  "revisado": "2026-11-05T15:40:44.458Z",
   "origen": "equipo",
   "disponibilidad": 1,
-  "validaciones": 8
+  "validaciones": 9
  },
  {
   "recurso": "Political Science Database",
@@ -425,119 +425,119 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 10,
-  "revisado": "2026-10-27T19:47:40.903Z",
+  "carga_s": 13.1,
+  "revisado": "2026-11-05T15:41:02.610Z",
   "origen": "equipo",
   "disponibilidad": 1,
-  "validaciones": 8
+  "validaciones": 9
  },
  {
   "recurso": "ProQuest Central Premium",
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/centralnew?accountid=25548",
-  "estado": "Disponible",
+  "estado": "Con falla",
   "etapas": {
    "proxy": "ok",
    "login": "ok",
-   "sitio": "ok"
+   "sitio": "falla"
   },
-  "falla": "",
-  "detalle": "",
-  "carga_s": 11.6,
-  "revisado": "2026-10-27T19:47:57.546Z",
+  "falla": "Contenido inesperado",
+  "detalle": "No aparece: ProQuest Central Premium, Acceso proporcionado por Universidad Agustiniana",
+  "carga_s": 5.7,
+  "revisado": "2026-11-05T15:41:13.368Z",
   "origen": "equipo",
-  "disponibilidad": 1,
-  "validaciones": 8
+  "disponibilidad": 0.889,
+  "validaciones": 9
  },
  {
   "recurso": "Publicly Available Content Database",
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/publiccontent/fromDatabasesLayer?accountid=25548uniagus",
-  "estado": "Disponible",
+  "estado": "Con falla",
   "etapas": {
    "proxy": "ok",
    "login": "ok",
-   "sitio": "ok"
+   "sitio": "falla"
   },
-  "falla": "",
-  "detalle": "",
-  "carga_s": 8.4,
-  "revisado": "2026-10-27T19:48:10.935Z",
+  "falla": "Contenido inesperado",
+  "detalle": "No aparece: Publicly Available Content Database, Acceso proporcionado por Universidad Agustiniana",
+  "carga_s": 6.3,
+  "revisado": "2026-11-05T15:41:25.664Z",
   "origen": "equipo",
-  "disponibilidad": 1,
-  "validaciones": 8
+  "disponibilidad": 0.889,
+  "validaciones": 9
  },
  {
   "recurso": "Public Health Database",
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/publichealth/index?accountid=25548",
-  "estado": "Disponible",
+  "estado": "Con falla",
   "etapas": {
    "proxy": "ok",
    "login": "ok",
-   "sitio": "ok"
+   "sitio": "falla"
   },
-  "falla": "",
-  "detalle": "",
-  "carga_s": 11,
-  "revisado": "2026-10-27T19:48:26.954Z",
+  "falla": "Contenido inesperado",
+  "detalle": "No aparece: Public Health Database, Acceso proporcionado por Universidad Agustiniana",
+  "carga_s": 4.7,
+  "revisado": "2026-11-05T15:41:36.314Z",
   "origen": "equipo",
-  "disponibilidad": 1,
-  "validaciones": 8
+  "disponibilidad": 0.889,
+  "validaciones": 9
  },
  {
   "recurso": "Religion Database (ProQuest)",
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/religion/index?accountid=25548",
-  "estado": "Disponible",
+  "estado": "Con falla",
   "etapas": {
    "proxy": "ok",
    "login": "ok",
-   "sitio": "ok"
+   "sitio": "falla"
   },
-  "falla": "",
-  "detalle": "",
-  "carga_s": 9.3,
-  "revisado": "2026-10-27T19:48:41.235Z",
+  "falla": "Contenido inesperado",
+  "detalle": "No aparece: Religion Collection, Acceso proporcionado por Universidad Agustiniana",
+  "carga_s": 5.1,
+  "revisado": "2026-11-05T15:41:47.319Z",
   "origen": "equipo",
-  "disponibilidad": 1,
-  "validaciones": 8
+  "disponibilidad": 0.889,
+  "validaciones": 9
  },
  {
   "recurso": "Research Library (ProQuest)",
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/pqrl/index?accountid=25548",
-  "estado": "Disponible",
+  "estado": "Con falla",
   "etapas": {
    "proxy": "ok",
    "login": "ok",
-   "sitio": "ok"
+   "sitio": "falla"
   },
-  "falla": "",
-  "detalle": "",
-  "carga_s": 14.4,
-  "revisado": "2026-10-27T19:49:00.641Z",
+  "falla": "Contenido inesperado",
+  "detalle": "No aparece: Research Library, Acceso proporcionado por Universidad Agustiniana",
+  "carga_s": 5,
+  "revisado": "2026-11-05T15:41:58.053Z",
   "origen": "equipo",
-  "disponibilidad": 1,
-  "validaciones": 8
+  "disponibilidad": 0.889,
+  "validaciones": 9
  },
  {
   "recurso": "Social Science Database (ProQuest)",
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/socscijournals/index?accountid=25548",
-  "estado": "Disponible",
+  "estado": "Con falla",
   "etapas": {
    "proxy": "ok",
    "login": "ok",
-   "sitio": "ok"
+   "sitio": "falla"
   },
-  "falla": "",
-  "detalle": "",
-  "carga_s": 16.1,
-  "revisado": "2026-10-27T19:49:21.753Z",
+  "falla": "Contenido inesperado",
+  "detalle": "No aparece: Social Science Database, Acceso proporcionado por Universidad Agustiniana",
+  "carga_s": 5.3,
+  "revisado": "2026-11-05T15:42:09.099Z",
   "origen": "equipo",
-  "disponibilidad": 1,
-  "validaciones": 8
+  "disponibilidad": 0.889,
+  "validaciones": 9
  },
  {
   "recurso": "Sociology Database (ProQuest)",
@@ -551,29 +551,29 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 15.5,
-  "revisado": "2026-10-27T19:49:42.260Z",
+  "carga_s": 7,
+  "revisado": "2026-11-05T15:42:21.976Z",
   "origen": "equipo",
   "disponibilidad": 1,
-  "validaciones": 8
+  "validaciones": 9
  },
  {
   "recurso": "US Newsstream",
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/usnews/index?accountid=25548",
-  "estado": "Disponible",
+  "estado": "Con falla",
   "etapas": {
    "proxy": "ok",
    "login": "ok",
-   "sitio": "ok"
+   "sitio": "falla"
   },
-  "falla": "",
-  "detalle": "",
-  "carga_s": 16,
-  "revisado": "2026-10-27T19:50:03.241Z",
+  "falla": "Contenido inesperado",
+  "detalle": "No aparece: U.S. Newsstream Collection, Acceso proporcionado por Universidad Agustiniana",
+  "carga_s": 4.9,
+  "revisado": "2026-11-05T15:42:31.928Z",
   "origen": "equipo",
-  "disponibilidad": 1,
-  "validaciones": 8
+  "disponibilidad": 0.889,
+  "validaciones": 9
  },
  {
   "recurso": "Virtual Pro",
@@ -587,11 +587,11 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 24.3,
-  "revisado": "2026-10-27T19:50:32.523Z",
+  "carga_s": 6.8,
+  "revisado": "2026-11-05T15:42:44.663Z",
   "origen": "equipo",
-  "disponibilidad": 0.875,
-  "validaciones": 8
+  "disponibilidad": 0.889,
+  "validaciones": 9
  },
  {
   "recurso": "OpenAire",
@@ -605,11 +605,11 @@
   },
   "falla": "Dominio inesperado",
   "detalle": "Dominio final itmsp.museknowledge.com, se esperaba www.openaire.eu",
-  "carga_s": 13.4,
-  "revisado": "2026-10-27T19:50:50.908Z",
+  "carga_s": 4,
+  "revisado": "2026-11-05T15:42:53.709Z",
   "origen": "equipo",
   "disponibilidad": 0,
-  "validaciones": 8
+  "validaciones": 9
  },
  {
   "recurso": "Ebook Central",
@@ -623,101 +623,101 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 14.7,
-  "revisado": "2026-10-27T19:51:10.639Z",
+  "carga_s": 5.5,
+  "revisado": "2026-11-05T15:43:05.027Z",
   "origen": "equipo",
   "disponibilidad": 1,
-  "validaciones": 8
+  "validaciones": 9
  },
  {
   "recurso": "Education Research Index",
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/?accountid=25548&selectids=10000449,1007399",
-  "estado": "Disponible",
+  "estado": "Con falla",
   "etapas": {
    "proxy": "ok",
    "login": "ok",
-   "sitio": "ok"
+   "sitio": "falla"
   },
-  "falla": "",
-  "detalle": "",
-  "carga_s": 11.4,
-  "revisado": "2026-10-27T19:51:27.070Z",
+  "falla": "Contenido inesperado",
+  "detalle": "No aparece: Acceso proporcionado por Universidad Agustiniana",
+  "carga_s": 5.7,
+  "revisado": "2026-11-05T15:43:15.787Z",
   "origen": "equipo",
-  "disponibilidad": 0.875,
-  "validaciones": 8
+  "disponibilidad": 0.778,
+  "validaciones": 9
  },
  {
   "recurso": "Eric",
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/?accountid=25548&selectids=1007399",
-  "estado": "Disponible",
+  "estado": "Con falla",
   "etapas": {
    "proxy": "ok",
    "login": "ok",
-   "sitio": "ok"
+   "sitio": "falla"
   },
-  "falla": "",
-  "detalle": "",
-  "carga_s": 12.1,
-  "revisado": "2026-10-27T19:51:44.199Z",
+  "falla": "Contenido inesperado",
+  "detalle": "No aparece: ERIC, Acceso proporcionado por Universidad Agustiniana",
+  "carga_s": 5.2,
+  "revisado": "2026-11-05T15:43:26.984Z",
   "origen": "equipo",
-  "disponibilidad": 1,
-  "validaciones": 8
+  "disponibilidad": 0.889,
+  "validaciones": 9
  },
  {
   "recurso": "Supplemental Education Index",
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/suppeducationindex?accountid=25548",
-  "estado": "Disponible",
+  "estado": "Con falla",
   "etapas": {
    "proxy": "ok",
    "login": "ok",
-   "sitio": "ok"
+   "sitio": "falla"
   },
-  "falla": "",
-  "detalle": "",
-  "carga_s": 16.6,
-  "revisado": "2026-10-27T19:52:05.844Z",
+  "falla": "Contenido inesperado",
+  "detalle": "No aparece: Supplemental Education Index, Acceso proporcionado por Universidad Agustiniana",
+  "carga_s": 5,
+  "revisado": "2026-11-05T15:43:40.003Z",
   "origen": "equipo",
-  "disponibilidad": 1,
-  "validaciones": 8
+  "disponibilidad": 0.889,
+  "validaciones": 9
  },
  {
   "recurso": "Agrícola",
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/agricolamodule?accountid=25548",
-  "estado": "Disponible",
+  "estado": "Con falla",
   "etapas": {
    "proxy": "ok",
    "login": "ok",
-   "sitio": "ok"
+   "sitio": "falla"
   },
-  "falla": "",
-  "detalle": "",
-  "carga_s": 13.6,
-  "revisado": "2026-10-27T19:52:24.464Z",
+  "falla": "Contenido inesperado",
+  "detalle": "No aparece: AGRICOLA, Acceso proporcionado por Universidad Agustiniana",
+  "carga_s": 5.1,
+  "revisado": "2026-11-05T15:43:53.269Z",
   "origen": "equipo",
-  "disponibilidad": 1,
-  "validaciones": 8
+  "disponibilidad": 0.889,
+  "validaciones": 9
  },
  {
   "recurso": "ASFA: Aquatic Sciences and Fisheries Abstracts",
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/asfa?accountid=25548",
-  "estado": "Disponible",
+  "estado": "Con falla",
   "etapas": {
    "proxy": "ok",
    "login": "ok",
-   "sitio": "ok"
+   "sitio": "falla"
   },
-  "falla": "",
-  "detalle": "",
-  "carga_s": 18.5,
-  "revisado": "2026-10-27T19:52:48.015Z",
+  "falla": "Contenido inesperado",
+  "detalle": "No aparece: ASFA: Aquatic Sciences and Fisheries Abstracts, Acceso proporcionado por Universidad Agustiniana",
+  "carga_s": 4.7,
+  "revisado": "2026-11-05T15:44:03.724Z",
   "origen": "equipo",
-  "disponibilidad": 1,
-  "validaciones": 8
+  "disponibilidad": 0.889,
+  "validaciones": 9
  },
  {
   "recurso": "Aquatic Science & Fisheries Abstracts (ASFA) 1: Biological Sciences & Living Resources",
@@ -731,137 +731,137 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 15.6,
-  "revisado": "2026-10-27T19:53:08.674Z",
+  "carga_s": 7.4,
+  "revisado": "2026-11-05T15:44:19.609Z",
   "origen": "equipo",
   "disponibilidad": 1,
-  "validaciones": 8
+  "validaciones": 9
  },
  {
   "recurso": "Aquatic Science & Fisheries Abstracts (ASFA) 2: Ocean Technology, Policy & Non-Living Resources",
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/asfaocean?accountid=25548",
-  "estado": "Disponible",
+  "estado": "Con falla",
   "etapas": {
    "proxy": "ok",
    "login": "ok",
-   "sitio": "ok"
+   "sitio": "falla"
   },
-  "falla": "",
-  "detalle": "",
-  "carga_s": 16.3,
-  "revisado": "2026-10-27T19:53:29.956Z",
+  "falla": "Contenido inesperado",
+  "detalle": "No aparece: Aquatic Science & Fisheries Abstracts (ASFA) 2: Ocean Technology, Policy & Non-Living Resources, Acceso proporcionado por Universidad Agustiniana",
+  "carga_s": 5,
+  "revisado": "2026-11-05T15:44:29.666Z",
   "origen": "equipo",
-  "disponibilidad": 1,
-  "validaciones": 8
+  "disponibilidad": 0.889,
+  "validaciones": 9
  },
  {
   "recurso": "Aquatic Science & Fisheries Abstracts (ASFA) 3: Aquatic Pollution & Environmental Quality",
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/asfaaquaticpollution?accountid=25548",
-  "estado": "Disponible",
+  "estado": "Con falla",
   "etapas": {
    "proxy": "ok",
    "login": "ok",
-   "sitio": "ok"
+   "sitio": "falla"
   },
-  "falla": "",
-  "detalle": "",
-  "carga_s": 19.9,
-  "revisado": "2026-10-27T19:53:54.875Z",
+  "falla": "Contenido inesperado",
+  "detalle": "No aparece: Aquatic Science & Fisheries Abstracts (ASFA) 3: Aquatic Pollution & Environmental Quality, Acceso proporcionado por Universidad Agustiniana",
+  "carga_s": 5.4,
+  "revisado": "2026-11-05T15:44:44.536Z",
   "origen": "equipo",
-  "disponibilidad": 1,
-  "validaciones": 8
+  "disponibilidad": 0.889,
+  "validaciones": 9
  },
  {
   "recurso": "Aquatic Science & Fisheries Abstracts (ASFA) Aquaculture Abstracts",
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/asfaaquaculture?accountid=25548",
-  "estado": "Disponible",
+  "estado": "Con falla",
   "etapas": {
    "proxy": "ok",
    "login": "ok",
-   "sitio": "ok"
+   "sitio": "falla"
   },
-  "falla": "",
-  "detalle": "",
-  "carga_s": 18.4,
-  "revisado": "2026-10-27T19:54:18.277Z",
+  "falla": "Contenido inesperado",
+  "detalle": "No aparece: Aquatic Science & Fisheries Abstracts (ASFA) Aquaculture Abstracts, Acceso proporcionado por Universidad Agustiniana",
+  "carga_s": 5.7,
+  "revisado": "2026-11-05T15:44:56.064Z",
   "origen": "equipo",
-  "disponibilidad": 1,
-  "validaciones": 8
+  "disponibilidad": 0.889,
+  "validaciones": 9
  },
  {
   "recurso": "Aquatic Science & Fisheries Abstracts (ASFA) Marine Biotechnology Abstracts",
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/asfamarine?accountid=25548",
-  "estado": "Disponible",
+  "estado": "Con falla",
   "etapas": {
    "proxy": "ok",
    "login": "ok",
-   "sitio": "ok"
+   "sitio": "falla"
   },
-  "falla": "",
-  "detalle": "",
-  "carga_s": 13.8,
-  "revisado": "2026-10-27T19:54:37.144Z",
+  "falla": "Contenido inesperado",
+  "detalle": "No aparece: Aquatic Science & Fisheries Abstracts (ASFA) Marine Biotechnology Abstracts, Acceso proporcionado por Universidad Agustiniana",
+  "carga_s": 5,
+  "revisado": "2026-11-05T15:45:06.973Z",
   "origen": "equipo",
-  "disponibilidad": 1,
-  "validaciones": 8
+  "disponibilidad": 0.889,
+  "validaciones": 9
  },
  {
   "recurso": "Oceanic Abstracts",
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/oceanic?accountid=25548",
-  "estado": "Disponible",
+  "estado": "Con falla",
   "etapas": {
    "proxy": "ok",
    "login": "ok",
-   "sitio": "ok"
+   "sitio": "falla"
   },
-  "falla": "",
-  "detalle": "",
-  "carga_s": 15.2,
-  "revisado": "2026-10-27T19:54:57.384Z",
+  "falla": "Contenido inesperado",
+  "detalle": "No aparece: Oceanic Abstracts, Acceso proporcionado por Universidad Agustiniana",
+  "carga_s": 4.8,
+  "revisado": "2026-11-05T15:45:17.542Z",
   "origen": "equipo",
-  "disponibilidad": 1,
-  "validaciones": 8
+  "disponibilidad": 0.889,
+  "validaciones": 9
  },
  {
   "recurso": "Environmental Science Index",
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/esindex?accountid=25548",
-  "estado": "Disponible",
+  "estado": "Con falla",
   "etapas": {
    "proxy": "ok",
    "login": "ok",
-   "sitio": "ok"
+   "sitio": "falla"
   },
-  "falla": "",
-  "detalle": "",
-  "carga_s": 17,
-  "revisado": "2026-10-27T19:55:19.435Z",
+  "falla": "Contenido inesperado",
+  "detalle": "No aparece: Environmental Science Index, Acceso proporcionado por Universidad Agustiniana",
+  "carga_s": 5,
+  "revisado": "2026-11-05T15:45:28.557Z",
   "origen": "equipo",
-  "disponibilidad": 1,
-  "validaciones": 8
+  "disponibilidad": 0.889,
+  "validaciones": 9
  },
  {
   "recurso": "Global Newsstream Collection",
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/globalnews?accountid=25548",
-  "estado": "Disponible",
+  "estado": "Con falla",
   "etapas": {
    "proxy": "ok",
    "login": "ok",
-   "sitio": "ok"
+   "sitio": "falla"
   },
-  "falla": "",
-  "detalle": "",
-  "carga_s": 18.8,
-  "revisado": "2026-10-27T19:55:43.290Z",
+  "falla": "Contenido inesperado",
+  "detalle": "No aparece: Global Newsstream Collection, Acceso proporcionado por Universidad Agustiniana",
+  "carga_s": 5.1,
+  "revisado": "2026-11-05T15:45:39.454Z",
   "origen": "equipo",
-  "disponibilidad": 1,
-  "validaciones": 8
+  "disponibilidad": 0.889,
+  "validaciones": 9
  },
  {
   "recurso": "Humanities Index",
@@ -875,52 +875,16 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 18.2,
-  "revisado": "2026-10-27T19:56:06.506Z",
+  "carga_s": 13.7,
+  "revisado": "2026-11-05T15:45:59.596Z",
   "origen": "equipo",
   "disponibilidad": 1,
-  "validaciones": 8
+  "validaciones": 9
  },
  {
   "recurso": "Meteorological & Geoastrophysical Abstracts",
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/mgamodule?accountid=25548",
-  "estado": "Disponible",
-  "etapas": {
-   "proxy": "ok",
-   "login": "ok",
-   "sitio": "ok"
-  },
-  "falla": "",
-  "detalle": "",
-  "carga_s": 14.4,
-  "revisado": "2026-10-27T19:56:25.900Z",
-  "origen": "equipo",
-  "disponibilidad": 1,
-  "validaciones": 8
- },
- {
-  "recurso": "ProQuest One Applied & Life Sciences",
-  "proveedor": "ProQuest",
-  "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/pq1appliedlifesciences?accountid=25548",
-  "estado": "Disponible",
-  "etapas": {
-   "proxy": "ok",
-   "login": "ok",
-   "sitio": "ok"
-  },
-  "falla": "",
-  "detalle": "",
-  "carga_s": 19.2,
-  "revisado": "2026-10-27T19:56:50.109Z",
-  "origen": "equipo",
-  "disponibilidad": 1,
-  "validaciones": 8
- },
- {
-  "recurso": "Advanced Technologies & Computer Science Collection",
-  "proveedor": "ProQuest",
-  "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/advancedtechaerospace?accountid=25548",
   "estado": "Con falla",
   "etapas": {
    "proxy": "ok",
@@ -928,48 +892,84 @@
    "sitio": "falla"
   },
   "falla": "Contenido inesperado",
-  "detalle": "No aparece: Advanced Technologies & Computer Science Collection, Acceso proporcionado por Universidad Agustiniana",
-  "carga_s": 12,
-  "revisado": "2026-11-05T15:22:46.959Z",
+  "detalle": "No aparece: Meteorological & Geoastrophysical Abstracts, Acceso proporcionado por Universidad Agustiniana",
+  "carga_s": 4.9,
+  "revisado": "2026-11-05T15:46:09.541Z",
+  "origen": "equipo",
+  "disponibilidad": 0.889,
+  "validaciones": 9
+ },
+ {
+  "recurso": "ProQuest One Applied & Life Sciences",
+  "proveedor": "ProQuest",
+  "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/pq1appliedlifesciences?accountid=25548",
+  "estado": "Con falla",
+  "etapas": {
+   "proxy": "ok",
+   "login": "ok",
+   "sitio": "falla"
+  },
+  "falla": "Contenido inesperado",
+  "detalle": "No aparece: ProQuest One Applied & Life Sciences, Acceso proporcionado por Universidad Agustiniana",
+  "carga_s": 5.4,
+  "revisado": "2026-11-05T15:46:20.737Z",
+  "origen": "equipo",
+  "disponibilidad": 0.889,
+  "validaciones": 9
+ },
+ {
+  "recurso": "Advanced Technologies & Computer Science Collection",
+  "proveedor": "ProQuest",
+  "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/advancedtechaerospace?accountid=25548",
+  "estado": "Disponible",
+  "etapas": {
+   "proxy": "ok",
+   "login": "ok",
+   "sitio": "ok"
+  },
+  "falla": "",
+  "detalle": "",
+  "carga_s": 9.4,
+  "revisado": "2026-11-05T15:46:36.738Z",
   "origen": "equipo",
   "disponibilidad": 1,
-  "validaciones": 8
+  "validaciones": 9
  },
  {
   "recurso": "Engineering Collection",
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/engcoll?accountid=25548",
-  "estado": "Disponible",
+  "estado": "Con falla",
   "etapas": {
    "proxy": "ok",
    "login": "ok",
-   "sitio": "ok"
+   "sitio": "falla"
   },
-  "falla": "",
-  "detalle": "",
-  "carga_s": 12.8,
-  "revisado": "2026-10-27T19:57:25.351Z",
+  "falla": "Contenido inesperado",
+  "detalle": "No aparece: Engineering Collection, Acceso proporcionado por Universidad Agustiniana",
+  "carga_s": 4.7,
+  "revisado": "2026-11-05T15:46:47.112Z",
   "origen": "equipo",
-  "disponibilidad": 1,
-  "validaciones": 8
+  "disponibilidad": 0.889,
+  "validaciones": 9
  },
  {
   "recurso": "Materials Science Collection",
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/mscoll?accountid=25548",
-  "estado": "Disponible",
+  "estado": "Con falla",
   "etapas": {
    "proxy": "ok",
    "login": "ok",
-   "sitio": "ok"
+   "sitio": "falla"
   },
-  "falla": "",
-  "detalle": "",
-  "carga_s": 11.6,
-  "revisado": "2026-10-27T19:57:41.970Z",
+  "falla": "Contenido inesperado",
+  "detalle": "No aparece: Materials Science Collection, Acceso proporcionado por Universidad Agustiniana",
+  "carga_s": 4.8,
+  "revisado": "2026-11-05T15:46:57.893Z",
   "origen": "equipo",
-  "disponibilidad": 1,
-  "validaciones": 8
+  "disponibilidad": 0.889,
+  "validaciones": 9
  },
  {
   "recurso": "ProQuest One Business",
@@ -983,47 +983,47 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 13.7,
-  "revisado": "2026-10-27T19:58:00.727Z",
+  "carga_s": 14.5,
+  "revisado": "2026-11-05T15:47:18.098Z",
   "origen": "equipo",
   "disponibilidad": 1,
-  "validaciones": 8
+  "validaciones": 9
  },
  {
   "recurso": "ProQuest One Education",
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/pq1education?accountid=25548",
-  "estado": "Disponible",
+  "estado": "Con falla",
   "etapas": {
    "proxy": "ok",
    "login": "ok",
-   "sitio": "ok"
+   "sitio": "falla"
   },
-  "falla": "",
-  "detalle": "",
-  "carga_s": 13,
-  "revisado": "2026-10-27T19:58:18.771Z",
+  "falla": "Contenido inesperado",
+  "detalle": "No aparece: ProQuest One Education, Acceso proporcionado por Universidad Agustiniana",
+  "carga_s": 5,
+  "revisado": "2026-11-05T15:47:28.121Z",
   "origen": "equipo",
-  "disponibilidad": 1,
-  "validaciones": 8
+  "disponibilidad": 0.889,
+  "validaciones": 9
  },
  {
   "recurso": "Education Magazine Archive",
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/ema?accountid=25548",
-  "estado": "Disponible",
+  "estado": "Con falla",
   "etapas": {
    "proxy": "ok",
    "login": "ok",
-   "sitio": "ok"
+   "sitio": "falla"
   },
-  "falla": "",
-  "detalle": "",
-  "carga_s": 9.4,
-  "revisado": "2026-10-27T19:58:33.152Z",
+  "falla": "Contenido inesperado",
+  "detalle": "No aparece: Education Magazine Archive, Acceso proporcionado por Universidad Agustiniana",
+  "carga_s": 5.4,
+  "revisado": "2026-11-05T15:47:39.454Z",
   "origen": "equipo",
-  "disponibilidad": 1,
-  "validaciones": 8
+  "disponibilidad": 0.889,
+  "validaciones": 9
  },
  {
   "recurso": "ProQuest One Health & Nursing",
@@ -1037,101 +1037,101 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 11.8,
-  "revisado": "2026-10-27T19:58:49.974Z",
+  "carga_s": 17.4,
+  "revisado": "2026-11-05T15:48:02.834Z",
   "origen": "equipo",
   "disponibilidad": 1,
-  "validaciones": 8
+  "validaciones": 9
  },
  {
   "recurso": "British Nursing Collection",
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/britishnursingindexft?accountid=25548",
-  "estado": "Disponible",
+  "estado": "Con falla",
   "etapas": {
    "proxy": "ok",
    "login": "ok",
-   "sitio": "ok"
+   "sitio": "falla"
   },
-  "falla": "",
-  "detalle": "",
-  "carga_s": 11.3,
-  "revisado": "2026-10-27T19:59:06.239Z",
+  "falla": "Contenido inesperado",
+  "detalle": "No aparece: British Nursing Collection, Acceso proporcionado por Universidad Agustiniana",
+  "carga_s": 7.7,
+  "revisado": "2026-11-05T15:48:15.585Z",
   "origen": "equipo",
-  "disponibilidad": 1,
-  "validaciones": 8
+  "disponibilidad": 0.889,
+  "validaciones": 9
  },
  {
   "recurso": "Health & Medical Research Collection",
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/healthmedresearch?accountid=25548",
-  "estado": "Disponible",
+  "estado": "Con falla",
   "etapas": {
    "proxy": "ok",
    "login": "ok",
-   "sitio": "ok"
+   "sitio": "falla"
   },
-  "falla": "",
-  "detalle": "",
-  "carga_s": 8,
-  "revisado": "2026-10-27T19:59:19.249Z",
+  "falla": "Contenido inesperado",
+  "detalle": "No aparece: Health & Medical Research Collection, Acceso proporcionado por Universidad Agustiniana",
+  "carga_s": 4.6,
+  "revisado": "2026-11-05T15:48:26.921Z",
   "origen": "equipo",
-  "disponibilidad": 1,
-  "validaciones": 8
+  "disponibilidad": 0.889,
+  "validaciones": 9
  },
  {
   "recurso": "ProQuest One Psychology",
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/pq1psychology?accountid=25548",
-  "estado": "Disponible",
+  "estado": "Con falla",
   "etapas": {
    "proxy": "ok",
    "login": "ok",
-   "sitio": "ok"
+   "sitio": "falla"
   },
-  "falla": "",
-  "detalle": "",
-  "carga_s": 13.8,
-  "revisado": "2026-10-27T19:59:38.066Z",
+  "falla": "Contenido inesperado",
+  "detalle": "No aparece: ProQuest One Psychology, Acceso proporcionado por Universidad Agustiniana",
+  "carga_s": 4.7,
+  "revisado": "2026-11-05T15:48:37.647Z",
   "origen": "equipo",
-  "disponibilidad": 1,
-  "validaciones": 8
+  "disponibilidad": 0.889,
+  "validaciones": 9
  },
  {
   "recurso": "ProQuest One Religion & Philosophy",
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/pq1religionphilosophy?accountid=25548",
-  "estado": "Disponible",
+  "estado": "Con falla",
   "etapas": {
    "proxy": "ok",
    "login": "ok",
-   "sitio": "ok"
+   "sitio": "falla"
   },
-  "falla": "",
-  "detalle": "",
-  "carga_s": 10.3,
-  "revisado": "2026-10-27T19:59:53.422Z",
+  "falla": "Contenido inesperado",
+  "detalle": "No aparece: ProQuest One Religion & Philosophy, Acceso proporcionado por Universidad Agustiniana",
+  "carga_s": 5.5,
+  "revisado": "2026-11-05T15:48:49.157Z",
   "origen": "equipo",
-  "disponibilidad": 1,
-  "validaciones": 8
+  "disponibilidad": 0.889,
+  "validaciones": 9
  },
  {
   "recurso": "Philosophy Research Collection",
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/philosophyjournals?accountid=25548",
-  "estado": "Disponible",
+  "estado": "Con falla",
   "etapas": {
    "proxy": "ok",
    "login": "ok",
-   "sitio": "ok"
+   "sitio": "falla"
   },
-  "falla": "",
-  "detalle": "",
-  "carga_s": 10.1,
-  "revisado": "2026-10-27T20:00:08.540Z",
+  "falla": "Contenido inesperado",
+  "detalle": "No aparece: Philosophy Research Collection, Acceso proporcionado por Universidad Agustiniana",
+  "carga_s": 4.6,
+  "revisado": "2026-11-05T15:48:59.653Z",
   "origen": "equipo",
-  "disponibilidad": 1,
-  "validaciones": 8
+  "disponibilidad": 0.889,
+  "validaciones": 9
  },
  {
   "recurso": "Religion Archive Collection",
@@ -1145,65 +1145,65 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 10.2,
-  "revisado": "2026-10-27T20:00:23.789Z",
+  "carga_s": 7.6,
+  "revisado": "2026-11-05T15:49:13.088Z",
   "origen": "equipo",
   "disponibilidad": 1,
-  "validaciones": 8
+  "validaciones": 9
  },
  {
   "recurso": "ProQuest One Social Sciences",
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/pq1socialsciences?accountid=25548",
-  "estado": "Disponible",
+  "estado": "Con falla",
   "etapas": {
    "proxy": "ok",
    "login": "ok",
-   "sitio": "ok"
+   "sitio": "falla"
   },
-  "falla": "",
-  "detalle": "",
-  "carga_s": 12.8,
-  "revisado": "2026-10-27T20:00:41.649Z",
+  "falla": "Contenido inesperado",
+  "detalle": "No aparece: ProQuest One Social Sciences, Acceso proporcionado por Universidad Agustiniana",
+  "carga_s": 6,
+  "revisado": "2026-11-05T15:49:24.143Z",
   "origen": "equipo",
-  "disponibilidad": 1,
-  "validaciones": 8
+  "disponibilidad": 0.889,
+  "validaciones": 9
  },
  {
   "recurso": "Criminology Collection",
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/criminology?accountid=25548",
-  "estado": "Disponible",
+  "estado": "Con falla",
   "etapas": {
    "proxy": "ok",
    "login": "ok",
-   "sitio": "ok"
+   "sitio": "falla"
   },
-  "falla": "",
-  "detalle": "",
-  "carga_s": 21,
-  "revisado": "2026-10-27T20:01:07.628Z",
+  "falla": "Contenido inesperado",
+  "detalle": "No aparece: Criminology Collection, Acceso proporcionado por Universidad Agustiniana",
+  "carga_s": 4.8,
+  "revisado": "2026-11-05T15:49:34.794Z",
   "origen": "equipo",
-  "disponibilidad": 1,
-  "validaciones": 8
+  "disponibilidad": 0.889,
+  "validaciones": 9
  },
  {
   "recurso": "Library & Information Science Collection",
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/libraryinformation?accountid=25548",
-  "estado": "Disponible",
+  "estado": "Con falla",
   "etapas": {
    "proxy": "ok",
    "login": "ok",
-   "sitio": "ok"
+   "sitio": "falla"
   },
-  "falla": "",
-  "detalle": "",
-  "carga_s": 8.5,
-  "revisado": "2026-10-27T20:01:21.111Z",
+  "falla": "Contenido inesperado",
+  "detalle": "No aparece: Library & Information Science Collection, Acceso proporcionado por Universidad Agustiniana",
+  "carga_s": 5.3,
+  "revisado": "2026-11-05T15:49:45.590Z",
   "origen": "equipo",
-  "disponibilidad": 1,
-  "validaciones": 8
+  "disponibilidad": 0.889,
+  "validaciones": 9
  },
  {
   "recurso": "Linguistics Collection",
@@ -1217,11 +1217,11 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 9.6,
-  "revisado": "2026-10-27T20:01:35.715Z",
+  "carga_s": 6.8,
+  "revisado": "2026-11-05T15:49:58.425Z",
   "origen": "equipo",
-  "disponibilidad": 0.875,
-  "validaciones": 8
+  "disponibilidad": 0.889,
+  "validaciones": 9
  },
  {
   "recurso": "Politics Collection",
@@ -1235,137 +1235,137 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 9.4,
-  "revisado": "2026-10-27T20:01:50.111Z",
+  "carga_s": 6.9,
+  "revisado": "2026-11-05T15:50:10.358Z",
   "origen": "equipo",
   "disponibilidad": 1,
-  "validaciones": 8
+  "validaciones": 9
  },
  {
   "recurso": "Sociology & Social Sciences Collection",
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/sociologysocialsciences?accountid=25548",
-  "estado": "Disponible",
+  "estado": "Con falla",
   "etapas": {
    "proxy": "ok",
    "login": "ok",
-   "sitio": "ok"
+   "sitio": "falla"
   },
-  "falla": "",
-  "detalle": "",
-  "carga_s": 10,
-  "revisado": "2026-10-27T20:02:05.129Z",
+  "falla": "Contenido inesperado",
+  "detalle": "No aparece: Sociology & Social Sciences Collection, Acceso proporcionado por Universidad Agustiniana",
+  "carga_s": 4.6,
+  "revisado": "2026-11-05T15:50:20.036Z",
   "origen": "equipo",
-  "disponibilidad": 1,
-  "validaciones": 8
+  "disponibilidad": 0.889,
+  "validaciones": 9
  },
  {
   "recurso": "ProQuest One Sustainability",
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/pq1sustainability?accountid=25548",
-  "estado": "Disponible",
+  "estado": "Con falla",
   "etapas": {
    "proxy": "ok",
    "login": "ok",
-   "sitio": "ok"
+   "sitio": "falla"
   },
-  "falla": "",
-  "detalle": "",
-  "carga_s": 15.7,
-  "revisado": "2026-10-27T20:02:25.836Z",
+  "falla": "Contenido inesperado",
+  "detalle": "No aparece: ProQuest One Sustainability, Acceso proporcionado por Universidad Agustiniana",
+  "carga_s": 4.6,
+  "revisado": "2026-11-05T15:50:30.538Z",
   "origen": "equipo",
-  "disponibilidad": 1,
-  "validaciones": 8
+  "disponibilidad": 0.889,
+  "validaciones": 9
  },
  {
   "recurso": "Research Library: Business",
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/pqrlbusiness?accountid=25548",
-  "estado": "Disponible",
+  "estado": "Con falla",
   "etapas": {
    "proxy": "ok",
    "login": "ok",
-   "sitio": "ok"
+   "sitio": "falla"
   },
-  "falla": "",
-  "detalle": "",
-  "carga_s": 9.2,
-  "revisado": "2026-10-27T20:02:40.090Z",
+  "falla": "Contenido inesperado",
+  "detalle": "No aparece: Research Library: Business, Acceso proporcionado por Universidad Agustiniana",
+  "carga_s": 4.6,
+  "revisado": "2026-11-05T15:50:40.816Z",
   "origen": "equipo",
-  "disponibilidad": 0.875,
-  "validaciones": 8
+  "disponibilidad": 0.778,
+  "validaciones": 9
  },
  {
   "recurso": "Research Library: Health & Medicine",
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/pqrlhealth?accountid=25548",
-  "estado": "Disponible",
+  "estado": "Con falla",
   "etapas": {
    "proxy": "ok",
    "login": "ok",
-   "sitio": "ok"
+   "sitio": "falla"
   },
-  "falla": "",
-  "detalle": "",
-  "carga_s": 12.2,
-  "revisado": "2026-10-27T20:02:57.348Z",
+  "falla": "Contenido inesperado",
+  "detalle": "No aparece: Research Library: Health & Medicine, Acceso proporcionado por Universidad Agustiniana",
+  "carga_s": 4.9,
+  "revisado": "2026-11-05T15:50:51.943Z",
   "origen": "equipo",
-  "disponibilidad": 1,
-  "validaciones": 8
+  "disponibilidad": 0.889,
+  "validaciones": 9
  },
  {
   "recurso": "Research Library: History",
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/pqrlhistory?accountid=25548",
-  "estado": "Disponible",
+  "estado": "Con falla",
   "etapas": {
    "proxy": "ok",
    "login": "ok",
-   "sitio": "ok"
+   "sitio": "falla"
   },
-  "falla": "",
-  "detalle": "",
-  "carga_s": 10.8,
-  "revisado": "2026-10-27T20:03:13.120Z",
+  "falla": "Contenido inesperado",
+  "detalle": "No aparece: Research Library: History, Acceso proporcionado por Universidad Agustiniana",
+  "carga_s": 5.2,
+  "revisado": "2026-11-05T15:51:02.860Z",
   "origen": "equipo",
-  "disponibilidad": 1,
-  "validaciones": 8
+  "disponibilidad": 0.889,
+  "validaciones": 9
  },
  {
   "recurso": "Research Library: Literature & Language",
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/pqrllitlang?accountid=25548",
-  "estado": "Disponible",
+  "estado": "Con falla",
   "etapas": {
    "proxy": "ok",
    "login": "ok",
-   "sitio": "ok"
+   "sitio": "falla"
   },
-  "falla": "",
-  "detalle": "",
-  "carga_s": 10.2,
-  "revisado": "2026-10-27T20:03:28.339Z",
+  "falla": "Contenido inesperado",
+  "detalle": "No aparece: Research Library: Literature & Language, Acceso proporcionado por Universidad Agustiniana",
+  "carga_s": 4.7,
+  "revisado": "2026-11-05T15:51:13.300Z",
   "origen": "equipo",
-  "disponibilidad": 1,
-  "validaciones": 8
+  "disponibilidad": 0.889,
+  "validaciones": 9
  },
  {
   "recurso": "Research Library: Science & Technology",
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/pqrlscitech?accountid=25548",
-  "estado": "Disponible",
+  "estado": "Con falla",
   "etapas": {
    "proxy": "ok",
    "login": "ok",
-   "sitio": "ok"
+   "sitio": "falla"
   },
-  "falla": "",
-  "detalle": "",
-  "carga_s": 9.4,
-  "revisado": "2026-10-27T20:03:42.792Z",
+  "falla": "Contenido inesperado",
+  "detalle": "No aparece: Research Library: Science & Technology, Acceso proporcionado por Universidad Agustiniana",
+  "carga_s": 5.6,
+  "revisado": "2026-11-05T15:51:24.875Z",
   "origen": "equipo",
-  "disponibilidad": 1,
-  "validaciones": 8
+  "disponibilidad": 0.889,
+  "validaciones": 9
  },
  {
   "recurso": "Research Library: Social Sciences",
@@ -1379,83 +1379,83 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 11,
-  "revisado": "2026-10-27T20:03:58.769Z",
+  "carga_s": 7.9,
+  "revisado": "2026-11-05T15:51:38.569Z",
   "origen": "equipo",
   "disponibilidad": 1,
-  "validaciones": 8
+  "validaciones": 9
  },
  {
   "recurso": "Research Library: The Arts",
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/pqrlarts?accountid=25548",
-  "estado": "Disponible",
+  "estado": "Con falla",
   "etapas": {
    "proxy": "ok",
    "login": "ok",
-   "sitio": "ok"
+   "sitio": "falla"
   },
-  "falla": "",
-  "detalle": "",
-  "carga_s": 8.3,
-  "revisado": "2026-10-27T20:04:12.060Z",
+  "falla": "Contenido inesperado",
+  "detalle": "No aparece: Research Library: The Arts, Acceso proporcionado por Universidad Agustiniana",
+  "carga_s": 4.6,
+  "revisado": "2026-11-05T15:51:48.163Z",
   "origen": "equipo",
-  "disponibilidad": 1,
-  "validaciones": 8
+  "disponibilidad": 0.889,
+  "validaciones": 9
  },
  {
   "recurso": "Career & Technical Education Database: Business",
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/careerbusiness?accountid=25548",
-  "estado": "Disponible",
+  "estado": "Con falla",
   "etapas": {
    "proxy": "ok",
    "login": "ok",
-   "sitio": "ok"
+   "sitio": "falla"
   },
-  "falla": "",
-  "detalle": "",
-  "carga_s": 9.2,
-  "revisado": "2026-10-27T20:04:26.243Z",
+  "falla": "Contenido inesperado",
+  "detalle": "No aparece: Career & Technical Education Database: Business, Acceso proporcionado por Universidad Agustiniana",
+  "carga_s": 4.5,
+  "revisado": "2026-11-05T15:51:58.908Z",
   "origen": "equipo",
-  "disponibilidad": 1,
-  "validaciones": 8
+  "disponibilidad": 0.889,
+  "validaciones": 9
  },
  {
   "recurso": "Career & Technical Education Database: Health & Medicine",
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/careerhealth?accountid=25548",
-  "estado": "Disponible",
+  "estado": "Con falla",
   "etapas": {
    "proxy": "ok",
    "login": "ok",
-   "sitio": "ok"
+   "sitio": "falla"
   },
-  "falla": "",
-  "detalle": "",
-  "carga_s": 11.2,
-  "revisado": "2026-10-27T20:04:42.489Z",
+  "falla": "Contenido inesperado",
+  "detalle": "No aparece: Career & Technical Education Database: Health & Medicine, Acceso proporcionado por Universidad Agustiniana",
+  "carga_s": 5.1,
+  "revisado": "2026-11-05T15:52:09.985Z",
   "origen": "equipo",
-  "disponibilidad": 1,
-  "validaciones": 8
+  "disponibilidad": 0.889,
+  "validaciones": 9
  },
  {
   "recurso": "Career & Technical Education Database: History",
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/careerhistory?accountid=25548",
-  "estado": "Disponible",
+  "estado": "Con falla",
   "etapas": {
    "proxy": "ok",
    "login": "ok",
-   "sitio": "ok"
+   "sitio": "falla"
   },
-  "falla": "",
-  "detalle": "",
-  "carga_s": 12.7,
-  "revisado": "2026-10-27T20:05:00.235Z",
+  "falla": "Contenido inesperado",
+  "detalle": "No aparece: Career & Technical Education Database: History, Acceso proporcionado por Universidad Agustiniana",
+  "carga_s": 4.8,
+  "revisado": "2026-11-05T15:52:20.851Z",
   "origen": "equipo",
-  "disponibilidad": 1,
-  "validaciones": 8
+  "disponibilidad": 0.889,
+  "validaciones": 9
  },
  {
   "recurso": "Career & Technical Education Database: Literature & Language",
@@ -1469,11 +1469,11 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 7.9,
-  "revisado": "2026-10-27T20:05:13.202Z",
+  "carga_s": 7,
+  "revisado": "2026-11-05T15:52:34.063Z",
   "origen": "equipo",
   "disponibilidad": 1,
-  "validaciones": 8
+  "validaciones": 9
  },
  {
   "recurso": "Career & Technical Education Database: Science & Technology",
@@ -1487,47 +1487,47 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 9.9,
-  "revisado": "2026-10-27T20:05:28.159Z",
+  "carga_s": 7.7,
+  "revisado": "2026-11-05T15:52:46.739Z",
   "origen": "equipo",
   "disponibilidad": 1,
-  "validaciones": 8
+  "validaciones": 9
  },
  {
   "recurso": "Career & Technical Education Database: Social Sciences",
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/careersocsci?accountid=25548",
-  "estado": "Disponible",
+  "estado": "Con falla",
   "etapas": {
    "proxy": "ok",
    "login": "ok",
-   "sitio": "ok"
+   "sitio": "falla"
   },
-  "falla": "",
-  "detalle": "",
-  "carga_s": 8.7,
-  "revisado": "2026-10-27T20:05:41.913Z",
+  "falla": "Contenido inesperado",
+  "detalle": "No aparece: Career & Technical Education Database: Social Sciences, Acceso proporcionado por Universidad Agustiniana",
+  "carga_s": 4.7,
+  "revisado": "2026-11-05T15:52:56.411Z",
   "origen": "equipo",
-  "disponibilidad": 1,
-  "validaciones": 8
+  "disponibilidad": 0.889,
+  "validaciones": 9
  },
  {
   "recurso": "Career & Technical Education Database: The Arts",
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/careerarts?accountid=25548",
-  "estado": "Disponible",
+  "estado": "Con falla",
   "etapas": {
    "proxy": "ok",
    "login": "ok",
-   "sitio": "ok"
+   "sitio": "falla"
   },
-  "falla": "",
-  "detalle": "",
-  "carga_s": 9.4,
-  "revisado": "2026-10-27T20:05:56.310Z",
+  "falla": "Contenido inesperado",
+  "detalle": "No aparece: Career & Technical Education Database: The Arts, Acceso proporcionado por Universidad Agustiniana",
+  "carga_s": 4.6,
+  "revisado": "2026-11-05T15:53:06.848Z",
   "origen": "equipo",
-  "disponibilidad": 1,
-  "validaciones": 8
+  "disponibilidad": 0.889,
+  "validaciones": 9
  },
  {
   "recurso": "Canadian Business & Current Affairs Database: Business",
@@ -1541,29 +1541,29 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 10.6,
-  "revisado": "2026-10-27T20:06:11.918Z",
+  "carga_s": 6.6,
+  "revisado": "2026-11-05T15:53:19.030Z",
   "origen": "equipo",
   "disponibilidad": 1,
-  "validaciones": 8
+  "validaciones": 9
  },
  {
   "recurso": "Canadian Business & Current Affairs Database: Health & Medicine",
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/cbcacompletehealth?accountid=25548",
-  "estado": "Disponible",
+  "estado": "Con falla",
   "etapas": {
    "proxy": "ok",
    "login": "ok",
-   "sitio": "ok"
+   "sitio": "falla"
   },
-  "falla": "",
-  "detalle": "",
-  "carga_s": 10.6,
-  "revisado": "2026-10-27T20:06:27.513Z",
+  "falla": "Contenido inesperado",
+  "detalle": "No aparece: Canadian Business & Current Affairs Database: Health & Medicine, Acceso proporcionado por Universidad Agustiniana",
+  "carga_s": 5.8,
+  "revisado": "2026-11-05T15:53:29.853Z",
   "origen": "equipo",
-  "disponibilidad": 1,
-  "validaciones": 8
+  "disponibilidad": 0.889,
+  "validaciones": 9
  },
  {
   "recurso": "Canadian Business & Current Affairs Database: History",
@@ -1577,47 +1577,47 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 14.4,
-  "revisado": "2026-10-27T20:06:46.883Z",
+  "carga_s": 7.1,
+  "revisado": "2026-11-05T15:53:42.717Z",
   "origen": "equipo",
   "disponibilidad": 1,
-  "validaciones": 8
+  "validaciones": 9
  },
  {
   "recurso": "Canadian Business & Current Affairs Database: Literature & Language",
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/cbcacompletelitlang?accountid=25548",
-  "estado": "Disponible",
+  "estado": "Con falla",
   "etapas": {
    "proxy": "ok",
    "login": "ok",
-   "sitio": "ok"
+   "sitio": "falla"
   },
-  "falla": "",
-  "detalle": "",
-  "carga_s": 11.8,
-  "revisado": "2026-10-27T20:07:03.688Z",
+  "falla": "Contenido inesperado",
+  "detalle": "No aparece: Canadian Business & Current Affairs Database: Literature & Language, Acceso proporcionado por Universidad Agustiniana",
+  "carga_s": 4.6,
+  "revisado": "2026-11-05T15:53:52.331Z",
   "origen": "equipo",
-  "disponibilidad": 1,
-  "validaciones": 8
+  "disponibilidad": 0.889,
+  "validaciones": 9
  },
  {
   "recurso": "Canadian Business & Current Affairs Database: Science & Technology",
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/cbcacompletescitech?accountid=25548",
-  "estado": "Disponible",
+  "estado": "Con falla",
   "etapas": {
    "proxy": "ok",
    "login": "ok",
-   "sitio": "ok"
+   "sitio": "falla"
   },
-  "falla": "",
-  "detalle": "",
-  "carga_s": 13.7,
-  "revisado": "2026-10-27T20:07:22.433Z",
+  "falla": "Contenido inesperado",
+  "detalle": "No aparece: Canadian Business & Current Affairs Database: Science & Technology, Acceso proporcionado por Universidad Agustiniana",
+  "carga_s": 6.4,
+  "revisado": "2026-11-05T15:54:04.613Z",
   "origen": "equipo",
-  "disponibilidad": 1,
-  "validaciones": 8
+  "disponibilidad": 0.889,
+  "validaciones": 9
  },
  {
   "recurso": "Canadian Business & Current Affairs Database: Social Sciences",
@@ -1631,11 +1631,11 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 16.5,
-  "revisado": "2026-10-27T20:07:43.971Z",
+  "carga_s": 8.6,
+  "revisado": "2026-11-05T15:54:19.063Z",
   "origen": "equipo",
   "disponibilidad": 1,
-  "validaciones": 8
+  "validaciones": 9
  },
  {
   "recurso": "Canadian Business & Current Affairs Database: The Arts",
@@ -1649,11 +1649,11 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 9.6,
-  "revisado": "2026-10-27T20:07:58.603Z",
+  "carga_s": 7.5,
+  "revisado": "2026-11-05T15:54:31.579Z",
   "origen": "equipo",
   "disponibilidad": 1,
-  "validaciones": 8
+  "validaciones": 9
  },
  {
   "recurso": "El Tiempo",
@@ -1668,10 +1668,10 @@
   "falla": "",
   "detalle": "",
   "carga_s": 3.6,
-  "revisado": "2026-10-27T20:08:07.192Z",
+  "revisado": "2026-11-05T15:54:40.198Z",
   "origen": "equipo",
-  "disponibilidad": 0.875,
-  "validaciones": 8
+  "disponibilidad": 0.889,
+  "validaciones": 9
  },
  {
   "recurso": "Revista Derecho y Sociedad",
@@ -1686,10 +1686,10 @@
   "falla": "Error de conexión",
   "detalle": "page.goto: net::ERR_NAME_NOT_RESOLVED at https://revistas-unicordoba-edu-co.recursoselectronicos.uniagustiniana.edu.co/index.php/dersoc",
   "carga_s": 0,
-  "revisado": "2026-10-27T20:08:12.252Z",
+  "revisado": "2026-11-05T15:54:45.268Z",
   "origen": "equipo",
   "disponibilidad": 0,
-  "validaciones": 8
+  "validaciones": 9
  },
  {
   "recurso": "E-Libro",
@@ -1703,11 +1703,11 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 4.5,
-  "revisado": "2026-11-05T15:23:46.949Z",
+  "carga_s": 5.1,
+  "revisado": "2026-11-05T15:54:56.273Z",
   "origen": "equipo",
   "disponibilidad": 1,
-  "validaciones": 8
+  "validaciones": 9
  },
  {
   "recurso": "Bibliotele",
@@ -1721,10 +1721,10 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 11.5,
-  "revisado": "2026-10-27T20:08:38.954Z",
+  "carga_s": 12.8,
+  "revisado": "2026-11-05T15:55:14.087Z",
   "origen": "equipo",
-  "disponibilidad": 0.875,
-  "validaciones": 8
+  "disponibilidad": 0.889,
+  "validaciones": 9
  }
 ]
