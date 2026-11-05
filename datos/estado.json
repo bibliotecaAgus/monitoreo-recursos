@@ -3,16 +3,16 @@
   "recurso": "Advanced Technologies & Aerospace Database",
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/hightechjournals/fromDatabasesLayer?accountid=25548",
-  "estado": "Disponible",
+  "estado": "Con falla",
   "etapas": {
    "proxy": "ok",
    "login": "ok",
-   "sitio": "ok"
+   "sitio": "falla"
   },
-  "falla": "",
-  "detalle": "",
-  "carga_s": 7.7,
-  "revisado": "2026-11-03T20:28:32.470Z",
+  "falla": "Contenido inesperado",
+  "detalle": "No aparece: Advanced Technologies & Aerospace Database, Acceso proporcionado por Universidad Agustiniana",
+  "carga_s": 5.8,
+  "revisado": "2026-11-05T15:22:28.879Z",
   "origen": "equipo",
   "disponibilidad": 1,
   "validaciones": 8
@@ -309,16 +309,16 @@
   "recurso": "Legiscomex",
   "proveedor": "Legis",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.legiscomex.com/",
-  "estado": "Con falla",
+  "estado": "Disponible",
   "etapas": {
    "proxy": "ok",
-   "login": "falla",
-   "sitio": null
+   "login": "ok",
+   "sitio": "ok"
   },
-  "falla": "Pantalla de login",
-  "detalle": "Apareció la pantalla de login",
-  "carga_s": 24.3,
-  "revisado": "2026-10-27T19:46:10.171Z",
+  "falla": "",
+  "detalle": "",
+  "carga_s": 20.2,
+  "revisado": "2026-11-05T15:24:29.907Z",
   "origen": "equipo",
   "disponibilidad": 0.875,
   "validaciones": 8
@@ -363,16 +363,16 @@
   "recurso": "Materials Science Database",
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/materialsscijournals/fromDatabasesLayer?accountid=25548",
-  "estado": "Disponible",
+  "estado": "Con falla",
   "etapas": {
    "proxy": "ok",
    "login": "ok",
-   "sitio": "ok"
+   "sitio": "falla"
   },
-  "falla": "",
-  "detalle": "",
-  "carga_s": 8.3,
-  "revisado": "2026-10-27T19:46:54.058Z",
+  "falla": "Contenido inesperado",
+  "detalle": "No aparece: Materials Science Database, Acceso proporcionado por Universidad Agustiniana",
+  "carga_s": 15.6,
+  "revisado": "2026-11-05T15:24:56.550Z",
   "origen": "equipo",
   "disponibilidad": 1,
   "validaciones": 8
@@ -921,16 +921,16 @@
   "recurso": "Advanced Technologies & Computer Science Collection",
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/advancedtechaerospace?accountid=25548",
-  "estado": "Disponible",
+  "estado": "Con falla",
   "etapas": {
    "proxy": "ok",
    "login": "ok",
-   "sitio": "ok"
+   "sitio": "falla"
   },
-  "falla": "",
-  "detalle": "",
-  "carga_s": 12.4,
-  "revisado": "2026-10-27T19:57:07.508Z",
+  "falla": "Contenido inesperado",
+  "detalle": "No aparece: Advanced Technologies & Computer Science Collection, Acceso proporcionado por Universidad Agustiniana",
+  "carga_s": 12,
+  "revisado": "2026-11-05T15:22:46.959Z",
   "origen": "equipo",
   "disponibilidad": 1,
   "validaciones": 8
@@ -1703,8 +1703,8 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 5.2,
-  "revisado": "2026-10-27T20:08:22.431Z",
+  "carga_s": 4.5,
+  "revisado": "2026-11-05T15:23:46.949Z",
   "origen": "equipo",
   "disponibilidad": 1,
   "validaciones": 8
