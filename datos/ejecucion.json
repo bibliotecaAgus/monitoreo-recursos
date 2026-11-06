@@ -1,7 +1,5 @@
 {
- "estado": "fallida",
+ "estado": "en_curso",
  "origen": "automatica",
- "inicio": "2026-11-06T13:57:04.855Z",
- "fin": "2026-11-06T13:57:26.279Z",
- "mensaje": "La sesión institucional venció; hay que renovar el login."
+ "inicio": "2026-11-06T14:03:40.916Z"
 }
