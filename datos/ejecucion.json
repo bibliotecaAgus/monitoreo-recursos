@@ -1,8 +1,5 @@
 {
- "estado": "fallida",
- "origen": "manual",
- "solicitante": "bibliotecaAgus",
- "inicio": "2026-11-10T15:22:49.988Z",
- "fin": "2026-11-10T15:23:04.137Z",
- "mensaje": "La sesión institucional venció; hay que renovar el login."
+ "estado": "en_curso",
+ "origen": "automatica",
+ "inicio": "2026-11-10T17:00:35.755Z"
 }
