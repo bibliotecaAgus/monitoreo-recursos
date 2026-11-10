@@ -586,5 +586,17 @@
   "proxy_ok": 0,
   "sitio_ok": 0,
   "carga_mediana_s": null
+ },
+ {
+  "fecha": "2026-11-10T17:15:24.241Z",
+  "origen": "equipo",
+  "sesion": "OK",
+  "revisados": 96,
+  "disponibles": 76,
+  "con_fallas": 20,
+  "disponibilidad": 0.792,
+  "proxy_ok": 94,
+  "sitio_ok": 76,
+  "carga_mediana_s": 3.5
  }
 ]
