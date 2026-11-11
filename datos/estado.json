@@ -3,19 +3,19 @@
   "recurso": "Advanced Technologies & Aerospace Database",
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/hightechjournals/fromDatabasesLayer?accountid=25548",
-  "estado": "Con falla",
+  "estado": "Disponible",
   "etapas": {
    "proxy": "ok",
    "login": "ok",
-   "sitio": "falla"
+   "sitio": "ok"
   },
-  "falla": "Contenido inesperado",
-  "detalle": "No aparece: Advanced Technologies & Aerospace Database",
-  "carga_s": 11.3,
-  "revisado": "2026-11-10T19:46:13.592Z",
+  "falla": "",
+  "detalle": "",
+  "carga_s": 5.1,
+  "revisado": "2026-11-11T17:46:16.474Z",
   "origen": "equipo",
-  "disponibilidad": 0.867,
-  "validaciones": 15
+  "disponibilidad": 0.875,
+  "validaciones": 16
  },
  {
   "recurso": "Arts & Humanities Database",
@@ -29,11 +29,11 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 3.6,
-  "revisado": "2026-11-10T19:46:20.428Z",
+  "carga_s": 4.1,
+  "revisado": "2026-11-11T17:46:23.735Z",
   "origen": "equipo",
-  "disponibilidad": 0.933,
-  "validaciones": 15
+  "disponibilidad": 0.938,
+  "validaciones": 16
  },
  {
   "recurso": "Biological Science Collection (Biomedicina)",
@@ -47,11 +47,11 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 4,
-  "revisado": "2026-11-10T19:46:27.901Z",
+  "carga_s": 4.2,
+  "revisado": "2026-11-11T17:46:29.945Z",
   "origen": "equipo",
   "disponibilidad": 1,
-  "validaciones": 15
+  "validaciones": 16
  },
  {
   "recurso": "Canadian Business & Current Affairs Database",
@@ -65,11 +65,11 @@
   },
   "falla": "Contenido inesperado",
   "detalle": "No aparece: Acceso proporcionado por Universidad Agustiniana",
-  "carga_s": 10.3,
-  "revisado": "2026-11-10T19:46:40.218Z",
+  "carga_s": 10.4,
+  "revisado": "2026-11-11T17:46:42.350Z",
   "origen": "equipo",
   "disponibilidad": 0,
-  "validaciones": 15
+  "validaciones": 16
  },
  {
   "recurso": "Canadian Newsstream",
@@ -83,11 +83,11 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 3.3,
-  "revisado": "2026-11-10T19:46:45.508Z",
+  "carga_s": 3.5,
+  "revisado": "2026-11-11T17:46:47.881Z",
   "origen": "equipo",
-  "disponibilidad": 0.933,
-  "validaciones": 15
+  "disponibilidad": 0.938,
+  "validaciones": 16
  },
  {
   "recurso": "Career and Technical Education (ProQuest)",
@@ -101,29 +101,29 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 4,
-  "revisado": "2026-11-10T19:46:51.544Z",
+  "carga_s": 3.8,
+  "revisado": "2026-11-11T17:46:53.720Z",
   "origen": "equipo",
-  "disponibilidad": 0.933,
-  "validaciones": 15
+  "disponibilidad": 0.938,
+  "validaciones": 16
  },
  {
   "recurso": "Computer Science Database",
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/compscijour",
-  "estado": "Con falla",
+  "estado": "Disponible",
   "etapas": {
    "proxy": "ok",
    "login": "ok",
-   "sitio": "falla"
+   "sitio": "ok"
   },
-  "falla": "Contenido inesperado",
-  "detalle": "No aparece: Computer Science Database",
-  "carga_s": 10.4,
-  "revisado": "2026-11-10T19:47:04.006Z",
+  "falla": "",
+  "detalle": "",
+  "carga_s": 3.8,
+  "revisado": "2026-11-11T17:46:59.550Z",
   "origen": "equipo",
-  "disponibilidad": 0.8,
-  "validaciones": 15
+  "disponibilidad": 0.813,
+  "validaciones": 16
  },
  {
   "recurso": "Consumer Health Database",
@@ -137,29 +137,29 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 3.3,
-  "revisado": "2026-11-10T19:47:09.342Z",
+  "carga_s": 3.6,
+  "revisado": "2026-11-11T17:47:05.929Z",
   "origen": "equipo",
-  "disponibilidad": 0.933,
-  "validaciones": 15
+  "disponibilidad": 0.938,
+  "validaciones": 16
  },
  {
   "recurso": "Coronavirus Research Database (ProQuest)",
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/coronavirus",
-  "estado": "Con falla",
+  "estado": "Disponible",
   "etapas": {
    "proxy": "ok",
    "login": "ok",
-   "sitio": "falla"
+   "sitio": "ok"
   },
-  "falla": "Contenido inesperado",
-  "detalle": "No aparece: Coronavirus Research Database",
-  "carga_s": 11.1,
-  "revisado": "2026-11-10T19:47:22.412Z",
+  "falla": "",
+  "detalle": "",
+  "carga_s": 3.4,
+  "revisado": "2026-11-11T17:47:11.343Z",
   "origen": "equipo",
-  "disponibilidad": 0.867,
-  "validaciones": 15
+  "disponibilidad": 0.875,
+  "validaciones": 16
  },
  {
   "recurso": "Criminal Justice Database (ProQuest)",
@@ -173,11 +173,11 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 3.7,
-  "revisado": "2026-11-10T19:47:29.096Z",
+  "carga_s": 3.3,
+  "revisado": "2026-11-11T17:47:18.437Z",
   "origen": "equipo",
   "disponibilidad": 1,
-  "validaciones": 15
+  "validaciones": 16
  },
  {
   "recurso": "E-Collection",
@@ -192,28 +192,28 @@
   "falla": "",
   "detalle": "",
   "carga_s": 1.8,
-  "revisado": "2026-11-10T19:47:32.882Z",
+  "revisado": "2026-11-11T17:47:22.278Z",
   "origen": "equipo",
   "disponibilidad": 1,
-  "validaciones": 15
+  "validaciones": 16
  },
  {
   "recurso": "Engineering Database",
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/engineeringjournals/fromDatabasesLayer?accountid=25548",
-  "estado": "Con falla",
+  "estado": "Disponible",
   "etapas": {
    "proxy": "ok",
    "login": "ok",
-   "sitio": "falla"
+   "sitio": "ok"
   },
-  "falla": "Contenido inesperado",
-  "detalle": "No aparece: Engineering Database",
-  "carga_s": 10.6,
-  "revisado": "2026-11-10T19:47:45.488Z",
+  "falla": "",
+  "detalle": "",
+  "carga_s": 3.3,
+  "revisado": "2026-11-11T17:47:27.646Z",
   "origen": "equipo",
-  "disponibilidad": 0.867,
-  "validaciones": 15
+  "disponibilidad": 0.875,
+  "validaciones": 16
  },
  {
   "recurso": "Global Breaking Newswires",
@@ -227,11 +227,11 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 3.3,
-  "revisado": "2026-11-10T19:47:52.280Z",
+  "carga_s": 3.5,
+  "revisado": "2026-11-11T17:47:34.162Z",
   "origen": "equipo",
-  "disponibilidad": 0.933,
-  "validaciones": 15
+  "disponibilidad": 0.938,
+  "validaciones": 16
  },
  {
   "recurso": "Gran base de datos Premium",
@@ -245,11 +245,11 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 2.9,
-  "revisado": "2026-11-10T19:47:57.208Z",
+  "carga_s": 3.2,
+  "revisado": "2026-11-11T17:47:39.382Z",
   "origen": "equipo",
   "disponibilidad": 1,
-  "validaciones": 15
+  "validaciones": 16
  },
  {
   "recurso": "Health & Medical Collection (ProQuest)",
@@ -263,11 +263,11 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 3.3,
-  "revisado": "2026-11-10T19:48:02.570Z",
+  "carga_s": 3.2,
+  "revisado": "2026-11-11T17:47:44.632Z",
   "origen": "equipo",
   "disponibilidad": 1,
-  "validaciones": 15
+  "validaciones": 16
  },
  {
   "recurso": "Healthcare Administration Database",
@@ -281,11 +281,11 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 3.3,
-  "revisado": "2026-11-10T19:48:07.943Z",
+  "carga_s": 3.2,
+  "revisado": "2026-11-11T17:47:49.853Z",
   "origen": "equipo",
   "disponibilidad": 1,
-  "validaciones": 15
+  "validaciones": 16
  },
  {
   "recurso": "International Newsstream (ProQuest)",
@@ -299,11 +299,11 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 3.6,
-  "revisado": "2026-11-10T19:48:13.525Z",
+  "carga_s": 3.4,
+  "revisado": "2026-11-11T17:47:55.312Z",
   "origen": "equipo",
-  "disponibilidad": 0.867,
-  "validaciones": 15
+  "disponibilidad": 0.875,
+  "validaciones": 16
  },
  {
   "recurso": "Legiscomex",
@@ -317,11 +317,11 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 11.5,
-  "revisado": "2026-11-10T19:48:28.084Z",
+  "carga_s": 11.4,
+  "revisado": "2026-11-11T17:48:08.786Z",
   "origen": "equipo",
-  "disponibilidad": 0.933,
-  "validaciones": 15
+  "disponibilidad": 0.938,
+  "validaciones": 16
  },
  {
   "recurso": "Library Science Database (ProQuest)",
@@ -335,11 +335,11 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 4,
-  "revisado": "2026-11-10T19:48:34.068Z",
+  "carga_s": 3.2,
+  "revisado": "2026-11-11T17:48:14.016Z",
   "origen": "equipo",
-  "disponibilidad": 0.867,
-  "validaciones": 15
+  "disponibilidad": 0.875,
+  "validaciones": 16
  },
  {
   "recurso": "Linguistics Database (ProQuest)",
@@ -353,11 +353,11 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 3.5,
-  "revisado": "2026-11-10T19:48:40.498Z",
+  "carga_s": 3.6,
+  "revisado": "2026-11-11T17:48:19.683Z",
   "origen": "equipo",
-  "disponibilidad": 0.933,
-  "validaciones": 15
+  "disponibilidad": 0.938,
+  "validaciones": 16
  },
  {
   "recurso": "Materials Science Database",
@@ -371,11 +371,11 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 3.2,
-  "revisado": "2026-11-10T19:48:45.754Z",
+  "carga_s": 3.3,
+  "revisado": "2026-11-11T17:48:24.967Z",
   "origen": "equipo",
-  "disponibilidad": 0.933,
-  "validaciones": 15
+  "disponibilidad": 0.938,
+  "validaciones": 16
  },
  {
   "recurso": "Military Database (ProQuest)",
@@ -389,11 +389,11 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 3.6,
-  "revisado": "2026-11-10T19:48:51.343Z",
+  "carga_s": 3.4,
+  "revisado": "2026-11-11T17:48:30.445Z",
   "origen": "equipo",
   "disponibilidad": 1,
-  "validaciones": 15
+  "validaciones": 16
  },
  {
   "recurso": "Nursing & Allied Health Database",
@@ -407,11 +407,11 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 7.4,
-  "revisado": "2026-11-10T19:49:00.724Z",
+  "carga_s": 4.9,
+  "revisado": "2026-11-11T17:48:37.390Z",
   "origen": "equipo",
   "disponibilidad": 1,
-  "validaciones": 15
+  "validaciones": 16
  },
  {
   "recurso": "Political Science Database",
@@ -425,11 +425,11 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 3.5,
-  "revisado": "2026-11-10T19:49:06.241Z",
+  "carga_s": 4,
+  "revisado": "2026-11-11T17:48:43.440Z",
   "origen": "equipo",
   "disponibilidad": 1,
-  "validaciones": 15
+  "validaciones": 16
  },
  {
   "recurso": "ProQuest Central Premium",
@@ -443,11 +443,11 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 5.1,
-  "revisado": "2026-11-10T19:49:13.349Z",
+  "carga_s": 4.9,
+  "revisado": "2026-11-11T17:48:50.385Z",
   "origen": "equipo",
-  "disponibilidad": 0.867,
-  "validaciones": 15
+  "disponibilidad": 0.875,
+  "validaciones": 16
  },
  {
   "recurso": "Publicly Available Content Database",
@@ -461,11 +461,11 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 4.6,
-  "revisado": "2026-11-10T19:49:20.754Z",
+  "carga_s": 3.4,
+  "revisado": "2026-11-11T17:48:55.835Z",
   "origen": "equipo",
-  "disponibilidad": 0.867,
-  "validaciones": 15
+  "disponibilidad": 0.875,
+  "validaciones": 16
  },
  {
   "recurso": "Public Health Database",
@@ -479,11 +479,11 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 3.5,
-  "revisado": "2026-11-10T19:49:26.991Z",
+  "carga_s": 3.2,
+  "revisado": "2026-11-11T17:49:01.051Z",
   "origen": "equipo",
-  "disponibilidad": 0.867,
-  "validaciones": 15
+  "disponibilidad": 0.875,
+  "validaciones": 16
  },
  {
   "recurso": "Religion Database (ProQuest)",
@@ -497,11 +497,11 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 3.3,
-  "revisado": "2026-11-10T19:49:33.083Z",
+  "carga_s": 3.6,
+  "revisado": "2026-11-11T17:49:06.633Z",
   "origen": "equipo",
-  "disponibilidad": 0.933,
-  "validaciones": 15
+  "disponibilidad": 0.938,
+  "validaciones": 16
  },
  {
   "recurso": "Research Library (ProQuest)",
@@ -515,11 +515,11 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 3.3,
-  "revisado": "2026-11-10T19:49:38.360Z",
+  "carga_s": 3.2,
+  "revisado": "2026-11-11T17:49:11.901Z",
   "origen": "equipo",
-  "disponibilidad": 0.933,
-  "validaciones": 15
+  "disponibilidad": 0.938,
+  "validaciones": 16
  },
  {
   "recurso": "Social Science Database (ProQuest)",
@@ -533,11 +533,11 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 3.2,
-  "revisado": "2026-11-10T19:49:43.605Z",
+  "carga_s": 4,
+  "revisado": "2026-11-11T17:49:17.969Z",
   "origen": "equipo",
-  "disponibilidad": 0.933,
-  "validaciones": 15
+  "disponibilidad": 0.938,
+  "validaciones": 16
  },
  {
   "recurso": "Sociology Database (ProQuest)",
@@ -551,11 +551,11 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 3.4,
-  "revisado": "2026-11-10T19:49:48.986Z",
+  "carga_s": 3.5,
+  "revisado": "2026-11-11T17:49:23.503Z",
   "origen": "equipo",
   "disponibilidad": 1,
-  "validaciones": 15
+  "validaciones": 16
  },
  {
   "recurso": "US Newsstream",
@@ -570,10 +570,10 @@
   "falla": "",
   "detalle": "",
   "carga_s": 3.4,
-  "revisado": "2026-11-10T19:49:54.439Z",
+  "revisado": "2026-11-11T17:49:28.910Z",
   "origen": "equipo",
-  "disponibilidad": 0.933,
-  "validaciones": 15
+  "disponibilidad": 0.938,
+  "validaciones": 16
  },
  {
   "recurso": "Virtual Pro",
@@ -587,11 +587,11 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 4.3,
-  "revisado": "2026-11-10T19:50:00.751Z",
+  "carga_s": 3.6,
+  "revisado": "2026-11-11T17:49:34.551Z",
   "origen": "equipo",
-  "disponibilidad": 0.933,
-  "validaciones": 15
+  "disponibilidad": 0.938,
+  "validaciones": 16
  },
  {
   "recurso": "OpenAire",
@@ -605,11 +605,11 @@
   },
   "falla": "Dominio inesperado",
   "detalle": "Dominio final itmsp.museknowledge.com, se esperaba www.openaire.eu",
-  "carga_s": 6.6,
-  "revisado": "2026-11-10T19:50:09.376Z",
+  "carga_s": 7.7,
+  "revisado": "2026-11-11T17:49:44.305Z",
   "origen": "equipo",
   "disponibilidad": 0,
-  "validaciones": 15
+  "validaciones": 16
  },
  {
   "recurso": "Ebook Central",
@@ -623,11 +623,11 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 1.7,
-  "revisado": "2026-11-10T19:50:13.068Z",
+  "carga_s": 2.3,
+  "revisado": "2026-11-11T17:49:48.612Z",
   "origen": "equipo",
   "disponibilidad": 1,
-  "validaciones": 15
+  "validaciones": 16
  },
  {
   "recurso": "Education Research Index",
@@ -641,11 +641,11 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 3.2,
-  "revisado": "2026-11-10T19:50:18.297Z",
+  "carga_s": 3.6,
+  "revisado": "2026-11-11T17:49:54.220Z",
   "origen": "equipo",
-  "disponibilidad": 0.867,
-  "validaciones": 15
+  "disponibilidad": 0.875,
+  "validaciones": 16
  },
  {
   "recurso": "Eric",
@@ -659,11 +659,11 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 3.2,
-  "revisado": "2026-11-10T19:50:23.481Z",
+  "carga_s": 3.4,
+  "revisado": "2026-11-11T17:49:59.666Z",
   "origen": "equipo",
-  "disponibilidad": 0.867,
-  "validaciones": 15
+  "disponibilidad": 0.875,
+  "validaciones": 16
  },
  {
   "recurso": "Supplemental Education Index",
@@ -677,11 +677,11 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 3.4,
-  "revisado": "2026-11-10T19:50:29.650Z",
+  "carga_s": 3.3,
+  "revisado": "2026-11-11T17:50:04.979Z",
   "origen": "equipo",
-  "disponibilidad": 0.933,
-  "validaciones": 15
+  "disponibilidad": 0.938,
+  "validaciones": 16
  },
  {
   "recurso": "Agrícola",
@@ -695,11 +695,11 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 3.7,
-  "revisado": "2026-11-10T19:50:35.336Z",
+  "carga_s": 3.4,
+  "revisado": "2026-11-11T17:50:10.390Z",
   "origen": "equipo",
-  "disponibilidad": 0.867,
-  "validaciones": 15
+  "disponibilidad": 0.875,
+  "validaciones": 16
  },
  {
   "recurso": "ASFA: Aquatic Sciences and Fisheries Abstracts",
@@ -713,11 +713,11 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 3.7,
-  "revisado": "2026-11-10T19:50:41.810Z",
+  "carga_s": 3.8,
+  "revisado": "2026-11-11T17:50:16.241Z",
   "origen": "equipo",
-  "disponibilidad": 0.867,
-  "validaciones": 15
+  "disponibilidad": 0.875,
+  "validaciones": 16
  },
  {
   "recurso": "Aquatic Science & Fisheries Abstracts (ASFA) 1: Biological Sciences & Living Resources",
@@ -731,11 +731,11 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 3.2,
-  "revisado": "2026-11-10T19:50:47.988Z",
+  "carga_s": 3.5,
+  "revisado": "2026-11-11T17:50:21.772Z",
   "origen": "equipo",
   "disponibilidad": 1,
-  "validaciones": 15
+  "validaciones": 16
  },
  {
   "recurso": "Aquatic Science & Fisheries Abstracts (ASFA) 2: Ocean Technology, Policy & Non-Living Resources",
@@ -749,11 +749,11 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 4,
-  "revisado": "2026-11-10T19:50:54.022Z",
+  "carga_s": 3.7,
+  "revisado": "2026-11-11T17:50:27.558Z",
   "origen": "equipo",
-  "disponibilidad": 0.933,
-  "validaciones": 15
+  "disponibilidad": 0.938,
+  "validaciones": 16
  },
  {
   "recurso": "Aquatic Science & Fisheries Abstracts (ASFA) 3: Aquatic Pollution & Environmental Quality",
@@ -767,11 +767,11 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 3.3,
-  "revisado": "2026-11-10T19:50:59.325Z",
+  "carga_s": 3.5,
+  "revisado": "2026-11-11T17:50:33.098Z",
   "origen": "equipo",
-  "disponibilidad": 0.867,
-  "validaciones": 15
+  "disponibilidad": 0.875,
+  "validaciones": 16
  },
  {
   "recurso": "Aquatic Science & Fisheries Abstracts (ASFA) Aquaculture Abstracts",
@@ -785,11 +785,11 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 3.3,
-  "revisado": "2026-11-10T19:51:04.678Z",
+  "carga_s": 3.6,
+  "revisado": "2026-11-11T17:50:38.748Z",
   "origen": "equipo",
-  "disponibilidad": 0.933,
-  "validaciones": 15
+  "disponibilidad": 0.938,
+  "validaciones": 16
  },
  {
   "recurso": "Aquatic Science & Fisheries Abstracts (ASFA) Marine Biotechnology Abstracts",
@@ -803,11 +803,11 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 3.3,
-  "revisado": "2026-11-10T19:51:09.998Z",
+  "carga_s": 3.9,
+  "revisado": "2026-11-11T17:50:44.707Z",
   "origen": "equipo",
-  "disponibilidad": 0.933,
-  "validaciones": 15
+  "disponibilidad": 0.938,
+  "validaciones": 16
  },
  {
   "recurso": "Oceanic Abstracts",
@@ -821,11 +821,11 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 3.3,
-  "revisado": "2026-11-10T19:51:15.303Z",
+  "carga_s": 3.7,
+  "revisado": "2026-11-11T17:50:50.471Z",
   "origen": "equipo",
-  "disponibilidad": 0.933,
-  "validaciones": 15
+  "disponibilidad": 0.938,
+  "validaciones": 16
  },
  {
   "recurso": "Environmental Science Index",
@@ -840,10 +840,10 @@
   "falla": "",
   "detalle": "",
   "carga_s": 3.5,
-  "revisado": "2026-11-10T19:51:20.816Z",
+  "revisado": "2026-11-11T17:50:55.967Z",
   "origen": "equipo",
-  "disponibilidad": 0.933,
-  "validaciones": 15
+  "disponibilidad": 0.938,
+  "validaciones": 16
  },
  {
   "recurso": "Global Newsstream Collection",
@@ -857,11 +857,11 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 3.3,
-  "revisado": "2026-11-10T19:51:26.123Z",
+  "carga_s": 3.4,
+  "revisado": "2026-11-11T17:51:01.350Z",
   "origen": "equipo",
-  "disponibilidad": 0.933,
-  "validaciones": 15
+  "disponibilidad": 0.938,
+  "validaciones": 16
  },
  {
   "recurso": "Humanities Index",
@@ -876,10 +876,10 @@
   "falla": "",
   "detalle": "",
   "carga_s": 3.4,
-  "revisado": "2026-11-10T19:51:31.544Z",
+  "revisado": "2026-11-11T17:51:06.767Z",
   "origen": "equipo",
   "disponibilidad": 1,
-  "validaciones": 15
+  "validaciones": 16
  },
  {
   "recurso": "Meteorological & Geoastrophysical Abstracts",
@@ -893,11 +893,11 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 4.1,
-  "revisado": "2026-11-10T19:51:37.670Z",
+  "carga_s": 3.5,
+  "revisado": "2026-11-11T17:51:12.283Z",
   "origen": "equipo",
-  "disponibilidad": 0.933,
-  "validaciones": 15
+  "disponibilidad": 0.938,
+  "validaciones": 16
  },
  {
   "recurso": "ProQuest One Applied & Life Sciences",
@@ -911,11 +911,11 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 6.2,
-  "revisado": "2026-11-10T19:51:45.909Z",
+  "carga_s": 6.9,
+  "revisado": "2026-11-11T17:51:21.219Z",
   "origen": "equipo",
-  "disponibilidad": 0.933,
-  "validaciones": 15
+  "disponibilidad": 0.938,
+  "validaciones": 16
  },
  {
   "recurso": "Advanced Technologies & Computer Science Collection",
@@ -929,11 +929,11 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 3.5,
-  "revisado": "2026-11-10T19:51:51.461Z",
+  "carga_s": 3.9,
+  "revisado": "2026-11-11T17:51:27.111Z",
   "origen": "equipo",
   "disponibilidad": 1,
-  "validaciones": 15
+  "validaciones": 16
  },
  {
   "recurso": "Engineering Collection",
@@ -947,11 +947,11 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 3.8,
-  "revisado": "2026-11-10T19:51:57.240Z",
+  "carga_s": 3.5,
+  "revisado": "2026-11-11T17:51:32.661Z",
   "origen": "equipo",
-  "disponibilidad": 0.933,
-  "validaciones": 15
+  "disponibilidad": 0.938,
+  "validaciones": 16
  },
  {
   "recurso": "Materials Science Collection",
@@ -965,11 +965,11 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 3.2,
-  "revisado": "2026-11-10T19:52:02.509Z",
+  "carga_s": 3.4,
+  "revisado": "2026-11-11T17:51:38.100Z",
   "origen": "equipo",
-  "disponibilidad": 0.867,
-  "validaciones": 15
+  "disponibilidad": 0.875,
+  "validaciones": 16
  },
  {
   "recurso": "ProQuest One Business",
@@ -983,11 +983,11 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 10.4,
-  "revisado": "2026-11-10T19:52:15.738Z",
+  "carga_s": 7.8,
+  "revisado": "2026-11-11T17:51:47.919Z",
   "origen": "equipo",
   "disponibilidad": 1,
-  "validaciones": 15
+  "validaciones": 16
  },
  {
   "recurso": "ProQuest One Education",
@@ -1001,11 +1001,11 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 6.6,
-  "revisado": "2026-11-10T19:52:24.359Z",
+  "carga_s": 5.8,
+  "revisado": "2026-11-11T17:51:55.786Z",
   "origen": "equipo",
-  "disponibilidad": 0.867,
-  "validaciones": 15
+  "disponibilidad": 0.875,
+  "validaciones": 16
  },
  {
   "recurso": "Education Magazine Archive",
@@ -1019,11 +1019,11 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 4.5,
-  "revisado": "2026-11-10T19:52:31.532Z",
+  "carga_s": 4,
+  "revisado": "2026-11-11T17:52:01.828Z",
   "origen": "equipo",
-  "disponibilidad": 0.867,
-  "validaciones": 15
+  "disponibilidad": 0.875,
+  "validaciones": 16
  },
  {
   "recurso": "ProQuest One Health & Nursing",
@@ -1037,11 +1037,11 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 5.9,
-  "revisado": "2026-11-10T19:52:39.947Z",
+  "carga_s": 5,
+  "revisado": "2026-11-11T17:52:08.883Z",
   "origen": "equipo",
   "disponibilidad": 1,
-  "validaciones": 15
+  "validaciones": 16
  },
  {
   "recurso": "British Nursing Collection",
@@ -1056,10 +1056,10 @@
   "falla": "",
   "detalle": "",
   "carga_s": 3.8,
-  "revisado": "2026-11-10T19:52:45.785Z",
+  "revisado": "2026-11-11T17:52:14.657Z",
   "origen": "equipo",
-  "disponibilidad": 0.933,
-  "validaciones": 15
+  "disponibilidad": 0.938,
+  "validaciones": 16
  },
  {
   "recurso": "Health & Medical Research Collection",
@@ -1073,29 +1073,29 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 3.8,
-  "revisado": "2026-11-10T19:52:51.565Z",
+  "carga_s": 3.6,
+  "revisado": "2026-11-11T17:52:20.277Z",
   "origen": "equipo",
-  "disponibilidad": 0.933,
-  "validaciones": 15
+  "disponibilidad": 0.938,
+  "validaciones": 16
  },
  {
   "recurso": "ProQuest One Psychology",
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/pq1psychology?accountid=25548",
-  "estado": "Con falla",
+  "estado": "Disponible",
   "etapas": {
    "proxy": "ok",
    "login": "ok",
-   "sitio": "falla"
+   "sitio": "ok"
   },
-  "falla": "Contenido inesperado",
-  "detalle": "No aparece: ProQuest One Psychology, Acceso proporcionado por Universidad Agustiniana",
-  "carga_s": 17.6,
-  "revisado": "2026-11-10T19:53:11.191Z",
+  "falla": "",
+  "detalle": "",
+  "carga_s": 8.3,
+  "revisado": "2026-11-11T17:52:30.639Z",
   "origen": "equipo",
-  "disponibilidad": 0.867,
-  "validaciones": 15
+  "disponibilidad": 0.875,
+  "validaciones": 16
  },
  {
   "recurso": "ProQuest One Religion & Philosophy",
@@ -1109,11 +1109,11 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 5,
-  "revisado": "2026-11-10T19:53:18.945Z",
+  "carga_s": 4.4,
+  "revisado": "2026-11-11T17:52:38.004Z",
   "origen": "equipo",
-  "disponibilidad": 0.933,
-  "validaciones": 15
+  "disponibilidad": 0.938,
+  "validaciones": 16
  },
  {
   "recurso": "Philosophy Research Collection",
@@ -1127,11 +1127,11 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 3.6,
-  "revisado": "2026-11-10T19:53:24.602Z",
+  "carga_s": 3.5,
+  "revisado": "2026-11-11T17:52:43.542Z",
   "origen": "equipo",
-  "disponibilidad": 0.933,
-  "validaciones": 15
+  "disponibilidad": 0.938,
+  "validaciones": 16
  },
  {
   "recurso": "Religion Archive Collection",
@@ -1145,11 +1145,11 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 4.6,
-  "revisado": "2026-11-10T19:53:31.256Z",
+  "carga_s": 4.4,
+  "revisado": "2026-11-11T17:52:50.004Z",
   "origen": "equipo",
   "disponibilidad": 1,
-  "validaciones": 15
+  "validaciones": 16
  },
  {
   "recurso": "ProQuest One Social Sciences",
@@ -1163,11 +1163,11 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 5.1,
-  "revisado": "2026-11-10T19:53:38.335Z",
+  "carga_s": 4.8,
+  "revisado": "2026-11-11T17:52:56.866Z",
   "origen": "equipo",
-  "disponibilidad": 0.933,
-  "validaciones": 15
+  "disponibilidad": 0.938,
+  "validaciones": 16
  },
  {
   "recurso": "Criminology Collection",
@@ -1181,11 +1181,11 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 3.6,
-  "revisado": "2026-11-10T19:53:43.968Z",
+  "carga_s": 3.8,
+  "revisado": "2026-11-11T17:53:02.663Z",
   "origen": "equipo",
-  "disponibilidad": 0.933,
-  "validaciones": 15
+  "disponibilidad": 0.938,
+  "validaciones": 16
  },
  {
   "recurso": "Library & Information Science Collection",
@@ -1199,11 +1199,11 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 3.4,
-  "revisado": "2026-11-10T19:53:49.348Z",
+  "carga_s": 3.5,
+  "revisado": "2026-11-11T17:53:08.156Z",
   "origen": "equipo",
-  "disponibilidad": 0.933,
-  "validaciones": 15
+  "disponibilidad": 0.938,
+  "validaciones": 16
  },
  {
   "recurso": "Linguistics Collection",
@@ -1217,11 +1217,11 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 2.9,
-  "revisado": "2026-11-10T19:53:54.282Z",
+  "carga_s": 3.4,
+  "revisado": "2026-11-11T17:53:13.661Z",
   "origen": "equipo",
-  "disponibilidad": 0.933,
-  "validaciones": 15
+  "disponibilidad": 0.938,
+  "validaciones": 16
  },
  {
   "recurso": "Politics Collection",
@@ -1235,11 +1235,11 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 3,
-  "revisado": "2026-11-10T19:53:59.336Z",
+  "carga_s": 3.3,
+  "revisado": "2026-11-11T17:53:19.021Z",
   "origen": "equipo",
-  "disponibilidad": 0.933,
-  "validaciones": 15
+  "disponibilidad": 0.938,
+  "validaciones": 16
  },
  {
   "recurso": "Sociology & Social Sciences Collection",
@@ -1253,11 +1253,11 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 3.3,
-  "revisado": "2026-11-10T19:54:06.165Z",
+  "carga_s": 4,
+  "revisado": "2026-11-11T17:53:24.998Z",
   "origen": "equipo",
-  "disponibilidad": 0.867,
-  "validaciones": 15
+  "disponibilidad": 0.875,
+  "validaciones": 16
  },
  {
   "recurso": "ProQuest One Sustainability",
@@ -1271,11 +1271,11 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 8.5,
-  "revisado": "2026-11-10T19:54:16.686Z",
+  "carga_s": 8.4,
+  "revisado": "2026-11-11T17:53:35.424Z",
   "origen": "equipo",
-  "disponibilidad": 0.933,
-  "validaciones": 15
+  "disponibilidad": 0.938,
+  "validaciones": 16
  },
  {
   "recurso": "Research Library: Business",
@@ -1289,11 +1289,11 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 3.2,
-  "revisado": "2026-11-10T19:54:21.889Z",
+  "carga_s": 3.6,
+  "revisado": "2026-11-11T17:53:41.035Z",
   "origen": "equipo",
-  "disponibilidad": 0.867,
-  "validaciones": 15
+  "disponibilidad": 0.875,
+  "validaciones": 16
  },
  {
   "recurso": "Research Library: Health & Medicine",
@@ -1307,11 +1307,11 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 3.2,
-  "revisado": "2026-11-10T19:54:27.060Z",
+  "carga_s": 3.8,
+  "revisado": "2026-11-11T17:53:46.900Z",
   "origen": "equipo",
-  "disponibilidad": 0.933,
-  "validaciones": 15
+  "disponibilidad": 0.938,
+  "validaciones": 16
  },
  {
   "recurso": "Research Library: History",
@@ -1325,11 +1325,11 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 3.1,
-  "revisado": "2026-11-10T19:54:32.191Z",
+  "carga_s": 3.6,
+  "revisado": "2026-11-11T17:53:52.515Z",
   "origen": "equipo",
-  "disponibilidad": 0.867,
-  "validaciones": 15
+  "disponibilidad": 0.875,
+  "validaciones": 16
  },
  {
   "recurso": "Research Library: Literature & Language",
@@ -1343,11 +1343,11 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 3.1,
-  "revisado": "2026-11-10T19:54:38.034Z",
+  "carga_s": 3.6,
+  "revisado": "2026-11-11T17:53:58.187Z",
   "origen": "equipo",
-  "disponibilidad": 0.867,
-  "validaciones": 15
+  "disponibilidad": 0.875,
+  "validaciones": 16
  },
  {
   "recurso": "Research Library: Science & Technology",
@@ -1361,11 +1361,11 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 3.2,
-  "revisado": "2026-11-10T19:54:44.094Z",
+  "carga_s": 3.4,
+  "revisado": "2026-11-11T17:54:03.586Z",
   "origen": "equipo",
-  "disponibilidad": 0.933,
-  "validaciones": 15
+  "disponibilidad": 0.938,
+  "validaciones": 16
  },
  {
   "recurso": "Research Library: Social Sciences",
@@ -1379,11 +1379,11 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 3.4,
-  "revisado": "2026-11-10T19:54:49.494Z",
+  "carga_s": 3.5,
+  "revisado": "2026-11-11T17:54:09.057Z",
   "origen": "equipo",
-  "disponibilidad": 0.933,
-  "validaciones": 15
+  "disponibilidad": 0.938,
+  "validaciones": 16
  },
  {
   "recurso": "Research Library: The Arts",
@@ -1397,11 +1397,11 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 3,
-  "revisado": "2026-11-10T19:54:55.203Z",
+  "carga_s": 3.5,
+  "revisado": "2026-11-11T17:54:14.584Z",
   "origen": "equipo",
-  "disponibilidad": 0.933,
-  "validaciones": 15
+  "disponibilidad": 0.938,
+  "validaciones": 16
  },
  {
   "recurso": "Career & Technical Education Database: Business",
@@ -1415,11 +1415,11 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 2.9,
-  "revisado": "2026-11-10T19:55:00.094Z",
+  "carga_s": 3.6,
+  "revisado": "2026-11-11T17:54:20.203Z",
   "origen": "equipo",
-  "disponibilidad": 0.933,
-  "validaciones": 15
+  "disponibilidad": 0.938,
+  "validaciones": 16
  },
  {
   "recurso": "Career & Technical Education Database: Health & Medicine",
@@ -1433,11 +1433,11 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 3.2,
-  "revisado": "2026-11-10T19:55:05.328Z",
+  "carga_s": 3.6,
+  "revisado": "2026-11-11T17:54:25.819Z",
   "origen": "equipo",
-  "disponibilidad": 0.933,
-  "validaciones": 15
+  "disponibilidad": 0.938,
+  "validaciones": 16
  },
  {
   "recurso": "Career & Technical Education Database: History",
@@ -1451,11 +1451,11 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 3,
-  "revisado": "2026-11-10T19:55:10.345Z",
+  "carga_s": 3.6,
+  "revisado": "2026-11-11T17:54:31.438Z",
   "origen": "equipo",
-  "disponibilidad": 0.933,
-  "validaciones": 15
+  "disponibilidad": 0.938,
+  "validaciones": 16
  },
  {
   "recurso": "Career & Technical Education Database: Literature & Language",
@@ -1469,11 +1469,11 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 3.1,
-  "revisado": "2026-11-10T19:55:15.499Z",
+  "carga_s": 3.4,
+  "revisado": "2026-11-11T17:54:36.895Z",
   "origen": "equipo",
   "disponibilidad": 1,
-  "validaciones": 15
+  "validaciones": 16
  },
  {
   "recurso": "Career & Technical Education Database: Science & Technology",
@@ -1487,11 +1487,11 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 3.4,
-  "revisado": "2026-11-10T19:55:20.910Z",
+  "carga_s": 3.6,
+  "revisado": "2026-11-11T17:54:42.484Z",
   "origen": "equipo",
   "disponibilidad": 1,
-  "validaciones": 15
+  "validaciones": 16
  },
  {
   "recurso": "Career & Technical Education Database: Social Sciences",
@@ -1505,29 +1505,29 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 3,
-  "revisado": "2026-11-10T19:55:25.925Z",
+  "carga_s": 3.5,
+  "revisado": "2026-11-11T17:54:48.013Z",
   "origen": "equipo",
-  "disponibilidad": 0.933,
-  "validaciones": 15
+  "disponibilidad": 0.938,
+  "validaciones": 16
  },
  {
   "recurso": "Career & Technical Education Database: The Arts",
   "proveedor": "ProQuest",
   "url": "https://itmsp.museknowledge.com/UniAgu?url=https://www.proquest.com/careerarts?accountid=25548",
-  "estado": "Con falla",
+  "estado": "Disponible",
   "etapas": {
    "proxy": "ok",
    "login": "ok",
-   "sitio": "falla"
+   "sitio": "ok"
   },
-  "falla": "Contenido inesperado",
-  "detalle": "No aparece: Career & Technical Education Database: The Arts",
-  "carga_s": 10.5,
-  "revisado": "2026-11-10T19:55:38.406Z",
+  "falla": "",
+  "detalle": "",
+  "carga_s": 3.6,
+  "revisado": "2026-11-11T17:54:53.608Z",
   "origen": "equipo",
-  "disponibilidad": 0.867,
-  "validaciones": 15
+  "disponibilidad": 0.875,
+  "validaciones": 16
  },
  {
   "recurso": "Canadian Business & Current Affairs Database: Business",
@@ -1541,11 +1541,11 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 3.2,
-  "revisado": "2026-11-10T19:55:44.307Z",
+  "carga_s": 3.5,
+  "revisado": "2026-11-11T17:55:02.217Z",
   "origen": "equipo",
   "disponibilidad": 1,
-  "validaciones": 15
+  "validaciones": 16
  },
  {
   "recurso": "Canadian Business & Current Affairs Database: Health & Medicine",
@@ -1559,11 +1559,11 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 3.2,
-  "revisado": "2026-11-10T19:55:49.549Z",
+  "carga_s": 3.5,
+  "revisado": "2026-11-11T17:55:07.715Z",
   "origen": "equipo",
-  "disponibilidad": 0.933,
-  "validaciones": 15
+  "disponibilidad": 0.938,
+  "validaciones": 16
  },
  {
   "recurso": "Canadian Business & Current Affairs Database: History",
@@ -1577,11 +1577,11 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 3,
-  "revisado": "2026-11-10T19:55:54.605Z",
+  "carga_s": 3.3,
+  "revisado": "2026-11-11T17:55:13.032Z",
   "origen": "equipo",
   "disponibilidad": 1,
-  "validaciones": 15
+  "validaciones": 16
  },
  {
   "recurso": "Canadian Business & Current Affairs Database: Literature & Language",
@@ -1595,11 +1595,11 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 3.2,
-  "revisado": "2026-11-10T19:55:59.844Z",
+  "carga_s": 3.5,
+  "revisado": "2026-11-11T17:55:18.510Z",
   "origen": "equipo",
-  "disponibilidad": 0.933,
-  "validaciones": 15
+  "disponibilidad": 0.938,
+  "validaciones": 16
  },
  {
   "recurso": "Canadian Business & Current Affairs Database: Science & Technology",
@@ -1613,11 +1613,11 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 3,
-  "revisado": "2026-11-10T19:56:04.859Z",
+  "carga_s": 3.3,
+  "revisado": "2026-11-11T17:55:23.819Z",
   "origen": "equipo",
-  "disponibilidad": 0.933,
-  "validaciones": 15
+  "disponibilidad": 0.938,
+  "validaciones": 16
  },
  {
   "recurso": "Canadian Business & Current Affairs Database: Social Sciences",
@@ -1631,11 +1631,11 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 3,
-  "revisado": "2026-11-10T19:56:09.896Z",
+  "carga_s": 3.2,
+  "revisado": "2026-11-11T17:55:29.084Z",
   "origen": "equipo",
   "disponibilidad": 1,
-  "validaciones": 15
+  "validaciones": 16
  },
  {
   "recurso": "Canadian Business & Current Affairs Database: The Arts",
@@ -1649,11 +1649,11 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 3.1,
-  "revisado": "2026-11-10T19:56:15.006Z",
+  "carga_s": 3.5,
+  "revisado": "2026-11-11T17:55:34.593Z",
   "origen": "equipo",
   "disponibilidad": 1,
-  "validaciones": 15
+  "validaciones": 16
  },
  {
   "recurso": "El Tiempo",
@@ -1667,11 +1667,11 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 1.6,
-  "revisado": "2026-11-10T19:56:18.643Z",
+  "carga_s": 1.1,
+  "revisado": "2026-11-11T17:55:37.732Z",
   "origen": "equipo",
-  "disponibilidad": 0.933,
-  "validaciones": 15
+  "disponibilidad": 0.938,
+  "validaciones": 16
  },
  {
   "recurso": "Revista Derecho y Sociedad",
@@ -1685,11 +1685,11 @@
   },
   "falla": "Error de conexión",
   "detalle": "page.goto: net::ERR_NAME_NOT_RESOLVED at https://revistas-unicordoba-edu-co.recursoselectronicos.uniagustiniana.edu.co/index.php/dersoc",
-  "carga_s": 0,
-  "revisado": "2026-11-10T19:56:20.700Z",
+  "carga_s": 0.1,
+  "revisado": "2026-11-11T17:55:39.802Z",
   "origen": "equipo",
   "disponibilidad": 0,
-  "validaciones": 15
+  "validaciones": 16
  },
  {
   "recurso": "E-Libro",
@@ -1703,28 +1703,28 @@
   },
   "falla": "",
   "detalle": "",
-  "carga_s": 1.9,
-  "revisado": "2026-11-10T19:56:24.670Z",
+  "carga_s": 1.7,
+  "revisado": "2026-11-11T17:55:43.544Z",
   "origen": "equipo",
   "disponibilidad": 1,
-  "validaciones": 15
+  "validaciones": 16
  },
  {
   "recurso": "Bibliotele",
   "proveedor": "Bibliotele",
   "url": "https://itmsp.museknowledge.com/UniAgu?groupID=1&action=source&sourceID=Bibliotele",
-  "estado": "Disponible",
+  "estado": "Con falla",
   "etapas": {
    "proxy": "ok",
    "login": "ok",
-   "sitio": "ok"
+   "sitio": "falla"
   },
-  "falla": "",
-  "detalle": "",
-  "carga_s": 6.8,
-  "revisado": "2026-11-10T19:56:33.495Z",
+  "falla": "Contenido inesperado",
+  "detalle": "No aparece: Continuar viendo",
+  "carga_s": 7.1,
+  "revisado": "2026-11-11T17:55:52.681Z",
   "origen": "equipo",
-  "disponibilidad": 0.933,
-  "validaciones": 15
+  "disponibilidad": 0.875,
+  "validaciones": 16
  }
 ]
