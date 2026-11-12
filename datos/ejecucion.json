@@ -1,6 +1,5 @@
 {
- "estado": "completada",
- "origen": "manual",
- "inicio": "2026-11-11T17:45:48.575Z",
- "fin": "2026-11-11T17:55:53.815Z"
+ "estado": "en_curso",
+ "origen": "automatica",
+ "inicio": "2026-11-12T13:28:03.056Z"
 }
