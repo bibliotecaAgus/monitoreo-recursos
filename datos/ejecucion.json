@@ -1,6 +1,7 @@
 {
- "estado": "en_curso",
+ "estado": "completada",
  "origen": "manual",
  "solicitante": "bibliotecaAgus",
- "inicio": "2026-11-17T17:52:49.950Z"
+ "inicio": "2026-11-17T17:52:49.950Z",
+ "fin": "2026-11-17T18:03:03.673Z"
 }
